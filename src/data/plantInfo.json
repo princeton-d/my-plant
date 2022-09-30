@@ -8,7 +8,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558041008652.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558041109033.jpg"
       ],
-      "price": ["10,000~20,000"],
       "Difficulty": ["normal"],
       "irrigation water": [
         "주1~2회",
@@ -45,7 +44,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558140056543.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558140144294.jpg"
       ],
-      "price": ["5,000~10,000"],
       "Difficulty": ["easy"],
       "irrigation water": ["주1~2회", "통통한 몸통이 얇아지면 듬뿍 주세요"],
       "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
@@ -79,7 +77,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159672313.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159755474.jpg"
       ],
-      "price": ["20,000~30.000"],
       "Difficulty": ["easy"],
       "irrigation water": [
         "월 1회 이하",
@@ -119,7 +116,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126095834.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126303905.jpg"
       ],
-      "price": ["5,000~10,000", "10,000~20,000"],
       "Difficulty": ["normal"],
       "irrigation water": [
         "주 2회 이상",
@@ -154,7 +150,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558766084363.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558766160894.jpg"
       ],
-      "price": ["5,000~10,000"],
       "Difficulty": ["easy"],
       "irrigation water": [
         "주1~2회",
@@ -190,7 +185,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175489852.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175567503.jpg"
       ],
-      "price": ["5,000~10,000", "10,000~20,000"],
       "Difficulty": ["easy"],
       "irrigation water": [
         "주1~2회",
@@ -228,7 +222,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16623599168773.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16623599309544.jpg"
       ],
-      "price": ["10,000~20,000", "20,000~30.000"],
       "Difficulty": ["easy"],
       "irrigation water": [
         "주1~2회",
@@ -265,7 +258,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618530468823.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618530535494.jpg"
       ],
-      "price": ["30,000~50,000", "50,000~100,000"],
       "Difficulty": ["easy"],
       "irrigation water": [
         "주1~2회",
@@ -306,7 +298,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643665121896.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643665216237.jpg"
       ],
-      "price": ["10,000~20,000"],
       "Difficulty": ["hard"],
       "irrigation water": [
         "주1~2회",
@@ -334,21 +325,6 @@
     },
     {
       "id": "010",
-      "name": [],
-      "picture": [],
-      "price": [],
-      "Difficulty": [],
-      "irrigation water": [],
-      "Temperature": [],
-      "amountOfSunshine": [],
-      "function": [],
-      "Characteristics": [],
-      "Description": []
-    }
-  ],
-  "sample": [
-    {
-      "id": "000",
       "name": ["필로덴드론 글로리오섬"],
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470142591.jpg",
@@ -357,7 +333,6 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470390514.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470463565.jpg"
       ],
-      "price": ["20,000~30.000", "30,000~50,000"],
       "Difficulty": ["hard"],
       "irrigation water": [
         "주1~2회",
@@ -381,6 +356,20 @@
       "Description": [
         "필로덴드론 글로리오섬은 벨벳 질감의 무광 초록색 바탕에 흰색의 잎맥의 대비감이 아름다운 식물이에요. 아름다운 외모로 식물 집사님들의 많은 사랑을 받고있답니다. 콜롬비아에서 온 글로리오섬은 원산지에서는 땅을 기어가며 자란다고해요. 집에서 기를 때 지지대를 해주지 않으면 화분 밑을 향해 자라는 게 그 이유랍니다. 아름다운 잎을 가지고 있지만 열대우림 같은 다습한 환경을 잘 맞춰지지 않으면 금세 잎에 상처가 나 세심하게 습도를 맞춰주어야하는 식물입니다."
       ]
+    }
+  ],
+  "sample": [
+    {
+      "id": "000",
+      "name": [],
+      "picture": [],
+      "Difficulty": [],
+      "irrigation water": [],
+      "Temperature": [],
+      "amountOfSunshine": [],
+      "function": [],
+      "Characteristics": [],
+      "Description": []
     }
   ]
 }
