@@ -1,0 +1,386 @@
+{
+  "plant": [
+    {
+      "id": "001",
+      "name": ["멜라니 고무나무"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558040766671.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558041008652.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558041109033.jpg"
+      ],
+      "price": ["10,000~20,000"],
+      "Difficulty": ["normal"],
+      "irrigation water": [
+        "주1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["음이온", "산소", "공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "목대 있는",
+        "둥근모양",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "멜라니 고무나무는 따뜻한 열대 지역 야생에서 키가 30m가 넘게 자라는 큰 나무예요. 짙은 와인빛을 띠는 두꺼운 잎을 가지고 있고 관리가 쉬운 식물입니다. 게다가 산소발생량이 많아서 인기 있는 실내 식물이에요. 다만, 온도 변화에 예민한 편이기 때문에 차가운 바람이 드나드는 곳과 온도변화가 심한 창가는 피해 놓아주세요. 수액에는 독성이 있으니 어린아이와 반려동물로부터 멀리해야 합니다."
+      ]
+    },
+    {
+      "id": "002",
+      "name": ["생선뼈 선인장", "피쉬본 선인장"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558139776991.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558139966462.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558140056543.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558140144294.jpg"
+      ],
+      "price": ["5,000~10,000"],
+      "Difficulty": ["easy"],
+      "irrigation water": ["주1~2회", "통통한 몸통이 얇아지면 듬뿍 주세요"],
+      "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "다육/선인장",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "늘어져 자라는",
+        "몸통이 납작한",
+        "가시가 없는"
+      ],
+      "Description": [
+        "공작선인장 종류의 생선뼈선인장은 수집가들로 부터 많은 인기를 가지고 있어요. 가시가 없고 공중 뿌리가 줄기를 따라 자라나 마치 생선뼈를 닮아 생선뼈 선인장이라고 불리운답니다. 선인장 종류 중 성장이 빠른편이고 물을 좋아하는 편이에요. 충분한 햇빛을 받고 성장하는 여름을 거쳐 기온이 떨어지는 가을에는 꽃이 피어요. 꽃이 피고 난 뒤 맺는 열매는 새콤하고 부드러운 과일푸딩의 맛이 난답니다."
+      ]
+    },
+    {
+      "id": "003",
+      "name": ["스투키"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1662619339309275685073_451859856695918_7461780793129810940_n.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159487241.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159583112.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159672313.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159755474.jpg"
+      ],
+      "price": ["20,000~30.000"],
+      "Difficulty": ["easy"],
+      "irrigation water": [
+        "월 1회 이하",
+        "단단한 몸통이 말랑해지면 물을 주세요"
+      ],
+      "Temperature": [
+        13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+      ],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "다육/선인장",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "가시가 없는",
+        "길쭉한",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "건조하고 따뜻한 아프리카에서 온 스투키는 강한 생명력을 가지고있어 식물을 처음 키우는 초보자들에게 많이 추천하는 식물이에요. 사실 ‘스투키’라는 식물은 우리가 키우는 스투키와는 다른 식물이에요. 국내에서 유통되는 스투키의 대부분은 ‘실린드리카’라는 식물이랍니다. 스투키와 비슷하게 생겼지만 성장 속도가 빨라서 성장 속도가 느린 스투키 대신 유통되고 있어요. 밤에 산소를 내뿜어 침실에 적합한 식물로 인기가 좋지만, 독성이 있어서 반려동물과 어린아이가 먹지 않도록 조심해야 합니다."
+      ]
+    },
+    {
+      "id": "004",
+      "name": ["블루스타 고사리", "블루스타펀"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558125454911.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558125906532.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126004783.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126095834.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126303905.jpg"
+      ],
+      "price": ["5,000~10,000", "10,000~20,000"],
+      "Difficulty": ["normal"],
+      "irrigation water": [
+        "주 2회 이상",
+        "흙이 촉촉한 상태를 유지하는 것이 좋아요"
+      ],
+      "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "길쭉한",
+        "갈라진",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "블루스타 고사리는 보는 각도마다 다른 빛깔의 은청색의 잎이 아름다워서 고사리 중에서도 인기가 많은 식물이에요. 금빛 털이 송송난 하얀색 근경이 옆으로 뻗어가면서 자라나 '황금발 고사리'라고도 불리운답니다. 블루스타 고사리는 열대 우림에서 키 큰 나무에 붙어 사는 착생 고사리라서 실내에서도 잘 키울 수 있어요. 게다가 독성도 없어서 반려동물과 어린 아이에게도 안전하답니다."
+      ]
+    },
+    {
+      "id": "005",
+      "name": ["테이블야자"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558765860501.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558766011562.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558766084363.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558766160894.jpg"
+      ],
+      "price": ["5,000~10,000"],
+      "Difficulty": ["easy"],
+      "irrigation water": [
+        "주1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "바늘모양",
+        "길쭉한",
+        "갈라진",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "테이블 야자의 속명 Chamaedorea는 ‘난쟁이(dwarf)ʼ와 ‘선물(gift)ʼ이라는 그리스어에서 유래되었어요. 테이블 야자는 그 이름처럼 선물하기에 아주 좋은 식물이에요. 또한 빛이 적은 곳에서도 잘 자라고 다양한 환경에 대한 적응력이 좋아서 키우기 쉬운 식물이에요. 그래서 초보 가드너들에 많이 추천하는 식물이랍니다. 게다가 독성이 없어서 반려동물에게 안전하고 각종 화학물질을 제거하는 공기정화 능력이 뛰어난 식물이라 오랫동안 사랑받고 있어요."
+      ]
+    },
+    {
+      "id": "006",
+      "name": ["필로덴드론 버킨", "무늬 콩고"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175366941.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175489852.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175567503.jpg"
+      ],
+      "price": ["5,000~10,000", "10,000~20,000"],
+      "Difficulty": ["easy"],
+      "irrigation water": [
+        "주1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "덩굴로 자라는",
+        "둥근모양",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "하얀 무늬가 매력적인 필로덴드론 버킨은 '필로덴드론 로조 콩고'의 재배 과정에서 자연적 돌연변이로 나오게 되었어요. 변이가 불안정한 식물이라 시간이 흐르면 로조 콩고를 닮은 잎이 날 수도 있답니다. 초반에는 공급이 적어서 고가였지만 조직 배양 덕분에 대량 생산으로 널리 보급되고 있어요. 두꺼운 잎을 가지고 있어 기르기에도 쉽고 실내공기를 정화해주는 능력이 있어 꾸준한 인기를 보인답니다. 길이가 수직으로 길어지면서 자라기보다는 옆으로 수세를 넓혀가는 덩굴형의 습성을 보이는 식물로, 빛을 골고루 받을 수 있도록 해주시면 풍성한 느낌을 선물해주는 식물이에요. 식물체에 독성이 있으므로 어린아이와 반려동물의 손이 닿지 않는 곳에 두는 것이 좋습니다."
+      ]
+    },
+    {
+      "id": "007",
+      "name": ["아글라오네마 스노우 사파이어"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16621154868341.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16621154956932.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16623599168773.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16623599309544.jpg"
+      ],
+      "price": ["10,000~20,000", "20,000~30.000"],
+      "Difficulty": ["easy"],
+      "irrigation water": [
+        "주1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "길쭉한",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "하얀 배경에 진한 녹색의 물감이 묻은 것 같은 무늬가 아름다운 스노우 사파이어는 아글라오네마의 한 종류에요. 아글라오네마는 그늘진 곳에서도 잘 자라지만 밝은 색의 무늬가 많을수록 더 밝은 빛을 받을 수 있는 공간이 적합합니다. 동남아시아가 원산인 아글라오네마는 따뜻한 온도를 좋아하고 촉촉한 습도를 좋아해요. 주변 공기가 너무 건조해지지 않도록 관리해주시고, 직접적인 강한 빛은 피해 놓아주시면 누구나 쉽게 키울 수 있답니다. 아글라오네마는 공기중의 포름알데히드와 자일렌을 제거하고, 실내 습도를 높여주는 실내 공기정화 식물이에요. '부귀', '행운', '행복'을 뜻해 선물로도 아주 좋은 식물이랍니다."
+      ]
+    },
+    {
+      "id": "008",
+      "name": ["인도 고무나무"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618530324161.webp",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618530405672.webp",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618530468823.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618530535494.jpg"
+      ],
+      "price": ["30,000~50,000", "50,000~100,000"],
+      "Difficulty": ["easy"],
+      "irrigation water": [
+        "주1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "목대 있는",
+        "둥근모양",
+        "길쭉한",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "인도에서 온 인도 고무나무는 영국에서 인기가 많은 친구에요. 광택이 나는 잎을 지니고 있으며 키우기 쉬운 식물이랍니다. 고무나무의 이름은 잎, 줄기를 자를 때 고무성분인 하얀 수액 '라텍스' 가 나오기 때문이에요, 이 성분은 과거에 고무를 만들 때 사용하였고 이 수액은 인체의 피부나 점막을 자극 할 수 있으니 가지치기를 하실 때 주의해야 해요. 인도 고무나무는 빛이 적은 곳에서도 잘 자라고 잎이 두꺼워 건조에도 강한 편이랍니다. 하지만 자리이동에는 예민한 편이니 환경을 바꾸실 때는 서서히 적응기간을 갖고 이동해주세요."
+      ]
+    },
+    {
+      "id": "009",
+      "name": ["코니오그램 에메이엔시스", "골든 제브라"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664666541.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664770572.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664847683.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664939384.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643665020465.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643665121896.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643665216237.jpg"
+      ],
+      "price": ["10,000~20,000"],
+      "Difficulty": ["hard"],
+      "irrigation water": [
+        "주1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "길쭉한",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "코니오그램 에메이엔시스는 반질반질 윤이나는 라임색 잎에 초록색 가로 줄무늬가 아름다운 고사리과 식물이에요. 잎의 무늬가 마치 얼룩말의 무늬 같다고 하여 'Golden Zebra'라는 이름이 붙여졌답니다. 서양에서는 잎 모양이 대나무 같다고 하여 'Bamboo Fern'이라고 불리고 있어요. 코니오그램의 속명인 에메이엔시스{Emeiensis)는 중국의 아미산을 지칭하며, 이를 통하여 코니오그램의 고향이 중국 아미산이라는 것을 알 수 있답니다. 코니오그램은 고사리과 식물답게 촉촉한 습도를 사랑하는 식물입니다. 초보 집사님들이 키우기에는 살짝 난이도가 높은 식물로, 흙이 마른 것을 확인한 후에 물을 주시고 주변 공기는 항상 촉촉하게 관리해주시면 건강하게 키우실 수 있어요."
+      ]
+    },
+    {
+      "id": "010",
+      "name": [],
+      "picture": [],
+      "price": [],
+      "Difficulty": [],
+      "irrigation water": [],
+      "Temperature": [],
+      "amountOfSunshine": [],
+      "function": [],
+      "Characteristics": [],
+      "Description": []
+    }
+  ],
+  "sample": [
+    {
+      "id": "000",
+      "name": ["필로덴드론 글로리오섬"],
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470142591.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470251762.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470319373.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470390514.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470463565.jpg"
+      ],
+      "price": ["20,000~30.000", "30,000~50,000"],
+      "Difficulty": ["hard"],
+      "irrigation water": [
+        "주1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25, 26],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "공기정화",
+        "빛이 적어도 되는",
+        "덩굴로 자라는",
+        "하트모양",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "필로덴드론 글로리오섬은 벨벳 질감의 무광 초록색 바탕에 흰색의 잎맥의 대비감이 아름다운 식물이에요. 아름다운 외모로 식물 집사님들의 많은 사랑을 받고있답니다. 콜롬비아에서 온 글로리오섬은 원산지에서는 땅을 기어가며 자란다고해요. 집에서 기를 때 지지대를 해주지 않으면 화분 밑을 향해 자라는 게 그 이유랍니다. 아름다운 잎을 가지고 있지만 열대우림 같은 다습한 환경을 잘 맞춰지지 않으면 금세 잎에 상처가 나 세심하게 습도를 맞춰주어야하는 식물입니다."
+      ]
+    }
+  ]
+}
