@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 
+// 김동현 2022.10.01 firebase setup
 const firebaseConfig = {
   apiKey: "AIzaSyAKrdPLkv5yw4ltJivcT1YDi9UalD_-Kgk",
   authDomain: "my-plant-ae765.firebaseapp.com",
