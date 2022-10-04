@@ -2,7 +2,10 @@ import React from 'react';
 import classes from './Navigation.module.css';
 
 // 김동현 2022.10.04 navigation 작업
-const Navigation = () => {
+const Navigation = ({ setPlantRecommendation }) => {
+  const handlePlantRecommendationButton = () => {
+    setPlantRecommendation(true);
+  };
   return (
     <>
       {/* wrapper area */}
@@ -27,7 +30,9 @@ const Navigation = () => {
           {/* menu */}
           <div className={classes.menuArea}>
             <button>정원 관리하기</button>
-            <button>식물 추천받기</button>
+            <button onClick={handlePlantRecommendationButton}>
+              식물 추천받기
+            </button>
           </div>
           {/* logout */}
           <div className={classes.logoutArea}>
