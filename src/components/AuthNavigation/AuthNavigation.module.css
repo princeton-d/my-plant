@@ -1,16 +1,20 @@
-/* 김동현 2022.10.04 - 기본 구조 배치 */
+/* 2022.10.04 - 기본 구조 작업 */
+
 /* wrapper area */
-.wrapper {
+.container {
   position: fixed;
+  display: flex;
 }
 
+/* left side auth area */
 .container {
+  display: flex;
+  flex-direction: column;
   width: 33vw;
   height: 100vh;
   background-color: aquamarine;
 }
 
-/* logo */
 .logoArea {
   display: flex;
   justify-content: center;
@@ -24,27 +28,17 @@
   background-color: antiquewhite;
 }
 
-/* user info */
-.userInfoArea {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* search plant */
-.searchPlantForm {
-  display: flex;
-  justify-content: center;
-}
-
-/* menu */
-.menuArea {
+.authForm {
   display: flex;
   flex-direction: column;
 }
 
-/* logout */
-.logoutArea {
+.signUpArea {
   display: flex;
   justify-content: center;
+}
+
+.externalLoginArea {
+  display: flex;
+  flex-direction: column;
 }

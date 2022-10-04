@@ -1,50 +1,15 @@
 /* 김동현 2022.10.01 - 기본 구조 배치 */
 
 /* wrapper area */
+.wrapper {
+  margin-left: 33vw;
+}
+
 .container {
   display: flex;
-}
-
-/* left side auth area */
-.leftArea {
-  display: flex;
   flex-direction: column;
-  width: 33vw;
-  height: 100vh;
-  background-color: aquamarine;
-}
-
-.logoArea {
-  display: flex;
-  justify-content: center;
-}
-
-.logo {
-  display: inline-block;
-  width: 15rem;
-  height: 15rem;
-  font-size: 2rem;
-  background-color: antiquewhite;
-}
-
-.authForm {
-  display: flex;
-  flex-direction: column;
-}
-
-.signUpArea {
-  display: flex;
-  justify-content: center;
-}
-
-.externalLoginArea {
-  display: flex;
-  flex-direction: column;
-}
-
-/* right side welcome page */
-.rightArea {
   width: 67vw;
+  height: 100vh;
   background-color: bisque;
 }
 
