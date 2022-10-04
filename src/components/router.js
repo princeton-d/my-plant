@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Home from '../routes/Home/Home'
-import PlantPick from "../routes/PlantPick/PlantPick"
-import Navigation from '../components/Navigation/Navigation'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from '../routes/Home/Home';
+import PlantPick from '../routes/PlantPick/PlantPick';
+import UserGarden from '../routes/UserGarden/UserGarden';
+import Navigation from '../components/Navigation/Navigation';
 import AuthNavigation from './AuthNavigation/AuthNavigation';
 
 const AppRouter = ({ isLogin }) => {
@@ -12,6 +13,7 @@ const AppRouter = ({ isLogin }) => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/plant_pick' element={<PlantPick />} />
+        <Route path='/garden' element={<UserGarden />} />
       </Routes>
     </Router>
   )

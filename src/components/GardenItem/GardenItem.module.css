@@ -1,0 +1,24 @@
+/* 김동현 2022.10.04 */
+
+.item {
+  display: flex;
+  width: 40rem;
+  height: 22rem;
+  margin: 1rem;
+  background-color: white;
+}
+
+.plantImg {
+  display: inline-block;
+  width: 20rem;
+  height: 20rem;
+  margin: 1rem;
+  background-color: antiquewhite;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+}

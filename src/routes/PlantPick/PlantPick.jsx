@@ -20,7 +20,6 @@ const PlantPick = () => {
               })}
             </ul>
           </div>
-          <div className={classes.PlantList}></div>
         </div>
       </div>
     </>
