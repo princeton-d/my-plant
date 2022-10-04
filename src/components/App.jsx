@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Home from '../routes/Home/Home';
 import classes from './App.module.css';
 import AppRouter from './router';
 

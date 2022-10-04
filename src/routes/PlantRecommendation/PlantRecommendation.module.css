@@ -1,0 +1,21 @@
+/* 김동현 2022.10.04 - 기본작업 */
+
+/* wrapper */
+.wrapper {
+  margin-left: 33vw;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: cornsilk;
+}
+
+.Recommendation {
+  display: flex;
+}
+
+.Recommendation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
