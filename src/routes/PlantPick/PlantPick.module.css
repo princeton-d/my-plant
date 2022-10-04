@@ -1,0 +1,20 @@
+/* 김동현 2022.10.04 - 기본작업 */
+
+/* wrapper */
+.wrapper {
+  margin-left: 33vw;
+}
+
+.container {
+  background-color: aqua;
+}
+
+.toadyPlant {
+  display: flex;
+}
+
+.toadyPlant ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

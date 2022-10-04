@@ -1,11 +1,28 @@
 import React from 'react';
+import PlantItem from '../../components/PlantItem/PlantItem';
 import classes from './PlantPick.module.css';
+import plantInfo from '../../data/plantInfo.json';
 
-// 김동현 2022.10.02
+// 김동현 2022.10.04 - 기본작업
 const PlantPick = () => {
   return (
     <>
-      <div></div>
+      <div className={classes.wrapper}>
+        <div className={classes.container}>
+          <div className={classes.title}>
+            <p>오늘의 식물 PICK</p>
+          </div>
+          <div className={classes.toadyPlant}>
+            <ul>
+              {/* 김동현 2022.10.04 - 각각의 식물 정보 mapping */}
+              {plantInfo.plant.map((item) => {
+                return <PlantItem plant={item} key={item.id} />;
+              })}
+            </ul>
+          </div>
+          <div className={classes.PlantList}></div>
+        </div>
+      </div>
     </>
   );
 };
