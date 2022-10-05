@@ -10,7 +10,7 @@ const PlantRecommendation = () => {
       <div className={classes.wrapper}>
         <div className={classes.container}>
           <div className={classes.title}>
-            <p>@@@님을 위한 추천식물</p>
+            <p>@@@님을 위한 <span>추천식물</span></p>
           </div>
           <div className={classes.Recommendation}>
             <ul>

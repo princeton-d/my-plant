@@ -1,21 +1,35 @@
 /* 김동현 2022.10.04 - 기본작업 */
+/* 김수영 2022.10.05 - 스타일링 작업 */
+@value fBasic from '../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, clGrey from '../../common/color.css';
 
 /* wrapper */
 .wrapper {
   margin-left: 33vw;
+  font-family: fBasic;
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  padding: 3rem 2rem;
+}
+.title span {
+  font-weight: bold;
 }
 
 .container {
   min-height: 100vh;
-  background-color: cornsilk;
+  background-color: clGrey;
 }
 
 .Recommendation {
-  display: flex;
+  padding: 0 1.3rem;
 }
 
 .Recommendation ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 3.5rem 2rem;
 }

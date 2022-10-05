@@ -11,7 +11,7 @@ const AppRouter = ({ isLogin, plantRecommendation, setPlantRecommendation }) => 
   return (
     <Router>
       {/* 김동현 2022.10.04 로그인 후 네비게이션 바 보임 */}
-      {isLogin ? <Navigation setPlantRecommendation={setPlantRecommendation} /> : <AuthNavigation />}
+      {!isLogin ? <Navigation setPlantRecommendation={setPlantRecommendation} /> : <AuthNavigation />}
       {plantRecommendation ? <RecommendationNavigation /> : null}
       <Routes>
         <Route path='/' element={<Home />} />
