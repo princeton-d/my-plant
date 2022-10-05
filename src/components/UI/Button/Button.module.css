@@ -1,0 +1,13 @@
+@value fBasic from '../../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../../common/color.css';
+
+.button {
+  border: none;
+  border-radius: 3rem;
+  margin: 0.5rem;
+  padding: 1.5rem 0;
+  font-family: fBasic;
+  font-weight: bold;
+  color: cWhite;
+  font-size: 1.3rem;
+}

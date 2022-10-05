@@ -1,18 +1,53 @@
 /* 김동현 2022.10.01 - 기본 구조 배치 */
+/* 김수영 2022.10.05 - 스타일링 완료 */
+@value fBasic from '../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite from '../../common/color.css';
 
 /* wrapper area */
 .wrapper {
   margin-left: 33vw;
+  font-family: fBasic;
+  color: cdBlue;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 67vw;
   height: 100vh;
+  padding: 7rem;
+  background: url('../../../public/image/bg.jpg') no-repeat center/cover;
   background-color: bisque;
+  transition: padding 150ms ease-in;
 }
 
-.test {
-  text-align: right;
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 4rem;
+  line-height: 1.7;
+  font-weight: bold;
+  margin-top: 2em;
+  transition: font-size 150ms ease-in;
+}
+
+.introduce {
+  font-size: 2.5rem;
+  line-height: 1.7;
+  margin-top: 2em;
+  transition: font-size 150ms ease-in;
+}
+
+@media screen and (max-width: 60rem) {
+  .container {
+    padding: 3.5rem;
+  }
+  .welcome {
+    font-size: 3rem;
+  }
+  .introduce {
+    font-size: 1.5rem;
+  }
 }

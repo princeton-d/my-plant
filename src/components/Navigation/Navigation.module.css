@@ -1,27 +1,35 @@
 /* 김동현 2022.10.04 - 기본 구조 배치 */
+/* 김수영 2022.10.05 - 스타일링 작업 */
+@value fBasic from '../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
+
 /* wrapper area */
 .wrapper {
   position: fixed;
+  font-family: fBasic;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 33vw;
   height: 100vh;
-  background-color: aquamarine;
+  padding: 5rem;
+  background: url('../../../public/image/bg.jpg') no-repeat center/cover;
 }
 
 /* logo */
 .logoArea {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .logo {
   display: inline-block;
-  width: 15rem;
-  height: 15rem;
+  width: 18rem;
   font-size: 2rem;
-  background-color: antiquewhite;
 }
 
 /* user info */
@@ -29,13 +37,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.8rem;
+  padding-bottom: 3rem;
 }
 
 /* search plant */
 .searchPlantForm {
   display: flex;
   justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
 }
+
+.searchPlantForm input[type="search"] {
+  width: 100%;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  font-family: fBasic;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.4rem;
+}
+.searchPlantForm input[type="search"]::placeholder {
+  color: cGrey;
+}
+.searchPlantForm input[type="search"]:focus {
+  outline: 2px solid cGreen;
+}
+.searchPlantForm input[type="submit"] {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  font-family: fBasic;
+  font-size: 2.2em;
+  color: cdBlue;
+  border: none;
+  background: cWhite;
+  transform: rotate(180deg) translateY(50%);
+}
+.searchPlantForm input[type="submit"]:hover {
+  color: cGreen;
+}
+
 
 /* menu */
 .menuArea {
@@ -43,8 +86,18 @@
   flex-direction: column;
 }
 
+.yellow {
+  background: cYellow;
+}
+
+.blue {
+  background: cdBlue;
+}
+
 /* logout */
 .logoutArea {
   display: flex;
   justify-content: center;
+  font-size: 1.2em;
+  margin-top: 1rem;
 }
