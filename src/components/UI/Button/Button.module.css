@@ -10,4 +10,6 @@
   font-weight: bold;
   color: cWhite;
   font-size: 1.3rem;
+  cursor: pointer;
+  letter-spacing: 0.8px;
 }

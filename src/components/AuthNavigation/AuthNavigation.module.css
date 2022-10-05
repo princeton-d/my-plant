@@ -1,4 +1,7 @@
 /* 2022.10.04 - 기본 구조 작업 */
+/* 2022.10.05 - 스타일링 작업 */
+@value fBasic from '../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
 /* wrapper area */
 .container {
@@ -10,22 +13,23 @@
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 33vw;
   height: 100vh;
-  background-color: aquamarine;
+  background-color: cWhite;
+  padding: 5rem;
 }
 
 .logoArea {
   display: flex;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .logo {
   display: inline-block;
-  width: 15rem;
-  height: 15rem;
+  width: 23rem;
   font-size: 2rem;
-  background-color: antiquewhite;
 }
 
 .authForm {
@@ -33,12 +37,58 @@
   flex-direction: column;
 }
 
+.authForm input {
+  text-align: center;
+  padding: 0.8rem 0;
+  border: none;
+  border-bottom: 1px solid cdBlue;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+.authForm input::placeholder {
+  color: cGrey;
+}
+.authForm input:focus {
+  outline: none;
+  border-bottom: 2px solid cGreen;
+
+}
+
+.loginBtn {
+  background: cGreen;
+  font-size: 1.5rem;
+}
+
 .signUpArea {
   display: flex;
   justify-content: center;
+  font-size: 1.3rem;
+  color: cGreen;
+  margin: 1rem;
 }
 
 .externalLoginArea {
   display: flex;
   flex-direction: column;
+  margin-top: 1rem;
+}
+
+.externalLogin {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: cdBlue;
+  font-weight: 500;
+}
+
+.externalLogin:hover {
+  background: cYellow;
+}
+
+.externalLogin img {
+  position: absolute;
+  left: 2rem;
+  width: 2rem;
 }
