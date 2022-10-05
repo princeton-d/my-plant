@@ -9,7 +9,6 @@ const App = () => {
   const [isLogin, setIsLogin] = useState(false);
   const [userInfo, setUserInfo] = useState(null);
   const [plantRecommendation, setPlantRecommendation] = useState(null);
-  console.log(userInfo, isLogin);
   // 김동현 2022.10.05 - 유저 정보 변화 감지
   useEffect(() => {
     onAuthStateChanged(authService, (user) => {

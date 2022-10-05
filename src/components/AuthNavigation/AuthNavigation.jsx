@@ -1,6 +1,11 @@
 // 2022.10.04 - 기본 구조 작업
 
-import { signInAnonymously, signInWithEmailAndPassword } from 'firebase/auth';
+import {
+  GoogleAuthProvider,
+  signInAnonymously,
+  signInWithEmailAndPassword,
+  signInWithPopup,
+} from 'firebase/auth';
 import React, { useState } from 'react';
 import { authService } from '../../service/fbase';
 import Button from '../UI/Button/Button';
@@ -35,6 +40,11 @@ const AuthNavigation = (props) => {
   const handleGuestButton = async () => {
     const user = await signInAnonymously(authService);
   };
+  // 김동현 2022.10.05 - 구글 로그인 기능
+  const handleGoogleLoginButton = async () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(authService, provider);
+  };
   return (
     <div className={classes.container}>
       <div className={classes.logoArea}>
@@ -63,7 +73,10 @@ const AuthNavigation = (props) => {
         <span>회원가입</span>
       </div>
       <div className={classes.externalLoginArea}>
-        <Button className={classes.externalLogin}>
+        <Button
+          className={classes.externalLogin}
+          onClick={handleGoogleLoginButton}
+        >
           <img src='/image/google.png' alt='google 로그인' />
           구글로 로그인
         </Button>
