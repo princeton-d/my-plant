@@ -10,7 +10,7 @@ const PlantPick = () => {
       <div className={classes.wrapper}>
         <div className={classes.container}>
           <div className={classes.title}>
-            <p>오늘의 식물 PICK</p>
+            <p>오늘의 식물 <span>PICK</span></p>
           </div>
           <div className={classes.toadyPlant}>
             <ul>

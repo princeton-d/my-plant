@@ -1,24 +1,88 @@
 /* 김동현 2022.10.04 */
+/* 2022.10.05 - 스타일링 작업 */
+@value fBasic from '../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
 .item {
   display: flex;
   width: 40rem;
-  height: 22rem;
   margin: 1rem;
-  background-color: white;
+  padding: 1.5rem;
+  background-color: cWhite;
+  border-radius: 1rem;
 }
 
-.plantImg {
-  display: inline-block;
+.plantImgWrap {
   width: 20rem;
   height: 20rem;
-  margin: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
   background-color: antiquewhite;
+  margin-right: 2rem;
+}
+.plantImg {
+  display: inline-block;
+  width: 100%;
 }
 
 .rightSide {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  margin: 1rem;
+  padding: 1.6rem 0 0;
+}
+
+.plantNickName {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.plantName {
+  all: unset;
+  color: cGreen;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.plantName span:first-child {
+  margin-right: 0.3rem;
+  padding-top: 0.3rem;
+}
+.plantName span:last-child {
+  font-size: 0.9rem;
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid cGreen;
+  border-radius: 50%;
+}
+
+.plantName:hover {
+  text-decoration: underline;
+}
+
+.rightSide > p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.rightSide input[type="date"] {
+  border: none;
+  font-family: fBasic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.rightSide input[type="date"]:focus {
+  outline: none;
+  border-bottom: 2px solid cGreen;
+}
+
+.rightSide input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0.3;
 }
