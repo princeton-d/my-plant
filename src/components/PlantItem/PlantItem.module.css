@@ -1,10 +1,30 @@
 /* 김동현 2022.10.04 - 기본작업 */
+/* 2022.10.05 - 스타일링 작업 */
+@value fBasic from '../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
-.plantImg {
+.plantList {
+  transition: transform 200ms ease-in;
+  cursor: pointer;
+}
+.plantList:hover {
+  transform: scale(1.02);
+}
+
+.plantImgWrap {
+  border-radius: 1rem;
+  overflow: hidden;
   width: 20rem;
   height: 20rem;
+  margin-bottom: 1rem;
+}
+.plantImg {
+  width: 130%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .plantName {
   text-align: center;
+  font-size: 1.5rem;
 }
