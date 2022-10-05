@@ -1,6 +1,6 @@
 // 2022.10.04 - 기본 구조 작업
 
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInAnonymously, signInWithEmailAndPassword } from 'firebase/auth';
 import React, { useState } from 'react';
 import { authService } from '../../service/fbase';
 import Button from '../UI/Button/Button';
@@ -27,11 +27,13 @@ const AuthNavigation = (props) => {
         email,
         password
       );
-      props.setIsLogin(true);
-      props.setUserInfo(user.user);
     } catch (error) {
       console.log(error.code);
     }
+  };
+  // 김동현 2022.10.05 - 게스트 로그인 기능
+  const handleGuestButton = async () => {
+    const user = await signInAnonymously(authService);
   };
   return (
     <div className={classes.container}>
@@ -65,7 +67,9 @@ const AuthNavigation = (props) => {
           <img src='/image/google.png' alt='google 로그인' />
           구글로 로그인
         </Button>
-        <Button className={classes.externalLogin}>게스트 로그인</Button>
+        <Button className={classes.externalLogin} onClick={handleGuestButton}>
+          게스트 로그인
+        </Button>
       </div>
     </div>
   );
