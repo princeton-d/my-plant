@@ -60,6 +60,10 @@
   font-size: 1.5rem;
 }
 
+.loginBtn:hover {
+  background: cYellow;
+}
+
 .signUpArea {
   display: flex;
   justify-content: center;
