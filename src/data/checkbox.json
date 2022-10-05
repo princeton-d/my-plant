@@ -1,54 +1,66 @@
 {
   "topCheckbox": [
     {
+      "id": 1,
       "text": "식물을 처음 키워봐요",
       "emoji": "🥹"
     },
     {
+      "id": 2,
       "text": "식물을 키워본적 있어요",
       "emoji": "😎"
     }
   ],
   "middleCheckbox": [
     {
+      "id": 3,
       "text": "햇볕맛집!",
       "emoji": "🌞"
     },
     {
+      "id": 4,
       "text": "맛집까진..",
       "emoji": "⛅️"
     },
     {
+      "id": 5,
       "text": "따뜻해요",
       "emoji": "🔥"
     },
     {
+      "id": 6,
       "text": "서늘해요",
       "emoji": "❄️"
     }
   ],
   "bottomCheckbox": [
     {
+      "id": 7,
       "text": "공기정화를 하고싶어요",
       "emoji": "✨"
     },
     {
+      "id": 8,
       "text": "반려동물/아이에게 안전해요",
       "emoji": "👃"
     },
     {
+      "id": 9,
       "text": "예쁜 잎을 감상하고 싶어요",
       "emoji": "🌿"
     },
     {
+      "id": 10,
       "text": "꽃이 피었으면 좋겠어요",
       "emoji": "🌸"
     },
     {
+      "id": 11,
       "text": "열매가 맺혔으면 좋겠어요",
       "emoji": "🍒"
     },
     {
+      "id": 12,
       "text": "다육이/선인장이 좋아요",
       "emoji": "🌵"
     }

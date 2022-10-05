@@ -1,14 +1,24 @@
-/* 김동현 2022.10.04 - 기본 구조작업 */
+/* 김수영 2022.10.05 - 스타일링 작업 */
+@value fBasic from '../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
 /* wrapper area */
 .wrapper {
   position: fixed;
+  font-family: fBasic;
 }
 
 .container {
+  position: relative;
+  overflow-y: scroll;
   width: 33vw;
   height: 100vh;
-  background-color: aquamarine;
+  background: url('../../../public/image/bg.jpg') no-repeat center/cover;
+  padding: 5rem;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
 }
 
 /* logo */
@@ -20,9 +30,13 @@
 .logo {
   display: inline-block;
   width: 15rem;
-  height: 15rem;
   font-size: 2rem;
-  background-color: antiquewhite;
+  margin-bottom: 3rem;
+}
+
+.container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .topInfo,
@@ -31,4 +45,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
+
+.backBtn {
+  all: unset;
+  position: absolute;
+  top: 4rem;
+  font-size: 3rem;
+  color: cGreen;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+
+.backBtn:hover {
+  transform: translateX(-0.5rem);
+}
+
