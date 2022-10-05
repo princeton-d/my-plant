@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { getAuth } from 'firebase/auth';
 
 // 김동현 2022.10.01 firebase setup
 const firebaseConfig = {
@@ -11,5 +12,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+
+export const authService = getAuth();
 
 export default initializeApp(firebaseConfig);

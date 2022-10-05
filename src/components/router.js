@@ -7,15 +7,14 @@ import Navigation from '../components/Navigation/Navigation';
 import AuthNavigation from './AuthNavigation/AuthNavigation';
 import RecommendationNavigation from './recommendationNavigation/recommendationNavigation'
 
-const AppRouter = ({ isLogin, plantRecommendation, setPlantRecommendation }) => {
+const AppRouter = (props) => {
   return (
     <Router>
       {/* 김동현 2022.10.04 로그인 후 네비게이션 바 보임 */}
-      {isLogin ? <Navigation setPlantRecommendation={setPlantRecommendation} /> : <AuthNavigation />}
-      {plantRecommendation ? <RecommendationNavigation /> : null}
+      {props.isLogin ? <Navigation setPlantRecommendation={props.setPlantRecommendation} /> : <AuthNavigation setIsLogin={props.setIsLogin} setUserInfo={props.setUserInfo} />}
+      {props.plantRecommendation ? <RecommendationNavigation /> : null}
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/plant_pick' element={<PlantPick />} />
+        {props.isLogin ? <Route path='/' element={<PlantPick />} /> : <Route path='/' element={<Home />} />}
         <Route path='/garden' element={<UserGarden />} />
         <Route path='/recommendation' element={<PlantRecommendation />} />
       </Routes>
