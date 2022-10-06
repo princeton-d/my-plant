@@ -45,6 +45,7 @@
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
   font-family: inherit;
+  transition: border-bottom 150ms ease-in;
 }
 .authForm input::placeholder {
   color: cGrey;
@@ -58,6 +59,7 @@
 .loginBtn {
   background: cGreen;
   font-size: 1.5rem;
+  transition: background 100ms ease-in;
 }
 
 .loginBtn:hover {
@@ -70,6 +72,16 @@
   font-size: 1.3rem;
   color: cGreen;
   margin: 1rem;
+}
+
+.signUpArea button {
+  all: unset;
+  cursor: pointer;
+  transition: color 100ms ease-in;
+}
+
+.signUpArea button:hover {
+  color: cYellow;
 }
 
 .externalLoginArea {
@@ -85,6 +97,7 @@
   align-items: center;
   background: cdBlue;
   font-weight: 500;
+  transition: background 100ms ease-in;
 }
 
 .externalLogin:hover {

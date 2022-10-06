@@ -70,7 +70,7 @@ const AuthNavigation = (props) => {
         </form>
       </div>
       <div className={classes.signUpArea}>
-        <span>회원가입</span>
+        <button>회원가입</button>
       </div>
       <div className={classes.externalLoginArea}>
         <Button
