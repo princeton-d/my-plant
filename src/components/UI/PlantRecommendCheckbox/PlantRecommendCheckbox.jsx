@@ -1,7 +1,7 @@
-import React from "react";
-import classes from "./PlantRecommendationItem.module.css";
+import React from 'react';
+import classes from './PlantRecommendCheckbox.module.css';
 
-const PlantRecommendationItem = ({ item, name }) => {
+const PlantRecommendCheckbox = ({ item, name }) => {
   return (
     <div className={classes.recommend}>
       <label htmlFor={item.id}>
@@ -9,13 +9,12 @@ const PlantRecommendationItem = ({ item, name }) => {
         <span className={classes.text}>{item.text}</span>
       </label>
       <input
-        type="radio"
+        type="checkbox"
         id={item.id}
         className={classes.checkbox}
-        name={name}
       />
     </div>
   );
 };
 
-export default PlantRecommendationItem;
+export default PlantRecommendCheckbox;

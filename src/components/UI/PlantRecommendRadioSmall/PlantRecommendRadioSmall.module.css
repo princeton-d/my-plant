@@ -1,0 +1,53 @@
+/* 2022.10.06 - 스타일링 작업 */
+@value fBasic from '../../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../../common/color.css';
+
+.recommend {
+  position: relative;
+  width: 50%;
+}
+.emoji {
+  position: absolute;
+  left: 3rem;
+}
+.checkbox {
+  display: none;
+}
+.recommend label {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem;
+  font-family: fBasic;
+  font-size: 1.3rem;
+  padding: 1.5rem 0;
+  background: cWhite;
+  border-radius: 3rem;
+  transition: outline 150ms ease-in;
+}
+
+.recommend label:hover {
+  outline: 1px solid cGreen;
+}
+
+.recommend input:checked + label {
+  background: cGreen;
+}
+
+.recommend input:checked {
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.recommend input:checked::after {
+  position: absolute;
+  top: 0;
+  left: 0.1rem;
+  content: '';
+  display: block;
+  margin: 0.3rem 0;
+  width: 95%;
+  height: 4.5rem;
+  border-radius: 5rem;
+  border: 3px solid cGreen;
+}

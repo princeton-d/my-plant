@@ -48,6 +48,12 @@
   margin-bottom: 1.5rem;
 }
 
+.middleBtn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .backBtn {
   all: unset;
   position: absolute;
