@@ -3,7 +3,9 @@
 import React from "react";
 import classes from "./recommendationNavigation.module.css";
 import checkbox from "../../data/checkbox.json";
-import PlantRecommendationItem from "../PlantRecommendationItem/PlantRecommendationItem";
+import PlantRecommendRadioBig from "../UI/PlantRecommendRadioBig/PlantRecommendRadioBig";
+import PlantRecommendRadioSmall from "../UI/PlantRecommendRadioSmall/PlantRecommendRadioSmall";
+import PlantRecommendCheckbox from "../UI/PlantRecommendCheckbox/PlantRecommendCheckbox";
 
 const recommendationNavigation = () => {
   return (
@@ -18,19 +20,21 @@ const recommendationNavigation = () => {
           <div className={classes.topInfo}>
             <h3>나는</h3>
             {checkbox.topCheckbox.map((item) => {
-              return <PlantRecommendationItem item={item} key={item.text} />;
+              return <PlantRecommendRadioBig item={item} key={item.text} name="aboutMe"/>;
             })}
           </div>
           <div className={classes.middleInfo}>
             <h3>우리집은</h3>
+            <div className={classes.middleBtn}>
             {checkbox.middleCheckbox.map((item) => {
-              return <PlantRecommendationItem item={item} key={item.text} />;
+              return <PlantRecommendRadioSmall item={item} key={item.text} name="aboutHome"/>;
             })}
+            </div>
           </div>
           <div className={classes.bottomInfo}>
             <h3>이런걸 원해요</h3>
             {checkbox.bottomCheckbox.map((item) => {
-              return <PlantRecommendationItem item={item} key={item.text} />;
+              return <PlantRecommendCheckbox item={item} key={item.text} />;
             })}
           </div>
           <button className={classes.backBtn}>

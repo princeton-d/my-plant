@@ -1,3 +1,8 @@
+/* 2022.10.06 - 스타일링 작업 */
+@value fBasic from '../../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../../common/color.css';
+
+
 .container {
   position: fixed;
   display: flex;
@@ -8,4 +13,73 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrap {
+  position: relative;
+  background: cWhite;
+  width: 45rem;
+  padding: 5rem 7rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logoArea {
+  width: 20rem;
+  margin: 3rem auto 4rem;
+}
+
+.logoArea img {
+  width: 100%;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.authForm input {
+  text-align: center;
+  padding: 0.8rem 0;
+  border: none;
+  border-bottom: 1px solid cdBlue;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  transition: border-bottom 150ms ease-in;
+}
+.authForm input::placeholder {
+  color: cGrey;
+}
+.authForm input:focus {
+  outline: none;
+  border-bottom: 2px solid cGreen;
+
+}
+
+.signInBtn {
+  background: cGreen;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  transition: background 100ms ease-in;
+}
+
+.signInBtn:hover {
+  background: cYellow;
+}
+
+.closeBtn {
+  all: unset;
+  position: absolute;
+  top: 2rem;
+  right: 2.3rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: color 150ms ease-in;
+}
+
+.closeBtn:hover {
+  color: cYellow;
 }

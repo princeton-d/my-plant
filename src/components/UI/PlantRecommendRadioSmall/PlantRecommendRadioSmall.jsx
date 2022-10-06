@@ -1,7 +1,7 @@
-import React from "react";
-import classes from "./PlantRecommendationItem.module.css";
+import React from 'react';
+import classes from './PlantRecommendRadioSmall.module.css';
 
-const PlantRecommendationItem = ({ item, name }) => {
+const PlantRecommendRadioSmall = ({ item, name }) => {
   return (
     <div className={classes.recommend}>
       <label htmlFor={item.id}>
@@ -18,4 +18,4 @@ const PlantRecommendationItem = ({ item, name }) => {
   );
 };
 
-export default PlantRecommendationItem;
+export default PlantRecommendRadioSmall;
