@@ -27,7 +27,10 @@ const recommendationNavigation = () => {
             <h3>우리집은</h3>
             <div className={classes.middleBtn}>
             {checkbox.middleCheckbox.map((item) => {
-              return <PlantRecommendRadioSmall item={item} key={item.text} name="aboutHome"/>;
+              return <PlantRecommendRadioSmall item={item} key={item.text} name="aboutHome1"/>;
+            })}
+            {checkbox.middleCheckboxTwo.map((item) => {
+              return <PlantRecommendRadioSmall item={item} key={item.text} name="aboutHome2"/>;
             })}
             </div>
           </div>
