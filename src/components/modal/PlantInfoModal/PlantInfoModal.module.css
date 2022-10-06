@@ -1,3 +1,7 @@
+/* 2022.10.06 - 스타일링 작업 */
+@value fBasic from '../../../common/font.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../../common/color.css';
+
 .container {
   position: fixed;
   display: flex;
@@ -8,14 +12,19 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(3px);
+  overflow-y: scroll;
 }
 
 .contents {
   position: relative;
   display: flex;
   width: 80%;
-  height: 80%;
   background-color: #fff;
+  border-radius: 1rem;
+  font-family: fBasic;
+  padding: 3rem;
+  margin-bottom: 2rem;
 }
 
 .imgArea {
@@ -23,31 +32,172 @@
   flex-direction: column;
   width: 40%;
   height: 100%;
-  padding: 2rem;
+  margin-right: 2.5rem;
 }
-
+.mainImgArea {
+  width: 30vw;
+  height: 30vw;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
 .mainImg {
   width: 100%;
-  height: 70%;
 }
 
 .subImgArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   width: 100%;
-  height: 30%;
 }
 
+.subImgArea > div {
+  width: 7vw;
+  height: 7vw;
+  overflow: hidden;
+  border-radius: 1rem;
+}
 .subImg {
-  width: 25%;
-  height: 50%;
+  width: 100%;
+}
+
+.subImgArea > div:hover {
+  outline: 2px solid cGreen;
 }
 
 .infoArea {
   display: flex;
   flex-direction: column;
-  width: 55%;
-  height: 100%;
+  padding-top: 1rem;
+}
+
+.topArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topArea h2 {
+  font-size: 2.5rem;
+}
+
+.topArea p {
+  line-height: 2;
+  color: cGreen;
+  border: 1px solid cGreen;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0 1.5rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.topArea p span {
+  margin-right: 0.8rem;
+}
+
+.topArea p b {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .detailInfo {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.detailInfo > p {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+.detailInfos {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.detailInfos div {
+  margin-top: 3rem;
+  width: 32%;
+  word-break: keep-all;
+}
+.detailInfos h3 {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.detailInfos span {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.buttonArea {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonArea button {
+  border: none;
+  font-family: inherit;
+  background: cYellow;
+  padding: 0.5rem 4rem;
+  border-radius: 3rem;
+  color: cWhite;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: background 150ms ease-in;
+  cursor: pointer;
+}
+.buttonArea button:hover {
+  background: cGreen;
+}
+
+@media screen and (max-width:60rem) {
+  .container {
+    align-items: flex-start;
+  }
+  .contents {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0;
+    padding-top: 2rem;
+  }
+  .imgArea {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+  .mainImgArea {
+    width: 70vw;
+    height: 70vw;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+  }
+  .subImgArea > div {
+    width: 10vw;
+    height: 10vw;
+  }
+  .infoArea {
+    text-align: center;
+  }
+  .topArea {
+    flex-direction: column;
+  }
+  .topArea h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .detailInfo {
+    padding: 2.5rem;
+  }
+  .buttonArea {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
