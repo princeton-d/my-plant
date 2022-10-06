@@ -1,11 +1,20 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { Link, Navigate } from 'react-router-dom';
+import { authService } from '../../service/fbase';
 import Button from '../UI/Button/Button';
 import classes from './Navigation.module.css';
 
 // 김동현 2022.10.04 navigation 작업
-const Navigation = ({ setPlantRecommendation }) => {
+const Navigation = (props) => {
   const handlePlantRecommendationButton = () => {
-    setPlantRecommendation(true);
+    props.setPlantRecommendation(true);
+  };
+  // 김동현 2022.10.06 - 로그아웃 기능
+  const handleLogoutButton = () => {
+    signOut(authService);
+    props.setIsLogin(false);
+    Navigate('/');
   };
   return (
     <>
@@ -24,20 +33,23 @@ const Navigation = ({ setPlantRecommendation }) => {
           {/* search */}
           <div className={classes.searchPlantArea}>
             <form className={classes.searchPlantForm}>
-              <input type='search' placeholder='식물 이름'/>
-              <input type='submit' value="☌"/>
+              <input type='search' placeholder='식물 이름' />
+              <input type='submit' value='☌' />
             </form>
           </div>
           {/* menu */}
           <div className={classes.menuArea}>
             <Button className={classes.yellow}>정원 관리하기</Button>
-            <Button className={classes.blue} onClick={handlePlantRecommendationButton}>
+            <Button
+              className={classes.blue}
+              onClick={handlePlantRecommendationButton}
+            >
               식물 추천받기
             </Button>
           </div>
           {/* logout */}
           <div className={classes.logoutArea}>
-            <button>로그아웃</button>
+            <button onClick={handleLogoutButton}>로그아웃</button>
           </div>
         </div>
       </div>
