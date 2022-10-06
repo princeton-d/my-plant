@@ -1,20 +1,33 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { authService } from '../../service/fbase';
 import Button from '../UI/Button/Button';
 import classes from './Navigation.module.css';
 
-// 김동현 2022.10.04 navigation 작업
+// 김동현 2022.10.06 navigation 작업
 const Navigation = (props) => {
+  const navigate = useNavigate();
+
   const handlePlantRecommendationButton = () => {
-    props.setPlantRecommendation(true);
+    props.setPlantRecommendation(true); // 식물추천 navigation 으로 변경
+    navigate('/recommendation'); // 식물추천 page 로 이동
   };
   // 김동현 2022.10.06 - 로그아웃 기능
   const handleLogoutButton = () => {
     signOut(authService);
     props.setIsLogin(false);
-    Navigate('/');
+    navigate('/');
+  };
+  // 김동현 2022.10.06 - 경로 이동 기능
+  const handleNavigate = (e) => {
+    if (e.target.innerText === '정원 관리하기') {
+      e.target.innerText = '오늘의 식물 PICK';
+      navigate('/garden');
+    } else if (e.target.innerText === '오늘의 식물 PICK') {
+      e.target.innerText = '정원 관리하기';
+      navigate('/');
+    }
   };
   return (
     <>
@@ -39,7 +52,9 @@ const Navigation = (props) => {
           </div>
           {/* menu */}
           <div className={classes.menuArea}>
-            <Button className={classes.yellow}>정원 관리하기</Button>
+            <Button className={classes.yellow} onClick={handleNavigate}>
+              정원 관리하기
+            </Button>
             <Button
               className={classes.blue}
               onClick={handlePlantRecommendationButton}

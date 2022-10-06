@@ -71,8 +71,7 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1662619339309275685073_451859856695918_7461780793129810940_n.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159487241.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159583112.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159672313.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159755474.jpg"
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159672313.jpg"
       ],
       "Difficulty": ["easy", "⭑"],
       "irrigationWater": [
@@ -110,8 +109,7 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558125454911.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558125906532.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126004783.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126095834.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126303905.jpg"
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558126095834.jpg"
       ],
       "Difficulty": ["normal", "⭑⭑"],
       "irrigationWater": [
@@ -278,10 +276,7 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664666541.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664770572.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664847683.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664939384.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643665020465.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643665121896.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643665216237.jpg"
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664939384.jpg"
       ],
       "Difficulty": ["hard", "⭑⭑⭑"],
       "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
@@ -312,8 +307,7 @@
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470142591.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470251762.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470319373.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470390514.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470463565.jpg"
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470390514.jpg"
       ],
       "Difficulty": ["hard", "⭑⭑⭑"],
       "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],

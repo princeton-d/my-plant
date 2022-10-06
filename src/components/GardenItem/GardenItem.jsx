@@ -1,13 +1,13 @@
 // 김동현 2022.10.04
-import React from "react";
-import classes from "./GardenItem.module.css";
+import React from 'react';
+import classes from './GardenItem.module.css';
 
 const GardenItem = () => {
   return (
     <>
       <li className={classes.item}>
         <div className={classes.plantImgWrap}>
-          <img className={classes.plantImg} src="#" alt="plant" />
+          <img className={classes.plantImg} src='#' alt='plant' />
         </div>
         <div className={classes.rightSide}>
           <h3 className={classes.plantNickName}>식이</h3>
@@ -16,9 +16,9 @@ const GardenItem = () => {
             <span>?</span>
           </button>
           <p>가장 최근 물 준 날</p>
-          <input type="date" value="2022-10-05"/>
+          <input type='date' defaultValue='2022-10-05' />
           <p>다음 물 줄 날</p>
-          <input type="date" />
+          <input type='date' />
         </div>
       </li>
     </>

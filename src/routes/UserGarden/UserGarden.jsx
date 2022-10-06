@@ -9,14 +9,12 @@ const UserGarden = () => {
       <div className={classes.wrapper}>
         <div className={classes.container}>
           <div className={classes.title}>
-            <p>@@@'s <span>GARDEN</span></p>
+            <p>
+              @@@'s <span>GARDEN</span>
+            </p>
           </div>
           <div className={classes.contents}>
             <ul>
-              <GardenItem />
-              <GardenItem />
-              <GardenItem />
-              <GardenItem />
               <GardenItem />
             </ul>
           </div>

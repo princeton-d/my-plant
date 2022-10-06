@@ -1,35 +1,29 @@
-import React from "react";
-import classes from "./PlantInfoModal.module.css";
+import React from 'react';
+import classes from './PlantInfoModal.module.css';
 
 const PlantInfoModal = (props) => {
-  console.log(props.plant);
   const onClick = (e) => {
-    if (e.target.id === "modalClose") {
+    if (e.target.id === 'modalClose') {
       props.setOpenModal(!props.openModal);
     }
   };
   return (
     <>
-      <div id="modalClose" className={classes.container} onClick={onClick}>
+      <div id='modalClose' className={classes.container} onClick={onClick}>
         <div className={classes.contents}>
           <div className={classes.imgArea}>
             <div className={classes.mainImgArea}>
               <img
                 className={classes.mainImg}
                 src={props.plant.picture[0]}
-                key={Math.random()}
-                alt="img"
+                alt='img'
               />
             </div>
             <div className={classes.subImgArea}>
               {props.plant.picture.map((item) => {
                 return (
-                  <div>
-                    <img
-                      className={classes.subImg}
-                      src={item}
-                      key={Math.random()}
-                    />
+                  <div key={Math.random()}>
+                    <img className={classes.subImg} src={item} />
                   </div>
                 );
               })}
@@ -47,17 +41,17 @@ const PlantInfoModal = (props) => {
               <p>{props.plant.Description}</p>
               <div className={classes.detailInfos}>
                 <div>
-                  <img src="/image/sun.png" alt="sun" />
+                  <img src='/image/sun.png' alt='sun' />
                   <h3>{props.plant.amountOfSunshine[0]}</h3>
                   <span>{props.plant.amountOfSunshine[1]}</span>
                 </div>
                 <div>
-                  <img src="/image/water.png" alt="water" />
+                  <img src='/image/water.png' alt='water' />
                   <h3>{props.plant.irrigationWater[0]}</h3>
                   <span>{props.plant.irrigationWater[1]}</span>
                 </div>
                 <div>
-                  <img src="/image/air.png" alt="water" />
+                  <img src='/image/air.png' alt='water' />
                   <h3>잘 자라는 온도</h3>
                   <span>
                     {props.plant.Temperature[0]}~
