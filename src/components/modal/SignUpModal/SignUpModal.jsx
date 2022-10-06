@@ -10,7 +10,7 @@ const SignUpModal = ({ openModal, setOpenModal }) => {
   };
   return (
     <>
-      <div id='modalClose' onClick={onClick}>
+      <div id='modalClose' className={classes.container} onClick={onClick}>
         <div>
           <h3>컨텐츠</h3>
           <button id='modalClose' type='button' onClick={onClick}>

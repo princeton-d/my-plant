@@ -10,10 +10,18 @@ import React, { useState } from 'react';
 import { authService } from '../../service/fbase';
 import Button from '../UI/Button/Button';
 import classes from './AuthNavigation.module.css';
+import ModalPortal from '../../components/modal/modalPortal';
+import SignUpModal from '../../components/modal/SignUpModal/SignUpModal';
 
 const AuthNavigation = (props) => {
+  const [openModal, setOpenModal] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  // 김동현 2022.10.06 - 모달창 실행
+  const handleSignUpButton = () => {
+    setOpenModal(!openModal);
+  };
 
   // 김동현 2022.10.05 - 이메일, 비밀번호 state에 저장
   const onChange = (e) => {
@@ -70,7 +78,12 @@ const AuthNavigation = (props) => {
         </form>
       </div>
       <div className={classes.signUpArea}>
-        <button>회원가입</button>
+        <button onClick={handleSignUpButton}>회원가입</button>
+        {openModal ? (
+          <ModalPortal>
+            <SignUpModal openModal={openModal} setOpenModal={setOpenModal} />
+          </ModalPortal>
+        ) : null}
       </div>
       <div className={classes.externalLoginArea}>
         <Button
