@@ -37,7 +37,7 @@ const Navigation = ({ setPlantRecommendation }) => {
           </div>
           {/* logout */}
           <div className={classes.logoutArea}>
-            <p>로그아웃</p>
+            <button>로그아웃</button>
           </div>
         </div>
       </div>
