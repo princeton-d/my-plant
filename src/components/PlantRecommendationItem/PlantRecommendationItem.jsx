@@ -7,13 +7,13 @@ const PlantRecommendationItem = ({ item }) => {
       <label htmlFor={item.id}>
         <span className={classes.emoji}>{item.emoji}</span>
         <span className={classes.text}>{item.text}</span>
-        <input
-          type="radio"
-          id={item.id}
-          className={classes.checkbox}
-          name="recommand"
-        />
       </label>
+      <input
+        type="radio"
+        id={item.id}
+        className={classes.checkbox}
+        name="recommand"
+      />
     </div>
   );
 };
