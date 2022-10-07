@@ -22,10 +22,8 @@ const Navigation = (props) => {
   // 김동현 2022.10.06 - 경로 이동 기능
   const handleNavigate = (e) => {
     if (e.target.innerText === '정원 관리하기') {
-      e.target.innerText = '오늘의 식물 PICK';
       navigate('/garden');
     } else if (e.target.innerText === '오늘의 식물 PICK') {
-      e.target.innerText = '정원 관리하기';
       navigate('/');
     }
   };
@@ -52,6 +50,9 @@ const Navigation = (props) => {
           </div>
           {/* menu */}
           <div className={classes.menuArea}>
+            <Button className={classes.yellow} onClick={handleNavigate}>
+              오늘의 식물 PICK
+            </Button>
             <Button className={classes.yellow} onClick={handleNavigate}>
               정원 관리하기
             </Button>
