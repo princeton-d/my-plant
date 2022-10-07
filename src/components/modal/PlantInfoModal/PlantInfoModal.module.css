@@ -47,15 +47,14 @@
 
 .subImgArea {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
   width: 100%;
 }
 
 .subImgArea > div {
-  width: 7vw;
-  height: 7vw;
+  width: 5.5vw;
+  height: 5.5vw;
   overflow: hidden;
   border-radius: 1rem;
 }
