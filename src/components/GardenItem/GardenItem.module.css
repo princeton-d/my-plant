@@ -148,10 +148,26 @@
   opacity: 0.3;
 }
 
+.warteringBtn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: cGreen;
+  font-size: 1.6rem;
+  font-weight: normal;
+  padding-bottom: 1.2rem;
+}
+
+.warteringBtn span {
+  margin-right: 0.5rem;
+}
+
 .deleteBtn {
   padding: 0.5rem;
   background: cGrey;
   transition: background 150ms ease-in;
+  margin-bottom: 0.2rem;
 }
 
 .deleteBtn:hover {
