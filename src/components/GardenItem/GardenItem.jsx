@@ -4,9 +4,10 @@ import { useRef } from "react";
 import { useState } from "react";
 import classes from "./GardenItem.module.css";
 
-const GardenItem = () => {
+const GardenItem = ({ plant }) => {
+  console.log(plant);
   const [editMode, setEditMode] = useState(false);
-  const [nickName, setNickName] = useState("식이");
+  const [nickName, setNickName] = useState(plant.name);
   const toggleEditMode = () => {
     setEditMode((prev) => !prev)
   };
@@ -20,7 +21,7 @@ const GardenItem = () => {
     <>
       <li className={classes.item}>
         <div className={classes.plantImgWrap}>
-          <img className={classes.plantImg} src="#" alt="plant" />
+          <img className={classes.plantImg} src={plant.picture[0]} alt="plant" />
         </div>
         <div className={classes.rightSide}>
           {editMode ? (
@@ -45,7 +46,7 @@ const GardenItem = () => {
             </div>
           )}
           <button className={classes.plantName}>
-            <span>블루스타펀</span>
+            <span>{plant.name}</span>
             <span>?</span>
           </button>
           <p>가장 최근 물 준 날</p>
