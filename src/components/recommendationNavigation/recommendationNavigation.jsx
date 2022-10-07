@@ -1,4 +1,4 @@
-// 김동현 2022.10.04 - 기본 구조작업
+// 김동현 2022.10.07
 
 import React from 'react';
 import classes from './RecommendationNavigation.module.css';
