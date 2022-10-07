@@ -78,7 +78,7 @@ const GardenItem = ({ plant }) => {
               className={classes.warteringBtn}
               onClick={toggleWateringMode}
             >
-              <span>관리하기</span>
+              <span>물주기</span>
               <i className="fa-solid fa-droplet"></i>
             </Button>
           ) : (
