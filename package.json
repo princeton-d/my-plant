@@ -1,7 +1,7 @@
 {
   "name": "my-plant",
   "version": "0.1.0",
-  "homepage": "https://websteak.github.io/my_plant",
+  "homepage": "https://websteak.github.io/my-plant",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
