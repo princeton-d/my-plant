@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { authService } from '../../service/fbase';
 import Button from '../UI/Button/Button';
 import classes from './Navigation.module.css';
+import logo from '../../image/logo.png';
 
 // 김동현 2022.10.06 navigation 작업
 const Navigation = (props) => {
@@ -11,20 +12,20 @@ const Navigation = (props) => {
 
   const handlePlantRecommendationButton = () => {
     props.setPlantRecommendation(true); // 식물추천 navigation 으로 변경
-    navigate('/recommendation'); // 식물추천 page 로 이동
+    navigate('/my-plant/recommendation'); // 식물추천 page 로 이동
   };
   // 김동현 2022.10.06 - 로그아웃 기능
   const handleLogoutButton = () => {
     signOut(authService);
     props.setIsLogin(false);
-    navigate('/');
+    navigate('/my-plant');
   };
   // 김동현 2022.10.06 - 경로 이동 기능
   const handleNavigate = (e) => {
     if (e.target.innerText === '정원 관리하기') {
-      navigate('/garden');
+      navigate('/my-plant/garden');
     } else if (e.target.innerText === '오늘의 식물 PICK') {
-      navigate('/');
+      navigate('/my-plant/');
     }
   };
   return (
@@ -34,7 +35,7 @@ const Navigation = (props) => {
         <div className={classes.container}>
           {/* logo */}
           <div className={classes.logoArea}>
-            <img className={classes.logo} src='/image/logo.png' alt='logo' />
+            <img className={classes.logo} src={logo} alt='logo' />
           </div>
           {/* user info */}
           <div className={classes.userInfoArea}>

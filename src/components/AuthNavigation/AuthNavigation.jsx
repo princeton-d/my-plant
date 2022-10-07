@@ -12,6 +12,8 @@ import Button from '../UI/Button/Button';
 import classes from './AuthNavigation.module.css';
 import ModalPortal from '../../components/modal/modalPortal';
 import SignUpModal from '../../components/modal/SignUpModal/SignUpModal';
+import logo from '../../image/logo.png';
+import googleLogo from '../../image/google.png';
 
 const AuthNavigation = (props) => {
   const [openModal, setOpenModal] = useState(false);
@@ -56,7 +58,7 @@ const AuthNavigation = (props) => {
   return (
     <div className={classes.container}>
       <div className={classes.logoArea}>
-        <img className={classes.logo} src='/image/logo.png' alt='logo' />
+        <img className={classes.logo} src={logo} alt='logo' />
       </div>
       <div className={classes.authArea}>
         <form className={classes.authForm} onSubmit={onSubmit}>
@@ -90,7 +92,7 @@ const AuthNavigation = (props) => {
           className={classes.externalLogin}
           onClick={handleGoogleLoginButton}
         >
-          <img src='/image/google.png' alt='google 로그인' />
+          <img src={googleLogo} alt='google 로그인' />
           구글로 로그인
         </Button>
         <Button className={classes.externalLogin} onClick={handleGuestButton}>

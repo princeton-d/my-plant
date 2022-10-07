@@ -7,13 +7,14 @@ import PlantRecommendRadioBig from '../UI/PlantRecommendRadioBig/PlantRecommendR
 import PlantRecommendRadioSmall from '../UI/PlantRecommendRadioSmall/PlantRecommendRadioSmall';
 import PlantRecommendCheckbox from '../UI/PlantRecommendCheckbox/PlantRecommendCheckbox';
 import { useNavigate } from 'react-router-dom';
+import logo from '../../image/logo.png';
 
 const RecommendationNavigation = (props) => {
   const navigate = useNavigate();
 
   const onClick = () => {
     props.setPlantRecommendation(false);
-    navigate('/');
+    navigate('/my-plant');
   };
   return (
     <>
@@ -22,7 +23,7 @@ const RecommendationNavigation = (props) => {
         <div className={classes.container}>
           {/* logo */}
           <div className={classes.logoArea}>
-            <img className={classes.logo} src='/image/logo.png' alt='logo' />
+            <img className={classes.logo} src={logo} alt='logo' />
           </div>
           <div className={classes.topInfo}>
             <h3>나는</h3>

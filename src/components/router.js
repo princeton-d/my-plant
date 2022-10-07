@@ -14,9 +14,9 @@ const AppRouter = (props) => {
       {props.isLogin ? <Navigation userInfo={props.userInfo} setIsLogin={props.setIsLogin} setPlantRecommendation={props.setPlantRecommendation} /> : <AuthNavigation setIsLogin={props.setIsLogin} setUserInfo={props.setUserInfo} />}
       {props.plantRecommendation && <RecommendationNavigation setPlantRecommendation={props.setPlantRecommendation} />}
       <Routes>
-        {props.isLogin ? <Route path='/' element={<PlantPick />} /> : <Route path='/' element={<Home />} />}
-        <Route path='/garden' element={<UserGarden userInfo={props.userInfo} />} />
-        <Route path='/recommendation' element={<PlantRecommendation userInfo={props.userInfo} />} />
+        {props.isLogin ? <Route path='/my-plant' element={<PlantPick />} /> : <Route path='/my-plant' element={<Home />} />}
+        <Route path='/my-plant/garden' element={<UserGarden userInfo={props.userInfo} />} />
+        <Route path='/my-plant/recommendation' element={<PlantRecommendation userInfo={props.userInfo} />} />
       </Routes>
     </Router>
   )
