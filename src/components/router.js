@@ -16,7 +16,7 @@ const AppRouter = (props) => {
       <Routes>
         {props.isLogin ? <Route path='/' element={<PlantPick />} /> : <Route path='/' element={<Home />} />}
         <Route path='/garden' element={<UserGarden userInfo={props.userInfo} />} />
-        <Route path='/recommendation' element={<PlantRecommendation />} />
+        <Route path='/recommendation' element={<PlantRecommendation userInfo={props.userInfo} />} />
       </Routes>
     </Router>
   )

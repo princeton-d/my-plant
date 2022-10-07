@@ -4,13 +4,16 @@ import plantInfo from '../../data/plantInfo.json';
 import PlantItem from '../../components/PlantItem/PlantItem';
 
 // 김동현 2022.10.02
-const PlantRecommendation = () => {
+const PlantRecommendation = (props) => {
   return (
     <>
       <div className={classes.wrapper}>
         <div className={classes.container}>
           <div className={classes.title}>
-            <p>@@@님을 위한 <span>추천식물</span></p>
+            <p>
+              {props.userInfo && props.userInfo.displayName}님을 위한{' '}
+              <span>추천식물</span>
+            </p>
           </div>
           <div className={classes.Recommendation}>
             <ul>
