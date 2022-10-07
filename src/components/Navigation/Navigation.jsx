@@ -39,7 +39,7 @@ const Navigation = (props) => {
           {/* user info */}
           <div className={classes.userInfoArea}>
             <p>환영합니다.</p>
-            <h2>@@@ 님</h2>
+            <h2>{props.userInfo.displayName} 님</h2>
           </div>
           {/* search */}
           <div className={classes.searchPlantArea}>
