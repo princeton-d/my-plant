@@ -3,7 +3,8 @@ import React from "react";
 import { useState } from "react";
 import classes from "./GardenItem.module.css";
 import { dbService as db} from '../../service/fbase';
-import { doc, updateDoc } from "firebase/firestore";
+import { deleteDoc, doc, updateDoc } from "firebase/firestore";
+import Button from "../UI/Button/Button";
 
 const GardenItem = ({ plant }) => {
   console.log(plant);
@@ -26,6 +27,13 @@ const GardenItem = ({ plant }) => {
   const onCancle = () => {
     setNickName(plant.nickName);
     toggleEditMode();
+  }
+  
+  const onDelete = () => {
+    const ok = window.confirm("정원에서 제외하겠습니까?");
+    if (ok) {
+      deleteDoc(doc(db, "garden", plant.did));
+    }
   }
   return (
     <>
@@ -63,6 +71,7 @@ const GardenItem = ({ plant }) => {
           <input type="date" defaultValue="2022-10-05" />
           <p>다음 물 줄 날</p>
           <input type="date" />
+          <Button className={classes.deleteBtn} onClick={onDelete}>정원에서 제외</Button>
         </div>
       </li>
     </>

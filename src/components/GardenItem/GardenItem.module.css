@@ -4,7 +4,7 @@
 
 .item {
   display: flex;
-  width: 40rem;
+  width: 45%;
   margin: 1rem;
   padding: 1.5rem;
   background-color: cWhite;
@@ -40,8 +40,7 @@
   font-family: inherit;
   font-size: 2rem;
   font-weight: bold;
-  padding: 0 0.5rem;
-  padding-top: 0.5rem;
+  padding: 0.5rem 5rem 0 0.5rem;
   border-radius: 0.5rem;
   border: 1px solid cGrey;
 }
@@ -147,4 +146,14 @@
 
 .rightSide input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0.3;
+}
+
+.deleteBtn {
+  padding: 0.5rem;
+  background: cGrey;
+  transition: background 150ms ease-in;
+}
+
+.deleteBtn:hover {
+  background: cYellow;
 }
