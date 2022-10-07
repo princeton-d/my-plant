@@ -18,6 +18,7 @@ const PlantItem = (item) => {
     await addDoc(collection(db, "garden"), {
       id: plant.id,
       name: plant.name,
+      nickName: plant.name,
       picture: plant.picture,
       difficulty: plant.Difficulty,
     });

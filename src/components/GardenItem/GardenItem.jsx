@@ -1,21 +1,31 @@
 // 김동현 2022.10.04
 import React from "react";
-import { useRef } from "react";
 import { useState } from "react";
 import classes from "./GardenItem.module.css";
+import { dbService as db} from '../../service/fbase';
+import { doc, updateDoc } from "firebase/firestore";
 
 const GardenItem = ({ plant }) => {
   console.log(plant);
   const [editMode, setEditMode] = useState(false);
-  const [nickName, setNickName] = useState(plant.name);
-  const toggleEditMode = () => {
-    setEditMode((prev) => !prev)
-  };
+  const [nickName, setNickName] = useState(plant.nickName);
+  const toggleEditMode = () => setEditMode((prev) => !prev);
   const onChangeNickName = (e) => {
     setNickName(e.target.value);
   };
   const onEditNickName = (e) => {
     e.preventDefault();
+    updateDoc(doc(db, "garden", plant.did), {
+      nickName: nickName
+    })
+    const ok = window.confirm("수정하시겠습니까?");
+    if (ok) {
+      toggleEditMode();
+    }
+  }
+  const onCancle = () => {
+    setNickName(plant.nickName);
+    toggleEditMode();
   }
   return (
     <>
@@ -33,7 +43,7 @@ const GardenItem = ({ plant }) => {
               >
                 <i className="fa-solid fa-check"></i>
               </button>
-              <button onClick={toggleEditMode} className={classes.cancleButton}>
+              <button onClick={onCancle} className={classes.cancleButton}>
                 x
               </button>
             </form>
