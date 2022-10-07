@@ -7,6 +7,8 @@ import { deleteDoc, doc, updateDoc } from "firebase/firestore";
 import Button from "../UI/Button/Button";
 
 const GardenItem = ({ plant }) => {
+  const date = new Date();
+  const [wateringDate, setWateringDate] = useState();
   const [editMode, setEditMode] = useState(false);
   const [wateringMode, setWateringMode] = useState(false);
   const [nickName, setNickName] = useState(plant.nickName);
@@ -37,6 +39,9 @@ const GardenItem = ({ plant }) => {
   };
 
   const toggleWateringMode = () => setWateringMode((prev) => !prev);
+  const wateringHandler = () => {
+    toggleWateringMode();
+  }
   return (
     <>
       <li className={classes.item}>
@@ -76,28 +81,31 @@ const GardenItem = ({ plant }) => {
           {!wateringMode ? (
             <Button
               className={classes.warteringBtn}
-              onClick={toggleWateringMode}
+              onClick={wateringHandler}
             >
               <span>물주기</span>
               <i className="fa-solid fa-droplet"></i>
             </Button>
           ) : (
             <>
-              <p>가장 최근 물 준 날</p>
-              <input type="date" defaultValue="2022-10-05" />
-              <p>다음 물 줄 날</p>
-              <input type="date" />
-              <Button
-                className={classes.deleteBtn}
-                onClick={toggleWateringMode}
-              >
+              <div className={classes.wateringDate}>
+                <div>
+                  <p>가장 최근 물 준 날</p>
+                  <input type="date" defaultValue="2022-10-05" />
+                </div>
+                <div>
+                  <p>다음 물 줄 날</p>
+                  <input type="date" />
+                </div>
+              </div>
+              <Button className={classes.stopBtn} onClick={toggleWateringMode}>
                 그만 돌보기
               </Button>
             </>
           )}
-          <Button className={classes.deleteBtn} onClick={onDelete}>
+          <button className={classes.deleteBtn} onClick={onDelete}>
             정원에서 제외
-          </Button>
+          </button>
         </div>
       </li>
     </>

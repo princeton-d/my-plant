@@ -24,10 +24,12 @@
 
 .contents {
   display: flex;
+  padding: 0 1.5rem;
 }
 
 .contents ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  width: 100%;
 }
