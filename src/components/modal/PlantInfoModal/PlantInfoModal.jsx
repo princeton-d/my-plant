@@ -66,7 +66,7 @@ const PlantInfoModal = (props) => {
               </div>
             </div>
             <div className={classes.buttonArea}>
-              <button>정원에 담기</button>
+              <button onClick={props.onAddToGarden}>정원에 담기</button>
             </div>
           </div>
         </div>

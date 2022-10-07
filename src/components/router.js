@@ -5,7 +5,7 @@ import UserGarden from '../routes/UserGarden/UserGarden';
 import PlantRecommendation from '../routes/PlantRecommendation/PlantRecommendation'
 import Navigation from '../components/Navigation/Navigation';
 import AuthNavigation from './AuthNavigation/AuthNavigation';
-import RecommendationNavigation from './RecommendationNavigation/RecommendationNavigation'
+import RecommendationNavigation from './recommendationNavigation/recommendationNavigation';
 
 const AppRouter = (props) => {
   return (
@@ -23,3 +23,4 @@ const AppRouter = (props) => {
 };
 
 export default AppRouter;
+
