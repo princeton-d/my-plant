@@ -1,5 +1,4 @@
-/* 김동현 2022.10.04 */
-/* 2022.10.05 - 스타일링 작업 */
+/* 2022.10.07 - 스타일링 수정 */
 @value fBasic from '../../common/font.css';
 @value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
@@ -29,6 +28,24 @@
   display: flex;
   flex-direction: column;
   padding: 1.6rem 0 0;
+}
+
+.nickNameArea {
+  display: flex;
+  align-items: baseline;
+}
+
+.nickNameArea button {
+  all: unset;
+  margin-left: 0.5rem;
+  color: cGrey;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 150ms ease-in;
+}
+
+.nickNameArea button:hover {
+  color: cGreen;
 }
 
 .plantNickName {
