@@ -1,9 +1,10 @@
-/* 김동현 2022.10.04 - 기본작업 */
-/* 2022.10.05 - 스타일링 작업 */
+/* 2022.10.08 - 반응형 작업 */
 @value fBasic from '../../common/font.css';
+@value sMedium, sSmall from '../../common/size.css';
 @value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
 .plantList {
+  width: 30%;
   transition: transform 200ms ease-in;
   cursor: pointer;
 }
@@ -12,14 +13,20 @@
 }
 
 .plantImgWrap {
+  position: relative;
   border-radius: 1rem;
   overflow: hidden;
-  width: 20rem;
-  height: 20rem;
+  width: 100%;
+  height: 17vw;
   margin-bottom: 1rem;
 }
 .plantImg {
-  width: 130%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
 }
@@ -27,4 +34,29 @@
 .plantName {
   text-align: center;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: sMedium) {
+  .plantList {
+    width: 47%;
+  }
+  .plantImgWrap {
+    height: 26vw;
+  }
+}
+@media screen and (max-width: sSmall) {
+  .plantList {
+    width: 48%;
+  }
+  .plantImgWrap {
+    height: 42vw;
+  }
+}
+@media screen and (max-width: 40rem) {
+  .plantList {
+    width: 100%;
+  }
+  .plantImgWrap {
+    height: 80vw;
+  }
 }

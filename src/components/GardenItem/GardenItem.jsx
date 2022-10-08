@@ -5,6 +5,8 @@ import classes from "./GardenItem.module.css";
 import { dbService as db } from "../../service/fbase";
 import { deleteDoc, doc, updateDoc } from "firebase/firestore";
 import Button from "../UI/Button/Button";
+import ModalPortal from "../modal/modalPortal";
+import PlantInfoModal from "../modal/PlantInfoModal/PlantInfoModal";
 
 const GardenItem = ({ plant }) => {
   const date = new Date();
@@ -12,6 +14,7 @@ const GardenItem = ({ plant }) => {
   const [editMode, setEditMode] = useState(false);
   const [wateringMode, setWateringMode] = useState(false);
   const [nickName, setNickName] = useState(plant.nickName);
+
   const toggleEditMode = () => setEditMode((prev) => !prev);
   const onChangeNickName = (e) => {
     setNickName(e.target.value);
@@ -42,6 +45,7 @@ const GardenItem = ({ plant }) => {
   const wateringHandler = () => {
     toggleWateringMode();
   }
+  const onOpenPlantInfo = () => window.alert("식물 정보 팝업창 띄우기");
   return (
     <>
       <li className={classes.item}>
@@ -74,7 +78,7 @@ const GardenItem = ({ plant }) => {
               </button>
             </div>
           )}
-          <button className={classes.plantName}>
+          <button className={classes.plantName} onClick={onOpenPlantInfo}>
             <span>{plant.name}</span>
             <span>?</span>
           </button>

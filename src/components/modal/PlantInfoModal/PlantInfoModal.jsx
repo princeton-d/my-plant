@@ -45,26 +45,32 @@ const PlantInfoModal = (props) => {
               <div className={classes.detailInfos}>
                 <div>
                   <img src={sun} alt='sun' />
-                  <h3>{props.plant.amountOfSunshine[0]}</h3>
-                  <span>{props.plant.amountOfSunshine[1]}</span>
+                  <div>
+                    <h3>{props.plant.amountOfSunshine[0]}</h3>
+                    <span>{props.plant.amountOfSunshine[1]}</span>
+                  </div>
                 </div>
                 <div>
                   <img src={water} alt='water' />
-                  <h3>{props.plant.irrigationWater[0]}</h3>
-                  <span>{props.plant.irrigationWater[1]}</span>
+                  <div>
+                    <h3>{props.plant.irrigationWater[0]}</h3>
+                    <span>{props.plant.irrigationWater[1]}</span>
+                  </div>
                 </div>
                 <div>
-                  <img src={air} alt='water' />
-                  <h3>잘 자라는 온도</h3>
-                  <span>
-                    {props.plant.Temperature[0]}~
-                    {
-                      props.plant.Temperature[
-                        props.plant.Temperature.length - 1
-                      ]
-                    }
-                    ℃의 온도에서 잘 자라요.
-                  </span>
+                  <img src={air} alt='air' />
+                  <div>
+                    <h3>잘 자라는 온도</h3>
+                    <span>
+                      {props.plant.Temperature[0]}~
+                      {
+                        props.plant.Temperature[
+                          props.plant.Temperature.length - 1
+                        ]
+                      }
+                      ℃의 온도에서 잘 자라요.
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

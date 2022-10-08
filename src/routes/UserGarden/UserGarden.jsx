@@ -5,7 +5,7 @@ import { dbService as db } from '../../service/fbase';
 import { useEffect } from 'react';
 import { collection, onSnapshot } from 'firebase/firestore';
 
-// 김동현 2022.10.04 기본  구조작업
+// 김수영 2022.10.7 CRUD 기능 구현
 const UserGarden = (props) => {
   const [plantInfo, setPlantInfo] = useState([]);
   useEffect(() => {
