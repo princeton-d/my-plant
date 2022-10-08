@@ -1,5 +1,6 @@
-/* 김수영 2022.10.05 - 스타일링 작업 */
+/* 김수영 2022.10.08 - 반응형 작업 */
 @value fBasic from '../../common/font.css';
+@value sMedium, sSmall from '../../common/size.css';
 @value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
 /* wrapper area */
@@ -68,3 +69,33 @@
   transform: translateX(-0.5rem);
 }
 
+@media screen and (max-width: sSmall) {
+  .wrapper {
+    position: relative;
+  }
+  .container {
+    position: relative;
+    width: 100vw;
+    padding-top: 8.5rem;
+  }
+  .logoArea {
+    display: none;
+  }
+  .backBtn {
+    position: fixed;
+    top: 1.8rem;
+    z-index: 9999;
+  }
+  .recommendBtn {
+    display: block;
+    background: cdBlue;
+    margin: 0;
+    margin-top: 3rem;
+    padding: 2rem;
+    font-size: 2rem;
+    transition: background 150ms ease-in;
+  }
+  .recommendBtn:hover {
+    background: cGreen;
+  }
+}

@@ -1,5 +1,6 @@
 /* 2022.10.06 - 스타일링 작업 */
 @value fBasic from '../../../common/font.css';
+@value sMedium, sSmall from '../../../common/size.css';
 @value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../../common/color.css';
 
 .recommend {
@@ -50,4 +51,14 @@
   height: 4.5rem;
   border-radius: 5rem;
   border: 3px solid cGreen;
+}
+@media screen and (max-width: sSmall) {
+  .recommend input:checked::after {
+    width: 98.5%;
+  }
+}
+@media screen and (max-width: 40rem) {
+  .recommend input:checked::after {
+    width: 98%;
+  }
 }

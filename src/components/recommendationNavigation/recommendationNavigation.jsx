@@ -8,6 +8,7 @@ import PlantRecommendRadioSmall from '../UI/PlantRecommendRadioSmall/PlantRecomm
 import PlantRecommendCheckbox from '../UI/PlantRecommendCheckbox/PlantRecommendCheckbox';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../image/logo.png';
+import Button from '../UI/Button/Button';
 
 const RecommendationNavigation = (props) => {
   const navigate = useNavigate();
@@ -69,6 +70,7 @@ const RecommendationNavigation = (props) => {
           <button className={classes.backBtn} onClick={onClick}>
             <i className='fa-solid fa-angle-left'></i>
           </button>
+          <Button className={classes.recommendBtn}>식물 추천받기</Button>
         </div>
       </div>
     </>
