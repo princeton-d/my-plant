@@ -5,20 +5,20 @@ import {
   signInAnonymously,
   signInWithEmailAndPassword,
   signInWithPopup,
-} from 'firebase/auth';
-import React, { useState } from 'react';
-import { authService } from '../../service/fbase';
-import Button from '../UI/Button/Button';
-import classes from './AuthNavigation.module.css';
-import ModalPortal from '../../components/modal/modalPortal';
-import SignUpModal from '../../components/modal/SignUpModal/SignUpModal';
-import logo from '../../image/logo.png';
-import googleLogo from '../../image/google.png';
+} from "firebase/auth";
+import React, { useState } from "react";
+import { authService } from "../../service/fbase";
+import Button from "../UI/Button/Button";
+import classes from "./AuthNavigation.module.css";
+import ModalPortal from "../../components/modal/modalPortal";
+import SignUpModal from "../../components/modal/SignUpModal/SignUpModal";
+import logo from "../../image/logo.png";
+import googleLogo from "../../image/google.png";
 
 const AuthNavigation = (props) => {
   const [openModal, setOpenModal] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   // 김동현 2022.10.06 - 모달창 실행
   const handleSignUpButton = () => {
@@ -27,9 +27,9 @@ const AuthNavigation = (props) => {
 
   // 김동현 2022.10.05 - 이메일, 비밀번호 state에 저장
   const onChange = (e) => {
-    if (e.target.name === 'email') {
+    if (e.target.name === "email") {
       setEmail(e.target.value);
-    } else if (e.target.name === 'password') {
+    } else if (e.target.name === "password") {
       setPassword(e.target.value);
     }
   };
@@ -57,47 +57,49 @@ const AuthNavigation = (props) => {
   };
   return (
     <div className={classes.container}>
-      <div className={classes.logoArea}>
-        <img className={classes.logo} src={logo} alt='logo' />
-      </div>
-      <div className={classes.authArea}>
-        <form className={classes.authForm} onSubmit={onSubmit}>
-          <input
-            name='email'
-            type='email'
-            required
-            placeholder='EMAIL'
-            onChange={onChange}
-          />
-          <input
-            name='password'
-            type='password'
-            required
-            placeholder='PASSWORD'
-            onChange={onChange}
-          />
-          <Button className={classes.loginBtn}>로그인</Button>
-        </form>
-      </div>
-      <div className={classes.signUpArea}>
-        <button onClick={handleSignUpButton}>회원가입</button>
-        {openModal ? (
-          <ModalPortal>
-            <SignUpModal openModal={openModal} setOpenModal={setOpenModal} />
-          </ModalPortal>
-        ) : null}
-      </div>
-      <div className={classes.externalLoginArea}>
-        <Button
-          className={classes.externalLogin}
-          onClick={handleGoogleLoginButton}
-        >
-          <img src={googleLogo} alt='google 로그인' />
-          구글로 로그인
-        </Button>
-        <Button className={classes.externalLogin} onClick={handleGuestButton}>
-          게스트 로그인
-        </Button>
+      <div className={classes.wrap}>
+        <div className={classes.logoArea}>
+          <img className={classes.logo} src={logo} alt="logo" />
+        </div>
+        <div className={classes.authArea}>
+          <form className={classes.authForm} onSubmit={onSubmit}>
+            <input
+              name="email"
+              type="email"
+              required
+              placeholder="EMAIL"
+              onChange={onChange}
+            />
+            <input
+              name="password"
+              type="password"
+              required
+              placeholder="PASSWORD"
+              onChange={onChange}
+            />
+            <Button className={classes.loginBtn}>로그인</Button>
+          </form>
+        </div>
+        <div className={classes.signUpArea}>
+          <button onClick={handleSignUpButton}>회원가입</button>
+          {openModal ? (
+            <ModalPortal>
+              <SignUpModal openModal={openModal} setOpenModal={setOpenModal} />
+            </ModalPortal>
+          ) : null}
+        </div>
+        <div className={classes.externalLoginArea}>
+          <Button
+            className={classes.externalLogin}
+            onClick={handleGoogleLoginButton}
+          >
+            <img src={googleLogo} alt="google 로그인" />
+            구글로 로그인
+          </Button>
+          <Button className={classes.externalLogin} onClick={handleGuestButton}>
+            게스트 로그인
+          </Button>
+        </div>
       </div>
     </div>
   );

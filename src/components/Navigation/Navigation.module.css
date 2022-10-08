@@ -1,6 +1,7 @@
 /* 김동현 2022.10.04 - 기본 구조 배치 */
 /* 김수영 2022.10.05 - 스타일링 작업 */
 @value fBasic from '../../common/font.css';
+@value sMedium from '../../common/size.css';
 @value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
 /* wrapper area */
@@ -118,4 +119,32 @@
 
 .logoutArea button:hover {
   color: cGreen;
+}
+
+@media screen and (max-width: sMedium) {
+  .container {
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 6rem;
+    padding: 0;
+    background: url('../../../public/image/bg.jpg') no-repeat center/cover;
+  }
+
+  .logoArea {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  .logo {
+    display: inline-block;
+    width: 5rem;
+    font-size: 2rem;
+  }
 }

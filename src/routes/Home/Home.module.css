@@ -1,11 +1,12 @@
 /* 김동현 2022.10.01 - 기본 구조 배치 */
 /* 김수영 2022.10.05 - 스타일링 완료 */
 @value fBasic from '../../common/font.css';
+@value sMedium, sSmall from '../../common/size.css';
 @value cdBlue, cGreen, cYellow, cWhite from '../../common/color.css';
 
 /* wrapper area */
 .wrapper {
-  margin-left: 33vw;
+  margin-left: 48rem;
   font-family: fBasic;
   color: cdBlue;
 }
@@ -40,14 +41,21 @@
   transition: font-size 150ms ease-in;
 }
 
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: 80rem) {
   .container {
-    padding: 3.5rem;
+    padding-right: 17rem;
+  }
+
+}
+
+@media screen and (max-width: 70rem) {
+  .container {
+    padding-left: 4rem;
   }
   .welcome {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .introduce {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
