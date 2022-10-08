@@ -1,5 +1,6 @@
-/* 2022.10.07 - 스타일링 수정 */
+/* 2022.10.08 - 반응형 작업 */
 @value fBasic from '../../common/font.css';
+@value sMedium, sSmall from '../../common/size.css';
 @value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';
 
 .item {
@@ -218,11 +219,11 @@
     height: 36vw;
   }
 }
-@media screen and (max-width: 60rem) {
+@media screen and (max-width: sSmall) {
   .item {
     width: 90%;
   }
   .plantImgWrap {
-    height: 45vw;
+    height: 70vw;
   }
 }
