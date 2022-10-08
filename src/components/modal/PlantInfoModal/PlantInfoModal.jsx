@@ -1,5 +1,8 @@
 import React from 'react';
 import classes from './PlantInfoModal.module.css';
+import sun from '../../../image/sun.png';
+import water from '../../../image/water.png';
+import air from '../../../image/air.png';
 
 const PlantInfoModal = (props) => {
   const onClick = (e) => {
@@ -41,17 +44,17 @@ const PlantInfoModal = (props) => {
               <p>{props.plant.Description}</p>
               <div className={classes.detailInfos}>
                 <div>
-                  <img src='/image/sun.png' alt='sun' />
+                  <img src={sun} alt='sun' />
                   <h3>{props.plant.amountOfSunshine[0]}</h3>
                   <span>{props.plant.amountOfSunshine[1]}</span>
                 </div>
                 <div>
-                  <img src='/image/water.png' alt='water' />
+                  <img src={water} alt='water' />
                   <h3>{props.plant.irrigationWater[0]}</h3>
                   <span>{props.plant.irrigationWater[1]}</span>
                 </div>
                 <div>
-                  <img src='/image/air.png' alt='water' />
+                  <img src={air} alt='water' />
                   <h3>잘 자라는 온도</h3>
                   <span>
                     {props.plant.Temperature[0]}~
