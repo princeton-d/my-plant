@@ -8,6 +8,7 @@
 .wrapper {
   position: fixed;
   font-family: fBasic;
+  z-index: 9999;
 }
 
 .container {
