@@ -1,5 +1,4 @@
-/* 김동현 2022.10.04 - 기본작업 */
-/* 김수영 2022.10.05 - 스타일링 작업 */
+/* 김수영 2022.10.08 - 반응형 작업 */
 @value fBasic from '../../common/font.css';
 @value sMedium, sSmall from '../../common/size.css';
 @value cdBlue, cGreen, cYellow, cWhite, clGrey from '../../common/color.css';

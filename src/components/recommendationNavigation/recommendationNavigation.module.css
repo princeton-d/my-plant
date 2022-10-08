@@ -76,6 +76,7 @@
   .container {
     position: relative;
     width: 100vw;
+    height: auto;
     padding-top: 8.5rem;
   }
   .logoArea {
