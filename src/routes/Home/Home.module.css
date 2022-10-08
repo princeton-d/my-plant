@@ -18,7 +18,7 @@
   width: 67vw;
   height: 100vh;
   padding: 7rem;
-  background: url('../../../public/image/bg.jpg') no-repeat center/cover;
+  background: url("../../../public/image/bg.jpg") no-repeat center/cover;
   background-color: bisque;
   transition: padding 150ms ease-in;
 }
@@ -45,7 +45,6 @@
   .container {
     padding-right: 17rem;
   }
-
 }
 
 @media screen and (max-width: 70rem) {
@@ -57,5 +56,11 @@
   }
   .introduce {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: sMedium) {
+  .wrapper {
+    display: none;
   }
 }
