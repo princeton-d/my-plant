@@ -1,39 +1,50 @@
-import { signOut } from "firebase/auth";
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { authService } from "../../service/fbase";
-import Button from "../UI/Button/Button";
-import classes from "./Navigation.module.css";
-import logo from "../../image/logo.png";
-import { useState } from "react";
+import { signOut } from 'firebase/auth';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { authService } from '../../service/fbase';
+import Button from '../UI/Button/Button';
+import classes from './Navigation.module.css';
+import logo from '../../image/logo.png';
+import { useState } from 'react';
+import plantInfo from '../../data/plantInfo.json';
 
 // 김동현 2022.10.06 navigation 작업
 const Navigation = (props) => {
   const navigate = useNavigate();
   const [menuActive, setMenuActive] = useState(false);
+  const [search, setSearch] = useState('');
+
+  // const filter = plantInfo.plant.filter((item) => {
+  //   return item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase());
+  // });
+
   const handlePlantRecommendationButton = () => {
     props.setPlantRecommendation(true); // 식물추천 navigation 으로 변경
-    navigate("/my-plant/recommendation"); // 식물추천 page 로 이동
+    navigate('/my-plant/recommendation'); // 식물추천 page 로 이동
   };
   // 김동현 2022.10.06 - 로그아웃 기능
   const handleLogoutButton = () => {
     signOut(authService);
     props.setIsLogin(false);
-    navigate("/my-plant");
+    navigate('/my-plant');
   };
   // 김동현 2022.10.06 - 경로 이동 기능
   const handleNavigate = (e) => {
-    if (e.target.innerText === "정원 관리하기") {
-      navigate("/my-plant/garden");
-    } else if (e.target.innerText === "오늘의 식물 PICK") {
-      navigate("/my-plant/");
+    if (e.target.innerText === '정원 관리하기') {
+      navigate('/my-plant/garden');
+    } else if (e.target.innerText === '오늘의 식물 PICK') {
+      navigate('/my-plant/');
     }
   };
   // 김수영 2022.10.08 - 반응형 메뉴바 보이기 기능
-  const toggleMenu = () => setMenuActive(prev => !prev);
-  console.log(menuActive);
-  const gnbClasses =!menuActive ? `${classes.gnbArea}` : `${classes.gnbArea} ${classes.gnbActive}`
-  console.log(gnbClasses);
+  const toggleMenu = () => setMenuActive((prev) => !prev);
+  const gnbClasses = !menuActive
+    ? `${classes.gnbArea}`
+    : `${classes.gnbArea} ${classes.gnbActive}`;
+  // 김동현 2022.10.09 - 검색기능
+  const onChange = (e) => {
+    setSearch(e.target.value);
+  };
   return (
     <>
       {/* wrapper area */}
@@ -41,10 +52,10 @@ const Navigation = (props) => {
         <div className={classes.container}>
           {/* logo */}
           <div className={classes.logoArea}>
-            <img className={classes.logo} src={logo} alt="logo" />
+            <img className={classes.logo} src={logo} alt='logo' />
           </div>
           <button className={classes.gnbBtn} onClick={toggleMenu}>
-            <i className="fa-solid fa-bars"></i>
+            <i className='fa-solid fa-bars'></i>
           </button>
           <nav className={gnbClasses}>
             {/* user info */}
@@ -55,8 +66,13 @@ const Navigation = (props) => {
             {/* search */}
             <div className={classes.searchPlantArea}>
               <form className={classes.searchPlantForm}>
-                <input type="search" placeholder="식물 이름" />
-                <input type="submit" value="☌" />
+                <input
+                  type='search'
+                  placeholder='식물 이름'
+                  value={search}
+                  onChange={onChange}
+                />
+                <input type='submit' value='☌' />
               </form>
             </div>
             {/* menu */}
