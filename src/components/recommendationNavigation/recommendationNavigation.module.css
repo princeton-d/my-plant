@@ -89,14 +89,18 @@
   }
   .recommendBtn {
     display: block;
-    background: cdBlue;
-    margin: 0;
-    margin-top: 3rem;
-    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
     font-size: 2rem;
-    transition: background 150ms ease-in;
+    color: cGreen;
+    border: 2px solid cGreen;
+    width: 25rem;
+    padding: 1rem;
+    border-radius: 5rem;
+    transition: transform 150ms ease-in;
   }
   .recommendBtn:hover {
-    background: cGreen;
+    transform: translateY(25%);
   }
 }

@@ -6,7 +6,7 @@
 
 /* wrapper area */
 .wrapper {
-  margin-left: 48rem;
+  margin-left: 33vw;
   font-family: fBasic;
   color: cdBlue;
 }
@@ -41,11 +41,6 @@
   transition: font-size 150ms ease-in;
 }
 
-@media screen and (max-width: 80rem) {
-  .container {
-    padding-right: 17rem;
-  }
-}
 
 @media screen and (max-width: 70rem) {
   .container {

@@ -70,7 +70,7 @@ const RecommendationNavigation = (props) => {
           <button className={classes.backBtn} onClick={onClick}>
             <i className='fa-solid fa-angle-left'></i>
           </button>
-          <Button className={classes.recommendBtn}>식물 추천받기</Button>
+          <span className={classes.recommendBtn}>추천 식물 보기 ↓</span>
         </div>
       </div>
     </>

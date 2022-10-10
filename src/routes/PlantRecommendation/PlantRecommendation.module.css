@@ -24,7 +24,7 @@
 }
 
 .Recommendation {
-  padding: 0 1.3rem;
+  padding: 0 3.3rem;
 }
 
 .Recommendation ul {
@@ -32,7 +32,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 3.5rem 2rem;
-  padding: 1rem;
 }
 
 @media screen and (max-width: sSmall) {
