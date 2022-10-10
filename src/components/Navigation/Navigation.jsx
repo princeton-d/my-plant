@@ -19,17 +19,20 @@ const Navigation = (props) => {
   // });
 
   const handlePlantRecommendationButton = () => {
+    toggleMenu();
     props.setPlantRecommendation(true); // 식물추천 navigation 으로 변경
     navigate("/my-plant/recommendation"); // 식물추천 page 로 이동
   };
   // 김동현 2022.10.06 - 로그아웃 기능
   const handleLogoutButton = () => {
+    toggleMenu();
     signOut(authService);
     props.setIsLogin(false);
     navigate("/my-plant");
   };
   // 김동현 2022.10.06 - 경로 이동 기능
   const handleNavigate = (e) => {
+    toggleMenu();
     if (e.target.innerText === "정원 관리하기") {
       navigate("/my-plant/garden");
     } else if (e.target.innerText === "오늘의 식물 PICK") {
@@ -45,9 +48,8 @@ const Navigation = (props) => {
   const onChange = (e) => {
     setSearch(e.target.value);
   };
-  const onCloseMenu = () => {
-    toggleMenu();
-  };
+  // 김수영 2022.10.10 = 토글 메뉴 기능 추가
+  const onCloseMenu = () => toggleMenu();
   const closeGnbClasses = !menuActive
   ? `${classes.gnbBottom} ${classes.closeGnb}`
   : `${classes.gnbBottom}`;
