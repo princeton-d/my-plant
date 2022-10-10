@@ -34,7 +34,7 @@
     },
     {
       "id": "002",
-      "name": ["생선뼈 선인장", "피쉬본 선인장"],
+      "name": ["생선뼈 선인장"],
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558139776991.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558139966462.jpg",
@@ -104,7 +104,7 @@
     },
     {
       "id": "004",
-      "name": ["블루스타 고사리", "블루스타펀"],
+      "name": ["블루스타 고사리"],
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558125454911.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558125906532.jpg",
@@ -171,7 +171,7 @@
     },
     {
       "id": "006",
-      "name": ["필로덴드론 버킨", "무늬 콩고"],
+      "name": ["필로덴드론 버킨"],
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175366941.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175489852.jpg",
@@ -271,7 +271,7 @@
     },
     {
       "id": "009",
-      "name": ["코니오그램 에메이엔시스", "골든 제브라"],
+      "name": ["코니오그램 에메이엔시스"],
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664666541.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664770572.jpg",

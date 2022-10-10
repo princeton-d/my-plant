@@ -14,9 +14,16 @@ const Navigation = (props) => {
   const [menuActive, setMenuActive] = useState(false);
   const [search, setSearch] = useState('');
 
-  // const filter = plantInfo.plant.filter((item) => {
-  //   return item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase());
-  // });
+  const arr = [];
+  plantInfo.plant.map((plant) => {
+    arr.push(plant.name.join().replace(' ', ''));
+  });
+
+  const searchFilter = arr.filter((item) => {
+    return item.includes(search.replace(' ', ''));
+  });
+
+  console.log(searchFilter);
 
   const handlePlantRecommendationButton = () => {
     props.setPlantRecommendation(true); // 식물추천 navigation 으로 변경
@@ -92,6 +99,20 @@ const Navigation = (props) => {
             </div>
             {/* logout */}
             <div className={classes.logoutArea}>
+              {plantInfo.plant
+                .filter((plant) => {
+                  return plant.name.includes(search.replace(' ', ''))
+                    ? plant
+                    : null;
+                })
+                .map((item) => {
+                  {
+                    console.log(item);
+                  }
+                  <li key={item.id}>
+                    <span>{item.name}</span>
+                  </li>;
+                })}
               <button onClick={handleLogoutButton}>로그아웃</button>
             </div>
           </nav>
