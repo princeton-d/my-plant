@@ -4,7 +4,9 @@ import classes from './PlantPick.module.css';
 import plantInfo from '../../data/plantInfo.json';
 
 // 김동현 2022.10.04 - 기본작업
-const PlantPick = () => {
+const PlantPick = ({userInfo}) => {
+  let userId = userInfo.uid;
+
   return (
     <>
       <div className={classes.wrapper}>
@@ -16,7 +18,7 @@ const PlantPick = () => {
             <ul>
               {/* 김동현 2022.10.04 - 각각의 식물 정보 mapping */}
               {plantInfo.plant.map((item) => {
-                return <PlantItem plant={item} key={item.id} />;
+                return <PlantItem plant={item} key={item.id} userId={userId} />;
               })}
             </ul>
           </div>
