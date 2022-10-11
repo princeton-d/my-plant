@@ -57,6 +57,13 @@ const GardenItem = ({ item }) => {
     setWateringDate(today);
     toggleWateringMode();
   };
+  const onChangeWateringDate = (e) => {
+    updateDoc(doc(db, "garden", item.did), {
+      wateringDate: e.target.value
+    })
+    setWateringDate(e.target.value);
+  }
+
   const endWateringMode = () => {
     updateDoc(doc(db, "garden", item.did), {
       wateringDate: null
@@ -114,7 +121,7 @@ const GardenItem = ({ item }) => {
               <div className={classes.wateringDate}>
                 <div>
                   <p>가장 최근 물 준 날</p>
-                  <input type="date" defaultValue={wateringDate} />
+                  <input type="date" defaultValue={wateringDate} onChange={onChangeWateringDate} />
                 </div>
                 <div>
                   <p>다음 물 줄 날</p>
