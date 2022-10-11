@@ -8,20 +8,23 @@ import Button from "../UI/Button/Button";
 import ModalPortal from "../modal/modalPortal";
 import PlantInfoModal from "../modal/PlantInfoModal/PlantInfoModal";
 
-const GardenItem = ({ plant }) => {
-  const date = new Date();
-  const [wateringDate, setWateringDate] = useState();
+const GardenItem = ({ item }) => {
+  const { plant } = item;
+  const [wateringDate, setWateringDate] = useState(item.wateringDate);
   const [editMode, setEditMode] = useState(false);
   const [wateringMode, setWateringMode] = useState(false);
-  const [nickName, setNickName] = useState(plant.nickName);
-
+  const [nickName, setNickName] = useState(item.nickName);
+  const [openModal, setOpenModal] = useState(false);
+  const openModalHandler = () => {
+    setOpenModal(!openModal);
+  };
   const toggleEditMode = () => setEditMode((prev) => !prev);
   const onChangeNickName = (e) => {
     setNickName(e.target.value);
   };
   const onEditNickName = (e) => {
     e.preventDefault();
-    updateDoc(doc(db, "garden", plant.did), {
+    updateDoc(doc(db, "garden", item.did), {
       nickName: nickName,
     });
     const ok = window.confirm("수정하시겠습니까?");
@@ -30,22 +33,45 @@ const GardenItem = ({ plant }) => {
     }
   };
   const onCancle = () => {
-    setNickName(plant.nickName);
+    setNickName(item.nickName);
     toggleEditMode();
   };
 
   const onDelete = () => {
     const ok = window.confirm("정원에서 제외하겠습니까?");
     if (ok) {
-      deleteDoc(doc(db, "garden", plant.did));
+      deleteDoc(doc(db, "garden", item.did));
     }
   };
 
   const toggleWateringMode = () => setWateringMode((prev) => !prev);
-  const wateringHandler = () => {
+  const startWateringMode = () => {
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const today = `${year}-${month}-${day}`
+    updateDoc(doc(db, "garden", item.did), {
+      wateringDate: today
+    })
+    setWateringDate(today);
     toggleWateringMode();
+  };
+  const onChangeWateringDate = (e) => {
+    updateDoc(doc(db, "garden", item.did), {
+      wateringDate: e.target.value
+    })
+    setWateringDate(e.target.value);
   }
-  const onOpenPlantInfo = () => window.alert("식물 정보 팝업창 띄우기");
+
+  const endWateringMode = () => {
+    updateDoc(doc(db, "garden", item.did), {
+      wateringDate: null
+    });
+    setWateringDate(null);
+    toggleWateringMode();
+    console.log(wateringMode);
+  }
   return (
     <>
       <li className={classes.item}>
@@ -78,14 +104,14 @@ const GardenItem = ({ plant }) => {
               </button>
             </div>
           )}
-          <button className={classes.plantName} onClick={onOpenPlantInfo}>
+          <button className={classes.plantName} onClick={openModalHandler}>
             <span>{plant.name}</span>
             <span>?</span>
           </button>
-          {!wateringMode ? (
+          {!wateringDate ? (
             <Button
               className={classes.warteringBtn}
-              onClick={wateringHandler}
+              onClick={startWateringMode}
             >
               <span>물주기</span>
               <i className="fa-solid fa-droplet"></i>
@@ -95,14 +121,14 @@ const GardenItem = ({ plant }) => {
               <div className={classes.wateringDate}>
                 <div>
                   <p>가장 최근 물 준 날</p>
-                  <input type="date" defaultValue="2022-10-05" />
+                  <input type="date" defaultValue={wateringDate} onChange={onChangeWateringDate} />
                 </div>
                 <div>
                   <p>다음 물 줄 날</p>
                   <input type="date" />
                 </div>
               </div>
-              <Button className={classes.stopBtn} onClick={toggleWateringMode}>
+              <Button className={classes.stopBtn} onClick={endWateringMode}>
                 그만 돌보기
               </Button>
             </>
@@ -112,6 +138,16 @@ const GardenItem = ({ plant }) => {
           </button>
         </div>
       </li>
+      {openModal ? (
+        <ModalPortal>
+          <PlantInfoModal
+            openModal={openModal}
+            setOpenModal={setOpenModal}
+            plant={plant}
+            // onAddToGarden={onAddToGarden}
+          />
+        </ModalPortal>
+      ) : null}
     </>
   );
 };

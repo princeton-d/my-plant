@@ -15,12 +15,14 @@ const PlantItem = ({plant, userId}) => {
   };
   const onAddToGarden = async () => {
     await addDoc(collection(db, "garden"), {
-      id: plant.id,
-      name: plant.name,
+      plant: plant,
+      creatorId: userId,
       nickName: plant.name,
-      picture: plant.picture,
-      difficulty: plant.Difficulty,
-      creatorId: userId
+      wateringDate: null
+      // id: plant.id,
+      // name: plant.name,
+      // picture: plant.picture,
+      // difficulty: plant.Difficulty,
     });
   }
   return (
