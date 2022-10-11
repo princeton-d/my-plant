@@ -32,8 +32,8 @@ const UserGarden = (props) => {
             <ul>
               {plantInfo
                 ? plantInfo
-                    .filter((plant) => plant.creatorId === props.userInfo.uid)
-                    .map((plant) => <GardenItem key={plant.id} plant={plant} />)
+                    .filter((item) => item.creatorId === props.userInfo.uid)
+                    .map((item) => <GardenItem key={item.plant.id} item={item} />)
                 : null}
             </ul>
           </div>
