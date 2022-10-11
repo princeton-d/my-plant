@@ -7,23 +7,13 @@ import classes from './Navigation.module.css';
 import logo from '../../image/logo.png';
 import { useState } from 'react';
 import plantInfo from '../../data/plantInfo.json';
+import PlantItem from '../PlantItem/PlantItem';
 
 // 김동현 2022.10.06 navigation 작업
 const Navigation = (props) => {
   const navigate = useNavigate();
   const [menuActive, setMenuActive] = useState(false);
   const [search, setSearch] = useState('');
-
-  const arr = [];
-  plantInfo.plant.map((plant) => {
-    arr.push(plant.name.join().replace(' ', ''));
-  });
-
-  const searchFilter = arr.filter((item) => {
-    return item.includes(search.replace(' ', ''));
-  });
-
-  console.log(searchFilter);
 
   const handlePlantRecommendationButton = () => {
     toggleMenu();
@@ -43,7 +33,7 @@ const Navigation = (props) => {
     if (e.target.innerText === '정원 관리하기') {
       navigate('/my-plant/garden');
     } else if (e.target.innerText === '오늘의 식물 PICK') {
-      navigate('/my-plant/');
+      navigate('/my-plant');
     }
   };
   // 김수영 2022.10.08 - 반응형 메뉴바 보이기 기능
@@ -60,6 +50,13 @@ const Navigation = (props) => {
   const closeGnbClasses = !menuActive
     ? `${classes.gnbBottom} ${classes.closeGnb}`
     : `${classes.gnbBottom}`;
+
+  // 김동현 2022.10.11 - 검색 기능
+  const searchPlant = plantInfo.plant.filter((plant) => {
+    return plant.name.join().includes(search.replace(/ /g, ''));
+  });
+
+  console.log(searchPlant);
   return (
     <>
       {/* wrapper area */}
@@ -92,6 +89,11 @@ const Navigation = (props) => {
                   <input type='submit' value='☌' />
                 </form>
               </div>
+              {/* <div>
+                {searchPlant.map((plant) => {
+                  return <PlantItem plant={plant} />;
+                })}
+              </div> */}
               {/* menu */}
               <div className={classes.menuArea}>
                 <Button className={classes.yellow} onClick={handleNavigate}>
