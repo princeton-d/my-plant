@@ -86,21 +86,22 @@
 /* menu */
 .menuArea {
   display: flex;
-  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  /* flex-direction: column; */
 }
 
-.yellow {
-  background: cYellow;
-  transition: background 100ms ease-in;
+.menuArea button {
+  height: 8rem;
+  margin: 0;
+  border: 1.5px solid cGreen;
+  color: cGreen;
+  background: rgba(255, 255, 255, .3);
+  transition: all 100ms ease-in;
 }
 
-.blue {
-  background: cdBlue;
-  transition: background 100ms ease-in;
-}
-
-.yellow:hover,
-.blue:hover {
+.menuArea button:hover {
+  color: cWhite;
   background: cGreen;
 }
 
@@ -178,8 +179,8 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 28rem;
-    background: rgba(46, 69, 82, 0.9);
+    height: 30rem;
+    background: rgba(46, 69, 82, 0.5);
     backdrop-filter: blur(5px);
   }
   .gnbBottom {
@@ -201,11 +202,12 @@
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    padding-top: 2.3rem;
+    padding-top: 1.6rem;
     padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid cGreen;
-    color: cGreen;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid cWhite;
+    /* color: cWhite; */
+    background: rgba(255,255,255,.3);
   }
   .userInfoArea p {
     margin-right: 1rem;
@@ -217,13 +219,21 @@
   }
   .menuArea {
     flex-direction: row;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 1rem;
   }
   .menuArea button {
-    border: 1px solid cWhite;
-    background: none;
+    border: 1.5px solid cWhite;
+    width: 11rem;
+    height: 9rem;
+    border-radius: 3rem;
+    color: cWhite;
+    background: rgba(255, 255, 255, .1);
   }
   .logoutArea button {
+    color: cdBlue;
+    font-weight: bold;
+  }
+  .logoutArea button:hover {
     color: cWhite;
   }
 }
