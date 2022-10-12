@@ -11,10 +11,12 @@ import PlantInfoModal from "../modal/PlantInfoModal/PlantInfoModal";
 const GardenItem = ({ item }) => {
   const { plant } = item;
   const [wateringDate, setWateringDate] = useState(item.wateringDate);
+  const [nextWateringDate, setNextWateringDate] = useState(item.nextWateringDate);
   const [editMode, setEditMode] = useState(false);
   const [wateringMode, setWateringMode] = useState(false);
   const [nickName, setNickName] = useState(item.nickName);
   const [openModal, setOpenModal] = useState(false);
+  const [showPlantName, setShowPlantName] = useState(false);
   const openModalHandler = () => {
     setOpenModal(!openModal);
   };
@@ -63,15 +65,25 @@ const GardenItem = ({ item }) => {
     })
     setWateringDate(e.target.value);
   }
+  const onChangeNextWateringDate = (e) => {
+    updateDoc(doc(db, "garden", item.did), {
+      nextWateringDate: e.target.value
+    })
+    setNextWateringDate(e.target.value);
+  }
 
   const endWateringMode = () => {
-    updateDoc(doc(db, "garden", item.did), {
-      wateringDate: null
-    });
-    setWateringDate(null);
-    toggleWateringMode();
-    console.log(wateringMode);
+    const ok = window.confirm("확인을 누르시면 물주기 정보가 지워집니다. 식물을 그만 돌보겠습니까? ")
+    if (ok) {
+      updateDoc(doc(db, "garden", item.did), {
+        wateringDate: null
+      });
+      setWateringDate(null);
+      toggleWateringMode();
+    }
   }
+  const togglePlantName = () => setShowPlantName(prev => !prev);
+  const plantInfoClasses = showPlantName ? `${classes.plantInfo}` : `${classes.plantInfo} ${classes.active}`
   return (
     <>
       <li className={classes.item}>
@@ -80,7 +92,15 @@ const GardenItem = ({ item }) => {
             className={classes.plantImg}
             src={plant.picture[0]}
             alt="plant"
+            onClick={openModalHandler}
+            onMouseEnter={togglePlantName}
+            onMouseLeave={togglePlantName}
           />
+          <button className={plantInfoClasses} onClick={openModalHandler} onMouseEnter={togglePlantName}
+            onMouseLeave={togglePlantName}>
+            <span>{plant.name}</span>
+            <span>?</span>
+          </button>
         </div>
         <div className={classes.rightSide}>
           {editMode ? (
@@ -104,10 +124,6 @@ const GardenItem = ({ item }) => {
               </button>
             </div>
           )}
-          <button className={classes.plantName} onClick={openModalHandler}>
-            <span>{plant.name}</span>
-            <span>?</span>
-          </button>
           {!wateringDate ? (
             <Button
               className={classes.warteringBtn}
@@ -125,7 +141,7 @@ const GardenItem = ({ item }) => {
                 </div>
                 <div>
                   <p>다음 물 줄 날</p>
-                  <input type="date" />
+                  <input type="date" defaultValue={nextWateringDate} onChange={onChangeNextWateringDate} />
                 </div>
               </div>
               <Button className={classes.stopBtn} onClick={endWateringMode}>

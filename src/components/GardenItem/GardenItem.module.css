@@ -20,7 +20,9 @@
   height: 17vw;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: antiquewhite;
+  background-color: cdBlue;
+  background: cWhite;
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(46,69,82,1) 80%);
 }
 .plantImg {
   position: absolute;
@@ -29,6 +31,46 @@
   transform: translate(-50%, -50%);
   display: inline-block;
   width: 100%;
+  transition: opacity 100ms ease-in;
+}
+
+.plantImg:hover {
+  opacity: .8;
+}
+.plantInfo {
+  position: absolute;
+  bottom: 1.3rem;
+  right: 1.5rem;
+  font-family: inherit;
+  color: cWhite;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  word-break: keep-all;
+  background: rgba(0, 0, 0, .1);
+  cursor: pointer;
+  border-radius: 1.5rem;
+  padding: 0.3rem 1.3rem;
+  border: none;
+  transition: bottom 100ms ease-in;
+}
+.active {
+  bottom: -2.5rem;
+}
+
+.plantInfo span:first-child {
+  margin-right: 0.3rem;
+  padding-top: 0.3rem;
+}
+.plantInfo span:last-child {
+  font-size: 0.9rem;
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid cWhite;
+  border-radius: 50%;
 }
 
 /* info */
@@ -101,37 +143,7 @@
   font-size: 2.3rem;
   font-weight: bold;
   margin-bottom: 0.7rem;
-}
-
-.plantName {
-  all: unset;
-  color: cGreen;
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
-  cursor: pointer;
-  border-bottom: 1px solid cGrey;
-}
-
-.plantName span:first-child {
-  margin-right: 0.3rem;
-  padding-top: 0.3rem;
-}
-.plantName span:last-child {
-  font-size: 0.9rem;
-  display: block;
-  text-align: center;
-  line-height: 1.5;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 1px solid cGreen;
-  border-radius: 50%;
-}
-
-.plantName:hover {
-  text-decoration: underline;
+  word-break: keep-all;
 }
 
 .warteringBtn {
@@ -153,6 +165,8 @@
 .wateringDate {
   display: flex;
   justify-content: space-between;
+  border-top: 1px solid cGrey;
+  padding-top: 1.5rem;
 }
 
 .wateringDate {
@@ -183,11 +197,13 @@
 .stopBtn {
   padding: 0.5rem;
   background: cGrey;
-  transition: background 150ms ease-in;
+  opacity: .5;
+  transition: all 150ms ease-in;
   margin: 0;
 }
 
 .stopBtn:hover {
+  opacity: 1;
   background: cYellow;
 }
 

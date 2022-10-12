@@ -17,7 +17,8 @@ const UserGarden = (props) => {
       setPlantInfo(plantList);
     });
   }, []);
-
+  const userPlantInfo = plantInfo.filter((item) => item.creatorId === props.userInfo.uid);
+  console.log(userPlantInfo);
   return (
     <>
       <div className={classes.wrapper}>
@@ -29,13 +30,14 @@ const UserGarden = (props) => {
             </p>
           </div>
           <div className={classes.contents}>
-            <ul>
-              {plantInfo
-                ? plantInfo
-                    .filter((item) => item.creatorId === props.userInfo.uid)
-                    .map((item) => <GardenItem key={item.plant.id} item={item} />)
-                : null}
-            </ul>
+              {userPlantInfo.length !== 0 ? <ul>
+                {plantInfo
+                  .filter((item) => item.creatorId === props.userInfo.uid)
+                  .map((item) => (
+                    <GardenItem key={item.plant.id} item={item} />
+                  ))}
+              </ul>
+              : <p className={classes.noPlant}>아직 식물이 없습니다.</p>}
           </div>
         </div>
       </div>
