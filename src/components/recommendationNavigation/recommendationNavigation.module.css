@@ -7,6 +7,7 @@
 .wrapper {
   position: fixed;
   font-family: fBasic;
+  z-index: 9999;
 }
 
 .container {
@@ -77,15 +78,8 @@
     position: relative;
     width: 100vw;
     height: auto;
-    padding-top: 8.5rem;
   }
   .logoArea {
-    display: none;
-  }
-  .backBtn {
-    position: fixed;
-    top: 1.8rem;
-    z-index: 9999;
   }
   .recommendBtn {
     display: block;
