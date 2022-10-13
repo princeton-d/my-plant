@@ -10,6 +10,7 @@
 .emoji {
   position: absolute;
   left: 3rem;
+  transition: left 100ms ease-in;
 }
 .checkbox {
   display: none;
@@ -52,7 +53,15 @@
   border-radius: 5rem;
   border: 3px solid cGreen;
 }
+@media screen and (max-width: sMedium) {
+  .emoji {
+    left: 1.8rem;
+  }
+}
 @media screen and (max-width: sSmall) {
+  .emoji {
+    left: 3rem;
+  }
   .recommend input:checked::after {
     width: 98.5%;
   }

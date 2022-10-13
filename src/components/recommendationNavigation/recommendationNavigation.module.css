@@ -16,7 +16,7 @@
   width: 33vw;
   height: 100vh;
   background: url('../../../public/image/bg.jpg') no-repeat center/cover;
-  padding: 5rem;
+  padding: 5rem 3%;
 }
 
 .container::-webkit-scrollbar {
@@ -78,6 +78,7 @@
     position: relative;
     width: 100vw;
     height: auto;
+    padding: 5rem;
   }
   .logoArea {
   }
