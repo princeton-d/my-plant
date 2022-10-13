@@ -68,6 +68,14 @@
   background: cYellow;
 }
 
+.error {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  font-size: 1.3rem;
+  font-family: fBasic;
+  color: red;
+}
+
 .signUpArea {
   display: flex;
   justify-content: center;

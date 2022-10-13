@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { authService } from '../../../service/fbase';
 import Button from '../../UI/Button/Button';
 import classes from './SignUpModal.module.css';
+import logo from '../../../image/logo.png';
 
 // 김동현 2022.10.02 setup
 const SignUpModal = ({ openModal, setOpenModal }) => {
@@ -44,7 +45,7 @@ const SignUpModal = ({ openModal, setOpenModal }) => {
         <div className={classes.wrap}>
           {/* logo */}
           <div className={classes.logoArea}>
-            <img className={classes.logo} src='/image/logo.png' alt='logo' />
+            <img className={classes.logo} src={logo} alt='logo' />
           </div>
           {/* auth */}
           <div className={classes.authArea}>
