@@ -3,13 +3,21 @@ import classes from './PlantInfoModal.module.css';
 import sun from '../../../image/sun.png';
 import water from '../../../image/water.png';
 import air from '../../../image/air.png';
+import { useState } from 'react';
 
 const PlantInfoModal = (props) => {
+  const [plantImg, setPlantImg] = useState(props.plant.picture[0])
   const onClick = (e) => {
     if (e.target.id === 'modalClose') {
       props.setOpenModal(!props.openModal);
     }
   };
+  
+  const onClickImg = (e) => {
+    setPlantImg(e.target.src);
+    props.changePlantImg(e.target.src);
+  }
+
   return (
     <>
       <div id='modalClose' className={classes.container} onClick={onClick}>
@@ -18,7 +26,7 @@ const PlantInfoModal = (props) => {
             <div className={classes.mainImgArea}>
               <img
                 className={classes.mainImg}
-                src={props.plant.picture[0]}
+                src={plantImg}
                 alt='img'
               />
             </div>
@@ -26,7 +34,7 @@ const PlantInfoModal = (props) => {
               {props.plant.picture.map((item) => {
                 return (
                   <div key={Math.random()}>
-                    <img className={classes.subImg} src={item} />
+                    <img className={classes.subImg} src={item} onClick={onClickImg}/>
                   </div>
                 );
               })}

@@ -21,7 +21,8 @@ const PlantItem = ({plant, userId}) => {
       creatorId: userId,
       nickName: plant.name,
       wateringDate: null,
-      nextWateringDate: null
+      nextWateringDate: null,
+      thumbImg: plant.picture[0]
     });
     setAdding(false);
     window.alert("식물을 정원에 담았습니다!");
