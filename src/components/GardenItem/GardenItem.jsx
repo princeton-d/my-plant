@@ -84,8 +84,10 @@ const GardenItem = ({ item }) => {
   }
   const togglePlantName = () => setShowPlantName(prev => !prev);
   const plantInfoClasses = showPlantName ? `${classes.plantInfo}` : `${classes.plantInfo} ${classes.active}`
-  
+
+  const [adding, setAdding] = useState(false);
   const onAddToGarden = async () => {
+    setAdding(true);
     await addDoc(collection(db, "garden"), {
       plant: plant,
       creatorId: item.creatorId,
@@ -93,6 +95,8 @@ const GardenItem = ({ item }) => {
       wateringDate: null,
       nextWateringDate: null,
     });
+    setAdding(false);
+    window.alert("식물을 정원에 담았습니다!");
   };
 
   return (
@@ -172,6 +176,7 @@ const GardenItem = ({ item }) => {
             setOpenModal={setOpenModal}
             plant={plant}
             onAddToGarden={onAddToGarden}
+            adding={adding}
           />
         </ModalPortal>
       ) : null}

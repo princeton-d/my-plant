@@ -9,11 +9,13 @@ import { addDoc, collection } from 'firebase/firestore';
 // 김수영 2022.10.07 - 모달창에서 정원에 추가 클릭 시 정원으로 추가
 const PlantItem = ({plant, userId}) => {
   const [openModal, setOpenModal] = useState(false);
+  const [adding, setAdding] = useState(false);
 
   const onClick = () => {
     setOpenModal(!openModal);
   };
   const onAddToGarden = async () => {
+    setAdding(true);
     await addDoc(collection(db, "garden"), {
       plant: plant,
       creatorId: userId,
@@ -21,6 +23,8 @@ const PlantItem = ({plant, userId}) => {
       wateringDate: null,
       nextWateringDate: null
     });
+    setAdding(false);
+    window.alert("식물을 정원에 담았습니다!");
   }
   return (
     <>
@@ -41,6 +45,7 @@ const PlantItem = ({plant, userId}) => {
             setOpenModal={setOpenModal}
             plant={plant}
             onAddToGarden={onAddToGarden}
+            adding={adding}
           />
         </ModalPortal>
       ) : null}
