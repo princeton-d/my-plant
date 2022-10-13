@@ -20,7 +20,6 @@ const AuthNavigation = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-
   // 김동현 2022.10.06 - 모달창 실행
   const handleSignUpButton = () => {
     setOpenModal(!openModal);
