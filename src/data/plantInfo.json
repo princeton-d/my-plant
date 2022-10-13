@@ -2,7 +2,7 @@
   "plant": [
     {
       "id": "001",
-      "name": ["멜라니 고무나무"],
+      "name": "멜라니 고무나무",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558040766671.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558041008652.jpg",
@@ -34,7 +34,7 @@
     },
     {
       "id": "002",
-      "name": ["생선뼈 선인장"],
+      "name": "생선뼈 선인장",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558139776991.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558139966462.jpg",
@@ -66,7 +66,7 @@
     },
     {
       "id": "003",
-      "name": ["스투키"],
+      "name": "스투키",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1662619339309275685073_451859856695918_7461780793129810940_n.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558159487241.jpg",
@@ -104,7 +104,7 @@
     },
     {
       "id": "004",
-      "name": ["블루스타 고사리"],
+      "name": "블루스타 고사리",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558125454911.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558125906532.jpg",
@@ -138,7 +138,7 @@
     },
     {
       "id": "005",
-      "name": ["테이블야자"],
+      "name": "테이블야자",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558765860501.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558766011562.jpg",
@@ -171,7 +171,7 @@
     },
     {
       "id": "006",
-      "name": ["필로덴드론 버킨"],
+      "name": "필로덴드론 버킨",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175366941.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575175489852.jpg",
@@ -204,7 +204,7 @@
     },
     {
       "id": "007",
-      "name": ["아글라오네마 스노우 사파이어"],
+      "name": "아글라오네마 스노우 사파이어",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16621154868341.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16621154956932.jpg",
@@ -237,7 +237,7 @@
     },
     {
       "id": "008",
-      "name": ["인도 고무나무"],
+      "name": "인도 고무나무",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618530324161.webp",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618530405672.webp",
@@ -271,7 +271,7 @@
     },
     {
       "id": "009",
-      "name": ["코니오그램 에메이엔시스"],
+      "name": "코니오그램 에메이엔시스",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664666541.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643664770572.jpg",
@@ -302,7 +302,7 @@
     },
     {
       "id": "010",
-      "name": ["필로덴드론 글로리오섬"],
+      "name": "필로덴드론 글로리오섬",
       "picture": [
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470142591.jpg",
         "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16618470251762.jpg",
@@ -334,7 +334,7 @@
   "sample": [
     {
       "id": "000",
-      "name": [],
+      "name": "",
       "picture": [],
       "Difficulty": [],
       "irrigationWater": [],

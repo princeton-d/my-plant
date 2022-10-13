@@ -6,6 +6,7 @@ import PlantRecommendation from '../routes/PlantRecommendation/PlantRecommendati
 import Navigation from '../components/Navigation/Navigation';
 import AuthNavigation from './AuthNavigation/AuthNavigation';
 import RecommendationNavigation from './RecommendationNavigation/RecommendationNavigation';
+import SearchResult from '../routes/SearchResult/SearchResult';
 
 const AppRouter = (props) => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = (props) => {
         {props.isLogin ? <Route path='/my-plant' element={<PlantPick userInfo={props.userInfo} />} /> : <Route path='/my-plant' element={<Home />} />}
         <Route path='/my-plant/garden' element={<UserGarden userInfo={props.userInfo} />} />
         <Route path='/my-plant/recommendation' element={<PlantRecommendation userInfo={props.userInfo} setPlantRecommendation={props.setPlantRecommendation} />} />
+        <Route path='/my-plant/search' element={<SearchResult userInfo={props.userInfo} />} />
       </Routes>
     </Router>
   )
