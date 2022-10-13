@@ -18,11 +18,8 @@ const PlantItem = ({plant, userId}) => {
       plant: plant,
       creatorId: userId,
       nickName: plant.name,
-      wateringDate: null
-      // id: plant.id,
-      // name: plant.name,
-      // picture: plant.picture,
-      // difficulty: plant.Difficulty,
+      wateringDate: null,
+      nextWateringDate: null
     });
   }
   return (

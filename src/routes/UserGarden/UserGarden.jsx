@@ -4,6 +4,7 @@ import classes from "./UserGarden.module.css";
 import { dbService as db } from "../../service/fbase";
 import { useEffect } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
+import gardening from '../../image/gardening.png';
 
 // 김수영 2022.10.7 CRUD 기능 구현
 const UserGarden = (props) => {
@@ -17,7 +18,10 @@ const UserGarden = (props) => {
       setPlantInfo(plantList);
     });
   }, []);
-
+  const userPlantInfo = plantInfo.filter(
+    (item) => item.creatorId === props.userInfo.uid
+  );
+  console.log(userPlantInfo);
   return (
     <>
       <div className={classes.wrapper}>
@@ -29,13 +33,20 @@ const UserGarden = (props) => {
             </p>
           </div>
           <div className={classes.contents}>
-            <ul>
-              {plantInfo
-                ? plantInfo
-                    .filter((item) => item.creatorId === props.userInfo.uid)
-                    .map((item) => <GardenItem key={item.plant.id} item={item} />)
-                : null}
-            </ul>
+            {userPlantInfo.length !== 0 ? (
+              <ul>
+                {plantInfo
+                  .filter((item) => item.creatorId === props.userInfo.uid)
+                  .map((item) => (
+                    <GardenItem key={item.plant.id} item={item} />
+                  ))}
+              </ul>
+            ) : (
+              <div className={classes.noPlant}>
+                <img src={gardening} alt="정원" />
+                <span>아직 식물이 없습니다.</span>
+              </div>
+            )}
           </div>
         </div>
       </div>
