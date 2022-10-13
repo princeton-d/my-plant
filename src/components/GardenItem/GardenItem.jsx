@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import classes from "./GardenItem.module.css";
 import { dbService as db } from "../../service/fbase";
-import { deleteDoc, doc, updateDoc } from "firebase/firestore";
+import { addDoc, collection, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import Button from "../UI/Button/Button";
 import ModalPortal from "../modal/modalPortal";
 import PlantInfoModal from "../modal/PlantInfoModal/PlantInfoModal";
@@ -84,6 +84,17 @@ const GardenItem = ({ item }) => {
   }
   const togglePlantName = () => setShowPlantName(prev => !prev);
   const plantInfoClasses = showPlantName ? `${classes.plantInfo}` : `${classes.plantInfo} ${classes.active}`
+  
+  const onAddToGarden = async () => {
+    await addDoc(collection(db, "garden"), {
+      plant: plant,
+      creatorId: item.creatorId,
+      nickName: plant.name,
+      wateringDate: null,
+      nextWateringDate: null,
+    });
+  };
+
   return (
     <>
       <li className={classes.item}>
@@ -160,7 +171,7 @@ const GardenItem = ({ item }) => {
             openModal={openModal}
             setOpenModal={setOpenModal}
             plant={plant}
-            // onAddToGarden={onAddToGarden}
+            onAddToGarden={onAddToGarden}
           />
         </ModalPortal>
       ) : null}

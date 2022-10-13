@@ -12,6 +12,8 @@ import PlantItem from '../../components/PlantItem/PlantItem';
 
 // 김동현 2022.10.02
 const PlantRecommendation = (props) => {
+  let userId = props.userInfo.uid;
+
   return (
     <>
       <div className={classes.wrapper}>
@@ -26,7 +28,7 @@ const PlantRecommendation = (props) => {
             <ul>
               {/* 김동현 2022.10.04 - 식물 추천 로직 구현 예정 */}
               {plantInfo.plant.map((item) => {
-                return <PlantItem plant={item} key={item.id} />;
+                return <PlantItem plant={item} key={item.id} userId={userId} />;
               })}
             </ul>
           </div>
