@@ -1,19 +1,15 @@
-import React from 'react';
-import classes from './SearchWindow.module.css';
+import React from "react";
+import classes from "./SearchWindow.module.css";
 
 const SearchWindow = (props) => {
   return (
-    <>
-      <div>
-        <ul>
-          <li>
-            {props.searchPlant.map((plant) => {
-              return plant.name;
-            })}
-          </li>
-        </ul>
-      </div>
-    </>
+    <div className={classes.wrap}>
+      <ul className={classes.searchList}>
+        {props.searchPlant.map((plant) => 
+          <li>{plant.name}</li>
+        )}
+      </ul>
+    </div>
   );
 };
 
