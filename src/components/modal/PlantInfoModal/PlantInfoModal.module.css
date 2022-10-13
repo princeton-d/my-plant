@@ -155,6 +155,12 @@
   justify-content: flex-end;
 }
 
+.addingGardne {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: cGreen;
+}
+
 .buttonArea button {
   border: none;
   font-family: inherit;

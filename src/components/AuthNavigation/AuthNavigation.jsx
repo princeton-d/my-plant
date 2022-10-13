@@ -19,7 +19,7 @@ const AuthNavigation = (props) => {
   const [openModal, setOpenModal] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [error, setError] = useState("");
   // 김동현 2022.10.06 - 모달창 실행
   const handleSignUpButton = () => {
     setOpenModal(!openModal);
@@ -43,7 +43,16 @@ const AuthNavigation = (props) => {
         password
       );
     } catch (error) {
-      console.log(error.code);
+      switch (error.code) {
+        case "auth/wrong-password":
+          setError("잘못된 비밀번호입니다.");
+          break;
+        case "auth/user-not-found":
+          setError("등록되지 않은 계정입니다.");
+          break;
+        default:
+          setError(error.code);
+      }
     }
   };
   // 김동현 2022.10.05 - 게스트 로그인 기능
@@ -79,6 +88,7 @@ const AuthNavigation = (props) => {
             />
             <Button className={classes.loginBtn}>로그인</Button>
           </form>
+          <div className={classes.error}>{error}</div>
         </div>
         <div className={classes.signUpArea}>
           <button onClick={handleSignUpButton}>회원가입</button>

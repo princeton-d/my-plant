@@ -31,9 +31,11 @@ const Navigation = (props) => {
   };
   // 김수영 2022.10.12 - 경로 이동 수정
   const goToPlantPick = () => {
+    toggleMenu();
     navigate('/my-plant');
   };
   const goToUserGarden = () => {
+    toggleMenu();
     navigate('/my-plant/garden');
   };
   // 김수영 2022.10.08 - 반응형 메뉴바 보이기 기능

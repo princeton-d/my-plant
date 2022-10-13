@@ -3,7 +3,7 @@ import React from "react";
 import { useState } from "react";
 import classes from "./GardenItem.module.css";
 import { dbService as db } from "../../service/fbase";
-import { deleteDoc, doc, updateDoc } from "firebase/firestore";
+import { addDoc, collection, deleteDoc, doc, updateDoc } from "firebase/firestore";
 import Button from "../UI/Button/Button";
 import ModalPortal from "../modal/modalPortal";
 import PlantInfoModal from "../modal/PlantInfoModal/PlantInfoModal";
@@ -17,6 +17,8 @@ const GardenItem = ({ item }) => {
   const [nickName, setNickName] = useState(item.nickName);
   const [openModal, setOpenModal] = useState(false);
   const [showPlantName, setShowPlantName] = useState(false);
+  const [thumbImg, setThumbImg] = useState(plant.picture[0]);
+  
   const openModalHandler = () => {
     setOpenModal(!openModal);
   };
@@ -71,6 +73,12 @@ const GardenItem = ({ item }) => {
     })
     setNextWateringDate(e.target.value);
   }
+  const onChangePlantImg = (img) => {
+    updateDoc(doc(db, "garden", item.did), {
+      thumbImg: img
+    })
+    setThumbImg(img);
+  }
 
   const endWateringMode = () => {
     const ok = window.confirm("확인을 누르시면 물주기 정보가 지워집니다. 식물을 그만 돌보겠습니까? ")
@@ -84,13 +92,29 @@ const GardenItem = ({ item }) => {
   }
   const togglePlantName = () => setShowPlantName(prev => !prev);
   const plantInfoClasses = showPlantName ? `${classes.plantInfo}` : `${classes.plantInfo} ${classes.active}`
+
+  const [adding, setAdding] = useState(false);
+  const onAddToGarden = async () => {
+    setAdding(true);
+    await addDoc(collection(db, "garden"), {
+      plant: plant,
+      creatorId: item.creatorId,
+      nickName: plant.name,
+      wateringDate: null,
+      nextWateringDate: null,
+      thumbImg: plant.picture[0]
+    });
+    setAdding(false);
+    window.alert("식물을 정원에 담았습니다!");
+  };
+
   return (
     <>
       <li className={classes.item}>
         <div className={classes.plantImgWrap}>
           <img
             className={classes.plantImg}
-            src={plant.picture[0]}
+            src={thumbImg}
             alt="plant"
             onClick={openModalHandler}
             onMouseEnter={togglePlantName}
@@ -160,7 +184,9 @@ const GardenItem = ({ item }) => {
             openModal={openModal}
             setOpenModal={setOpenModal}
             plant={plant}
-            // onAddToGarden={onAddToGarden}
+            onAddToGarden={onAddToGarden}
+            adding={adding}
+            changePlantImg={onChangePlantImg}
           />
         </ModalPortal>
       ) : null}

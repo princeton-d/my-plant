@@ -55,7 +55,6 @@
 .authForm input:focus {
   outline: none;
   border-bottom: 2px solid cGreen;
-
 }
 
 .loginBtn {
@@ -66,6 +65,14 @@
 
 .loginBtn:hover {
   background: cYellow;
+}
+
+.error {
+  text-align: center;
+  margin: 1rem 0 2rem;
+  font-size: 1.3rem;
+  font-family: fBasic;
+  color: red;
 }
 
 .signUpArea {
