@@ -1,39 +1,41 @@
-import { signOut } from "firebase/auth";
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { authService } from "../../service/fbase";
-import Button from "../UI/Button/Button";
-import classes from "./Navigation.module.css";
-import logo from "../../image/logo.png";
-import { useState } from "react";
-import plantInfo from "../../data/plantInfo.json";
-import PlantItem from "../PlantItem/PlantItem";
+import { signOut } from 'firebase/auth';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { authService } from '../../service/fbase';
+import Button from '../UI/Button/Button';
+import classes from './Navigation.module.css';
+import logo from '../../image/logo.png';
+import { useState } from 'react';
+import plantInfo from '../../data/plantInfo.json';
+import PlantItem from '../PlantItem/PlantItem';
+import SearchWindow from '../SearchWindow/SearchWindow';
 
 // 김동현 2022.10.06 navigation 작업
 const Navigation = (props) => {
   const navigate = useNavigate();
   const [menuActive, setMenuActive] = useState(false);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
+  const [searchFocus, setSearchFocus] = useState(false);
 
   const handlePlantRecommendationButton = () => {
     toggleMenu();
     props.setPlantRecommendation(true); // 식물추천 navigation 으로 변경
-    navigate("/my-plant/recommendation"); // 식물추천 page 로 이동
+    navigate('/my-plant/recommendation'); // 식물추천 page 로 이동
   };
   // 김동현 2022.10.06 - 로그아웃 기능
   const handleLogoutButton = () => {
     toggleMenu();
     signOut(authService);
     props.setIsLogin(false);
-    navigate("/my-plant");
+    navigate('/my-plant');
   };
   // 김수영 2022.10.12 - 경로 이동 수정
   const goToPlantPick = () => {
-    navigate("/my-plant");
-  }
+    navigate('/my-plant');
+  };
   const goToUserGarden = () => {
-    navigate("/my-plant/garden");
-  }
+    navigate('/my-plant/garden');
+  };
   // 김수영 2022.10.08 - 반응형 메뉴바 보이기 기능
   const toggleMenu = () => setMenuActive((prev) => !prev);
   const gnbClasses = !menuActive
@@ -51,7 +53,7 @@ const Navigation = (props) => {
 
   // 김동현 2022.10.11 - 검색 기능
   const searchPlant = plantInfo.plant.filter((plant) => {
-    return plant.name.join().includes(search.replace(/ /g, ""));
+    return plant.name.join().includes(search.replace(/ /g, ''));
   });
 
   console.log(searchPlant);
@@ -60,12 +62,13 @@ const Navigation = (props) => {
       {/* wrapper area */}
       <div className={classes.wrapper}>
         <div className={classes.container}>
+          {searchFocus ? <SearchWindow searchPlant={searchPlant} /> : null}
           {/* logo */}
           <div className={classes.logoArea}>
-            <img className={classes.logo} src={logo} alt="logo" />
+            <img className={classes.logo} src={logo} alt='logo' />
           </div>
           <button className={classes.gnbBtn} onClick={toggleMenu}>
-            <i className="fa-solid fa-bars"></i>
+            <i className='fa-solid fa-bars'></i>
           </button>
           <nav className={gnbClasses}>
             <div className={closeGnbClasses} onClick={onCloseMenu} />
@@ -79,12 +82,18 @@ const Navigation = (props) => {
               <div className={classes.searchPlantArea}>
                 <form className={classes.searchPlantForm}>
                   <input
-                    type="search"
-                    placeholder="식물 이름"
+                    type='search'
+                    placeholder='식물 이름'
                     value={search}
                     onChange={onChange}
+                    onFocus={() => {
+                      setSearchFocus(true);
+                    }}
+                    onBlur={() => {
+                      setSearchFocus(false);
+                    }}
                   />
-                  <input type="submit" value="☌" />
+                  <input type='submit' value='☌' />
                 </form>
               </div>
               {/* <div>
@@ -95,22 +104,22 @@ const Navigation = (props) => {
               {/* menu */}
               <div className={classes.menuArea}>
                 <Button className={classes.yellow} onClick={goToPlantPick}>
-                  <i className="fa-solid fa-seedling"></i>
+                  <i className='fa-solid fa-seedling'></i>
                   <span>오늘의 식물</span>
-                  <span>PICK</span>{" "}
+                  <span>PICK</span>{' '}
                 </Button>
                 <Button className={classes.yellow} onClick={goToUserGarden}>
-                  <i className="fa-solid fa-tree"></i>
+                  <i className='fa-solid fa-tree'></i>
                   <span>정원</span>
-                  <span>관리하기</span>{" "}
+                  <span>관리하기</span>{' '}
                 </Button>
                 <Button
                   className={classes.blue}
                   onClick={handlePlantRecommendationButton}
                 >
-                  <i className="fa-regular fa-square-check"></i>
+                  <i className='fa-regular fa-square-check'></i>
                   <span>식물</span>
-                  <span>추천받기</span>{" "}
+                  <span>추천받기</span>{' '}
                 </Button>
               </div>
               {/* logout */}
