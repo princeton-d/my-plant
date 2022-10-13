@@ -51,12 +51,18 @@ const Navigation = (props) => {
     ? `${classes.gnbBottom} ${classes.closeGnb}`
     : `${classes.gnbBottom}`;
 
-  // 김동현 2022.10.11 - 검색 기능
+  // 김동현 2022.10.13 - 검색 기능
   const searchPlant = plantInfo.plant.filter((plant) => {
-    return plant.name.join().includes(search.replace(/ /g, ''));
+    return plant.name.replace(/ /g, '').includes(search.replace(/ /g, ''));
   });
-
-  console.log(searchPlant);
+  const onSubmit = (e) => {
+    e.preventDefault();
+    navigate('/my-plant/search', {
+      state: {
+        search: searchPlant,
+      },
+    });
+  };
   return (
     <>
       {/* wrapper area */}
@@ -80,7 +86,7 @@ const Navigation = (props) => {
               </div>
               {/* search */}
               <div className={classes.searchPlantArea}>
-                <form className={classes.searchPlantForm}>
+                <form className={classes.searchPlantForm} onSubmit={onSubmit}>
                   <input
                     type='search'
                     placeholder='식물 이름'

@@ -34,7 +34,7 @@ const PlantInfoModal = (props) => {
           </div>
           <div className={classes.infoArea}>
             <div className={classes.topArea}>
-              <h2>{props.plant.name[0]}</h2>
+              <h2>{props.plant.name}</h2>
               <p>
                 <span>난이도</span>
                 <b>{props.plant.Difficulty[1]}</b>
