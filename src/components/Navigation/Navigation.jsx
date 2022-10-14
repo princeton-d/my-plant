@@ -70,7 +70,6 @@ const Navigation = (props) => {
       {/* wrapper area */}
       <div className={classes.wrapper}>
         <div className={classes.container}>
-          {searchFocus ? <SearchWindow searchPlant={searchPlant} /> : null}
           {/* logo */}
           <div className={classes.logoArea}>
             <img className={classes.logo} src={logo} alt='logo' />
@@ -102,9 +101,11 @@ const Navigation = (props) => {
                     }}
                   />
                   <input type='submit' value='☌' />
+                  {searchFocus ? (
+                    <SearchWindow searchPlant={searchPlant} />
+                  ) : null}
                 </form>
               </div>
-              {/* menu */}
               <div className={classes.menuArea}>
                 <Button className={classes.yellow} onClick={goToPlantPick}>
                   <i className='fa-solid fa-seedling'></i>

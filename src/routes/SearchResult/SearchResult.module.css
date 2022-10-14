@@ -1,3 +1,40 @@
+@value fBasic from '../../common/font.css';
+@value sMedium, sSmall from '../../common/size.css';
+@value cdBlue, cGreen, cYellow, cWhite, clGrey from '../../common/color.css';
+
+.wrapper {
+  margin-left: 33vw;
+  font-family: fBasic;
+}
+.container {
+  height: 100vh;
+  background: clGrey;
+}
+.title {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  padding: 3rem 2rem;
+  font-weight: bold;
+}
 .searchResult {
-  margin-left: 800px;
+  padding: 0 3.3rem;
+}
+
+.searchResult {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3.5rem 2rem;
+}
+
+@media screen and (max-width: sSmall) {
+  .wrapper {
+    margin-left: 0;
+    padding-top: 6.3rem;
+  }
+  
+  .container {
+    height: auto;
+    padding-bottom: 5rem
+  }
 }
