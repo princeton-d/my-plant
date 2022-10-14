@@ -329,6 +329,757 @@
       "Description": [
         "필로덴드론 글로리오섬은 벨벳 질감의 무광 초록색 바탕에 흰색의 잎맥의 대비감이 아름다운 식물이에요. 아름다운 외모로 식물 집사님들의 많은 사랑을 받고있답니다. 콜롬비아에서 온 글로리오섬은 원산지에서는 땅을 기어가며 자란다고해요. 집에서 기를 때 지지대를 해주지 않으면 화분 밑을 향해 자라는 게 그 이유랍니다. 아름다운 잎을 가지고 있지만 열대우림 같은 다습한 환경을 잘 맞춰지지 않으면 금세 잎에 상처가 나 세심하게 습도를 맞춰주어야하는 식물입니다."
       ]
+    },
+    {
+      "id": "011",
+      "name": "몬스테라 델리시오사",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558050290401.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558050290401.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558050290401.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": [
+        "평균 주 1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "하트모양",
+        "빛이 적어도 되는",
+        "초보자용",
+        "선물하기 좋은",
+        "덩굴로 자라는",
+        "갈라진",
+        "잎이 두꺼운",
+        "둥근모양"
+      ],
+      "Description": [
+        "남미 열대 우림 출신의 몬스테라 델리시오사는 큰 나무를 타고 올라가는 습성이 있는 덩굴성 식물이에요. 하트 모양의 찢어진 특이한 잎 모양이 시원한 느낌을 자아내고, 키우기도 까다롭지 않아 사랑받고 있어요. 몬스테라는 아래 쪽의 잎에도 빛을 나누어주기 위해 잎이 찢어졌다고 해요. 천남성과에 속하므로 독성이 있어 아이와 반려동물이 있다면 섭취하지 않도록 주의를 기울여야 하는 친구예요."
+      ]
+    },
+    {
+      "id": "012",
+      "name": "몬스테라 아단소니",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558057236601.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558057375632.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558057456953.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": [
+        "평균 주 1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "덩굴로 자라는",
+        "둥근모양",
+        "구멍이 있는",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "몬스테라 아단소니는 'Swiss cheese vine' 이라는 영명을 가지고 있는 것 처럼 잎의 생김새가 스위스 치즈처럼 구멍이 뚫려 있어요. 덩굴성의 줄기를 가지고 있어 야생에서는 나무를 타고 올라가며 자라는 몬스테라 아단소니를 지주대를 세워 키우면 타고 올라가는 예쁜 수형을 만들 수 있어요. 성장속도가 빠른 편이여서 키우는 재미를 쉽게 느낄 수 있어요. 식물체에 독성이 있어 반려동물이 섭취하지 않도록 주의가 필요해요."
+      ]
+    },
+    {
+      "id": "013",
+      "name": "스킨답서스",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558155726801.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558155910692.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": [
+        "평균 주 1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "덩굴로 자라는",
+        "둥근모양",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한",
+        "길쭉한"
+      ],
+      "Description": [
+        "스킨답서스는 덩굴성의 줄기가 길게 늘어지며 자라는 실내에서 키우기 정말 쉬운 식물입니다. 일산화탄소 제거능력이 뛰어난 공기정화 식물이며, 다양한 품종이 무늬가 있는 품종과 없는 품종 등 아주 다양한 종류가 있어요. 하지만 식물에 독성이 있어 아이들과 반려동물이 먹으면 위험하니 섭취하지 않도록 주의해주세요."
+      ]
+    },
+    {
+      "id": "014",
+      "name": "필레아 페페로미오데스",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558779648691.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558779729982.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558779821373.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558779942034.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": [
+        "평균 주 1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
+      ],
+      "Temperature": [
+        13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+      ],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "둥근모양",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "동전식물, UFO식물, 팬케이크' 식물이라고도 불리는 페페로미아는 사방으로 자라는 둥근 잎을 가지고 있어요. 외형이 독특해서 어린아이들에게도 인기가 좋아요. 잎의 모양이 후추를 닮은 후추과 식물이에요. 반그늘에서도 잘 자라지만 햇빛을 보지 못하면 잎이 숟가락처럼 휘고, 잎의 색이 옅어져요. 빛이 잘 드는 곳에서 키우다 보면 화분에서 조그마한 잎이 올라오는데, 필레아 페페로미오데스의 자식들이랍니다. 어느 정도 성장했을 때 분리해서 화분에 심어주시면 금새 대가족이 되어있을 거에요."
+      ]
+    },
+    {
+      "id": "015",
+      "name": "보스턴 고사리",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16626281525171.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16626281603442.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16626281603442.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": [
+        "주 2회 이상",
+        "흙이 촉촉한 상태를 유지하는 것이 좋아요"
+      ],
+      "Temperature": [16, 17, 18, 19, 20],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "길쭉한",
+        "갈라진",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "보스턴 고사리는 역사상 가장 오래된 식물 중 하나에요. 주로 잎이 아래쪽으로 휘어져 있어요. 건조한 환경에서 습도를 높이는데 좋은 식물이에요. 음이온을 발생시켜 실내의 공기를 상쾌하게 만들어 준답니다. 싱그러운 연두색 잎은 플로리스트와 가드너에게 꽃 장식용으로 친숙한 식물이에요."
+      ]
+    },
+    {
+      "id": "016",
+      "name": "알보 몬스테라",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16572773318795.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16572772952052.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16572773035523.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16572773625211.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "빛이 적어도 되는",
+        "덩굴로 자라는",
+        "하트모양",
+        "갈라진",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "둥근모양"
+      ],
+      "Description": [
+        "알보 몬스테라는 유전적인 변이로 인해 초록색을 띠는 엽록소가 없이 부분 부분마다 하얀 무늬가 생긴 변이종이에요. 인위적으로는 만들어 낼 수 없고, 수입도 금지되어 있어 희소성이 높아 아주 비싼 가격을 형성하고 있답니다. '식테크', '무천이(무늬천재)', '알보몬' 등의 많은 신조어를 만들어 낸 장본인인 알보 몬스테라는 흰 부분이 많을수록 햇빛을 흡수하여 필요한 양분을 만들어내는 광합성작용을 잘 하지 못하기 때문에 일반 몬스테라보다 더 많은 빛을 필요로 해요. 또한 온도와 습도에도 아주 예민한 아이라 많은 식집사들의 애간장을 태우기도 한답니다. 알보 몬스테라는 배수가 아주 잘 되는 토양에 심어주시고, 창문을 거친 밝은 간접광이 드는 따뜻한 곳에서 공기를 촉촉하게 유지해주면서 키워주셔야 한답니다. 잎 크기를 크게 키우시고 싶다면 수태봉의 도움을 받아보세요. 더 튼튼한 잎으로 성장할 수 있답니다."
+      ]
+    },
+    {
+      "id": "017",
+      "name": "스파티필름",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558172175451.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558172274162.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558172362693.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558172442354.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [
+        18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32
+      ],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "길쭉한",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한",
+        "둥근모양"
+      ],
+      "Description": [
+        "스파티필름은 공기 정화 능력이 매우 뛰어난 식물이에요. 게다가 빛이 많이 들지 않는 환경에서도 잘 견디고 꽃도 피우기 때문에 인기가 많은 식물이랍니다. 스파티필름(Spathiphyllum)은 ‘포엽(leaf spathe)’을 뜻하는 말로, 꽃처럼 보이는 하얀 잎이 바로 '포엽'이랍니다. 잎에는 독성이 있어 반려동물이 있는 집에서는 주의해서 키워야 해요."
+      ]
+    },
+    {
+      "id": "018",
+      "name": "프테리스 고사리",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16577865762001.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16577865846492.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558775794071.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": [
+        "주 2회 이상",
+        "흙이 촉촉한 상태를 유지하는 것이 좋아요"
+      ],
+      "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "길쭉한",
+        "갈라진",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "프테리스는 하늘하늘거리는 엷은 연두잎이 사랑스러운 식물이에요. 포름알데히드를 제거하는 능력이 아주 좋아 실내 공기를 정화해주는 능력도 탁월하답니다. 프테리스의 얇은 줄기와 길쭉한 잎은 동양적인 느낌을 연출하기도 해요. 프테리스는 물이 마르면 잎이 바싹 마를 수 있으니 관심을 갖고 관리해주세요."
+      ]
+    },
+    {
+      "id": "019",
+      "name": "휘커스 움베르타 고무나무",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16587374965001.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16587375046952.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16587375118893.jpg"
+      ],
+      "Difficulty": ["hard", "⭑⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화", "산소", "음이온"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "목대 있는",
+        "둥근모양",
+        "하트모양",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "휘커스 움베르타는 얇지만 넓은 하트모양의 잎을 가지고 있어요. 잎이 넓어 음이온과 산소 발생량도 높은 편이라 '산소 제조기', '산소 탱크' 라는 별명이 붙었답니다. 휘커스 움베르타는 환경 변화에 예민해요. 특히 화분의 자리를 이동하면 휘커스 움베르타가 받는 빛의 양과 온도조건 등이 달라지기 때문에 자리 이동을 최소한으로 해줘야해요. 열대 아프리카 지역에서 온 휘커스 움베르타는 따뜻하고 온도 변화가 심하지 않은 곳에서 은은한 밝은 빛을 오랫동안 받을 수 있도록 키워주시면 건강하게 잘 키울 수 있어요. 봄, 여름철에는 빠른 성장 속도를 보이고, 지지대를 해주면 더 튼튼하게 잘 자란답니다."
+      ]
+    },
+    {
+      "id": "020",
+      "name": "엔조이 스킨답서스",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557274895831.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "덩굴로 자라는",
+        "둥근모양",
+        "무늬가 있는",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "엔조이 스킨답서스는 잎 마다 다른 흰 색의 무늬가 매력적인 스킨답서스의 한 종류입니다. 보통의 스킨답서스보다 잎 크기가 작고 잎이 더 얇은 특징이 있어요. 일산화탄소 제거능력이 뛰어난 공기정화 식물이며 실내에서 키우기 정말 쉬운 식물입니다. 빛이 적은 공간에도 잘 적응하지만 너무 어두운 곳에서는 잎 무늬가 없어질 수 있어 밝은 빛을 받을 수 있는 곳에서 키우는 게 좋아요. 식물에 독성이 있어 아이들과 반려동물이 먹으면 위험하니 섭취하지 않도록 주의해주세요."
+      ]
+    },
+    {
+      "id": "020",
+      "name": "아비스",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558676279931.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": [
+        "주 2회 이상",
+        "흙이 촉촉한 상태를 유지하는 것이 좋아요"
+      ],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "길쭉한",
+        "갈라진",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "주로 열대 지방에 넓게 분포하고 있는 아비스는 새 순이 나오는 중심부가 새 둥지를 닮아 'Bird's nest fern(새둥지 고사리)'이라고 불린답니다. 제주도에 자생하고 있는 멸종위기 식물 '파초일엽(Asplenium antiquum)과 외형적으로 아주 비슷하답니다. 아비스는 주로 습기가 많고 그늘진 나무나 바위 위에 붙어서 사는 착생 양치식물로, 아기가 주먹을 꼭 쥔 것 같이 꽉 말려있던 새 순이 빛을 받기위해 조금씩 펴지는 모습을 관찰하는 재미가 있는 식물이랍니다."
+      ]
+    },
+    {
+      "id": "021",
+      "name": "칼라데아 아마그리스",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558747675201.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558747767312.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558748020134.jpg"
+      ],
+      "Difficulty": ["hard", "⭑⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "둥근모양",
+        "무늬가 있는",
+        "잎이 빳빳한",
+        "길쭉한"
+      ],
+      "Description": [
+        "작은 연둣빛 동그란 잎사귀가 아주 귀여운 칼라데아 아마그리스는 잎 뒷면이 보라색이라 반전 매력을 소유한 식물입니다. 대부분의 칼라데아속 식물들은 남아메리카에서 온 데 반해, 아마그리스는 벨기에의 실험실에서 만들어진 품종이라고 해요. 작은 잎들이 따글따글 옹기종기 모여서 자라고, 따뜻한 온도와 촉촉한 공기를 좋아합니다. 시원시원한 큰 잎을 가진 칼라데아 친구들 사이에서 미니미니한 사이즈로 매니아들에게 매우 인기가 있는 희소성 있는 품종이랍니다."
+      ]
+    },
+    {
+      "id": "022",
+      "name": "유칼립투스 폴리안",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575392076981.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575392158422.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16575392318074.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["향기나는"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "목대 있는",
+        "둥근모양",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "유칼립투스 폴리안은 동글동글 귀여운 잎을 가진 호주 출신 유칼립투스에요. 동글동글한 잎사귀를 살짝 부비부비 해주면 상큼한 향기가 은은하게 풍기는 매력만점인 식물이랍니다. 해외에선 'Red box gum' 이라고 불리기도 해요. 다양한 품종 중 특히 폴리안은 유칼립투스 중 키우기 쉬운 편에 속하는 아이랍니다. 강한 햇빛과 바람이 아주 잘 통하는 곳을 좋아해 빛을 오래 받을 수 있고 통풍이 잘 되는 야외에서 키우는 것이 가장 좋아요. 환경만 맞는다면 성장속도가 아주 빨라서 키우는 재미가 있지만 물주기가 까다로워 물주기를 세심하게 확인해야하는 식물이에요. 식물에 독성이 있어 반려동물과 어린아이가 있다면 섭취하지 않도록 주의가 필요해요."
+      ]
+    },
+    {
+      "id": "023",
+      "name": "화이트 고스트",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583842859321.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583843567852.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583844772523.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583844968584.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": [
+        "월1~2회",
+        "단단한 몸통이 살짝 쭈글해지면 듬뿍 주세요"
+      ],
+      "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["공기정화"],
+      "Characteristics": ["다육/선인장"],
+      "Description": [
+        "하얀 우유에 초록색 물감을 풀어놓은 듯한 오묘하고 독특한 색을 가지고 있는 화이트 고스트는 그 색감과 특이한 모양으로 식물 하나만으로도 공간의 분위기를 확 살려주는 다육식물입니다. 화이트 고스트는 선인장처럼 보이지만 다육식물인 유포르비아의 한 종류에요. 식물의 초록색을 띠게 하는 색소인 엽록소가 부족해서 하얀색을 띠고 있어요. 식물은 빛에서 필요한 영양분을 흡수하는 '광합성'을 하는데, 광합성량은 엽록소가 많을수록 많이 일어난답니다. 따라서 초록색을 띠는 다른 식물보다 광합성을 잘 할 수 없어 밝은 빛을 오랫동안 받을 수 있는 공간에 두어야 해요. 화이트 고스트를 자르거나 상처를 내게 되면 하얀 진액이 나오는데, 이 진액에는 독성이 있어 알러지 반응을 일으킬 수 있기 때문에 다루실 때 항상 주의가 필요한 식물입니다."
+      ]
+    },
+    {
+      "id": "024",
+      "name": "칼라데아 스트로만데",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578532939461.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578533021862.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16577943614861.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578536427094.jpg"
+      ],
+      "Difficulty": ["hard", "⭑⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "길쭉한",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 빳빳한",
+        "둥근모양",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "길쭉하고 우아한 분홍색 잎을 지닌 스트로만테 멀티컬러는 'Stromanthe'속에 속하는 식물입니다. 칼라데아와 같은 마란타과에 속하지만 다른 종이랍니다. 브라질에서 온 스트로만테 멀티컬러는 다른 마란타과의 식물들처럼 따뜻한 온도와 촉촉한 공기를 좋아합니다. 물론, 밤이 되면 잎을 위로 접는 마란타과의 특성도 가지고 있어요. 다른 칼라데아들보다 키우기 까다로운 편이어서 세심하게 돌봐주어야 하는 식물이지만, 예쁜 색감 덕분에 매니아 층이 튼튼한 품종이랍니다. 또한 독성이 없어 반려동물을 기르시는 집사님들도 걱정 없이 키울 수 있는 식물이랍니다!"
+      ]
+    },
+    {
+      "id": "025",
+      "name": "안스리움",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583148489411.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583148589372.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583109048231.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583109212173.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "꽃을 감상하는",
+        "초보자용",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "하트모양",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한",
+        "둥근모양"
+      ],
+      "Description": [
+        "화려한 색깔과 하트모양의 잎이 사랑스러운 안스리움은 꼬리를 닮아 'Tail Flower'라고도 해요. 안스리움은 원통형의 꼬리를 닮은 신기한 꽃모양을 가지고 있고, 꽃을 감싸고 있는 불염포에 붉은색, 분홍색, 흰색 등 다양한 색깔로 물들어 있답니다. 계절에 상관없이 온도만 맞으면 실내에서도 꽃을 피울 수 있고, 꽃이 한 번 피면 7주 정도는 지속되어 오래 감상할 수 있답니다! 또한 공기 중의 일산화탄소와 암모니아, 포름 알데히드를 제거하는 능력이 뛰어나 훌륭한 실내 공기정화 식물로 오랫동안 사랑받고 있답니다."
+      ]
+    },
+    {
+      "id": "026",
+      "name": "오렌지 자스민",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16614304042061%20%281%29.webp",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16614304127591%20%282%29.webp"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["향기나는"],
+      "Characteristics": [
+        "꽃을 감상하는",
+        "목대있는",
+        "둥근모양",
+        "잎 끝이 뾰족한",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "오렌지 자스민은 나팔같은 하얀 꽃에서 나는 향이 자스민 꽃 향을 닮았고, 그 열매가 오렌지의 모양을 닮았다고 붙여진 이름입니다. 실제로 자스민과는 다른 종류 운향과에 속하는 식물로, 서아시아, 북 오스트레일리아, 뉴칼레도니아가 원산인 작은 나무 식물이랍니다. 연중 따뜻한 기온을 유지하는 곳에서 온 오렌지 자스민은 추위에 약하고 촉촉한 습도를 좋아하고, 한 번 걸러진 밝은 빛을 오래 받을 수 있으면 일년 내내 꽃이 피는 식물이에요. 오렌지 자스민 꽃의 수명은 짧지만 계속해서 새 꽃을 감상할 수 있어 인기가 많은 식물이랍니다. 꽃이 지면 꽃의 암술이 있던 자리에 열매가 생기고, 열매가 익으면 열매 속의 씨앗으로 새로운 오렌지 자스민 새싹을 볼 수 있지만, 꽃을 계속 감상하고 싶으시다면 열매가 맺히기 전에 암술을 따주어야 에너지 소모가 줄어 아름다운 꽃을 더 많이 내어준답니다."
+      ]
+    },
+    {
+      "id": "027",
+      "name": "스노우 스파티필름",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558151967671.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558152059532.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558152145263.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [
+        18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32
+      ],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "빛이 적어도 되는",
+        "둥근모양",
+        "길쭉한",
+        "무늬가 있는",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "스노우 스파티필름은 벨벳같은 보들보들한 잎에 하얀 줄무늬가 매력적인 식물입니다. 빛이 많이 들지 않는 환경에서도 잘 견디고 꽃도 피우며 공기 정화 능력도 매우 뛰어난 팔방미인이랍니다. 반면, 잎에 독성이 있어 아이가 있는 집이나 반려동물이 있는 집에서는 주의해서 키워야 해요. 수돗물의 염소성분에 예민하기때문에 수돗물을 바로 사용하면 잎에 갈색 반점이 생기거나 잎 끝이 갈색으로 타들어갈 수 있어요. 정수된 물을 사용하시거나 수돗물을 하루 정도 받아두었다가 사용해주세요."
+      ]
+    },
+    {
+      "id": "028",
+      "name": "싱고니움 핑크 쥬얼리",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16612577343941.webp",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16612577466782.webp"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "둥근모양",
+        "하트모양",
+        "무늬가 있는",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "싱고니움 핑크 쥬얼리는 짙은 풀색을 띠는 잎에 체리핑크빛 무늬가 섞인 희귀한 품종의 싱고니움입니다. 동글동글 하트모양의 잎의 체리핑크색 무늬가 정말 상큼한 딸기 아이스크림을 연상시켜 품종 이름이 'Strawberry Ice'랍니다. 싱고니움 핑크 쥬얼리는 따뜻한 온도를 좋아하고 은은한 밝은 빛을 좋아해요. 주변 공기를 촉촉하게 해주시면 새 잎도 잘 내어주는 순둥이랍니다. 싱고니움은 잎을 자르면 나오는 수액에 독성이 있으니 아이가 있는 집이나 반려동물이 있는 집에는 주의해서 키워야 해요. 빛을 향해 잎이 자라는 특징이 있어서 잎이 햇빛을 골고루 받을 수 있게, 화분을 돌려가며 키워주세요."
+      ]
+    },
+    {
+      "id": "029",
+      "name": "스프링 골풀",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558163317161.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558163508782.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": [
+        "주 2회 이상",
+        "흙이 바싹 마르지 않도록 주의해주세요"
+      ],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": [],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "빛이 적어도 되는",
+        "바늘모양",
+        "길쭉한",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "꼬불꼬불 스프링 모양의 잎이 독특한 스프링 준쿠스는 촉촉한 습지 근처에서 자라는 식물입니다. 물 근처에서 자라는 수변식물이기 때문에 물을 아주 좋아해 흙이 다 마르기 전에 물을 주며 관리해야 하며, 뿌리 근처에 통통한 뿌리 줄기가 있어 너무 좁은 화분에서는 건강하게 성장하지 못한답니다. 반질반질한 줄기를 가지고 있고 잎이 따로 없어 빛이 적은 곳에서도 잘 자라 실내에서 키우기 좋고 독특한 수형으로 많은 사랑을 받는 아이에요. 여름에는 갈색을 띠는 꽃이 줄기 끝에서 핀답니다."
+      ]
+    },
+    {
+      "id": "030",
+      "name": "렉스 베고니아",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578634475461.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578634552012.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578634630393.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578634707374.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [16, 17, 18, 19, 20],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "둥근모양",
+        "하트모양",
+        "별모양",
+        "갈라진",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "렉스베고니아는 품종이 아주 다양한 식물이예요. 품종마다 잎의 크기와 모양, 색깔이 달라 잎보기 식물로 아주 인기가 많답니다. 100개가 넘는 품종을 하나하나 수집하는 매니아층까지 보유한 홈가드닝의 아이돌 렉스베고니아는 따뜻한 곳을 좋아하고 실내에서도 순둥순둥 적응을 잘 해서 관리하는 데 쉬운 편이랍니다. 너무 강한 직사광선보다는 커튼이나 블라인드를 거친 부드러운 빛을 좋아하고, 물 줄 시기가 되면 잎이 살짝 처지면서 물 줄 때를 알려주는 기특한 식물입니다. 게다가 실내의 습도를 높여주고, 이산화탄소를 감소시키는 공기정화 능력도 가지고 있어 반려식물계의 팔방미인이에요."
+      ]
+    },
+    {
+      "id": "031",
+      "name": "칼라데아 인시그니스",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16582349251081.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16582349380652.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16582349455273.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "둥근모양",
+        "길쭉한",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "길쭉한 잎에 특이한 점무늬가 인상적인 칼라데아 인시그니스는 따뜻하고 촉촉한 브라질의 열대우림에서 왔어요. 잎의 무늬가 방울뱀을 닮아 'Rattle Snake Plant'라고도 불려요. 칼라데아속의 식물답게 따뜻한 온도와 높은 습도를 아주 좋아해 가끔 샤워하실 때 화장실로 데려가 스팀을 맞게 해주시면 아주 좋아할거예요. 낮에는 햇빛을 많이 받기 위해 잎을 내려 활짝 펴고 밤에는 습도를 유지하기 위해 하늘 위로 오므린답니다. 움직임을 관찰하는 재미가 있는 식물이예요. 칼라데아속의 친구들은 모두 수돗물의 염소성분에 예민하기 때문에 물을 주시거나 분무를 해 주실 때 주의해주세요, 하루 이상 받아두어 염소농도가 낮아진 수돗물이나 정수기 물을 이용해 주시면 잎이 얼룩지지않고 잘 자란답니다."
+      ]
+    },
+    {
+      "id": "032",
+      "name": "유칼립투스 구니",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613463306313.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613463141101.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613463241582.jpg"
+      ],
+      "Difficulty": ["hard", "⭑⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["향기나는"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "목대 있는",
+        "둥근모양",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "예쁜 수형과 청량한 향기를 내뿜는 유칼립투스 구니는 함께 하면 항균, 비염, 아토피에 도움을 주는 식물이랍니다. 은빛이 도는 동그란 잎사귀가 아름다운 유칼립투스 구니는 'Cider Gum'이라고도 불리고, 절화장식에서 그린소재로 많이 활용되고 있어요. 빛이 많고 바람이 잘 부는 자연에 가까운 환경을 좋아하는 유칼립투스는 제한된 실내 환경에서 키우기 위해 물, 빛, 통풍에 대한 섬세한 관심이 필요해요. 좋아하는 환경만 갖춰준다면 하루가 다르게 자라나는 즐거움을 주는 식물이랍니다."
+      ]
+    },
+    {
+      "id": "033",
+      "name": "리톱스",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643447797491.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16643447914772.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1662629974128229065306_978075746076118_5635138458244747072_n.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1662624333658244553979_649407589355083_4527861647078286778_n.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": [
+        "월 1회 이하",
+        "통통한 잎이 살짝 쭈글해지면 듬뿍 주세요"
+      ],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "다육/선인장",
+        "초보자용",
+        "선물하기 좋은",
+        "반려동물과 어린아이 괜찮아요",
+        "가시가 없는",
+        "둥근모양",
+        "무늬가 있는",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "리톱스는 공룡 발자국 같은 모양의 키가 작은 다육식물입니다. 그 모습이 흙 속의 자갈 같아서 'Pebble plant'라고 불리기도 하고, 살아있는 돌 같이 보인다고 해서 'Living stones'라고도 알려져 있어요. 특이한 외형에 다양한 크기와 색깔, 무늬를 가지고 있어 식집사들의 사랑을 듬뿍 받는 다육식물이랍니다. 이렇게 특이한 외형은 다른 동물들로부터 자신의 몸을 보호하기 위해 주변 색과 비슷한 색과 질감으로 변한 결과물이라고 해요. 남아프리카의 건조한 사막지대에서 온 리톱스는 여름과 겨울에는 휴면기를 가지고, 봄과 가을에 파충류처럼 '탈피'를 하며 새 잎을 내는 특이한 식물이랍니다. 리톱스는 밝은 빛이 드는 따뜻한 공간에서 통풍만 잘 시켜주면 누구든지 건강하게 키울 수 있어요."
+      ]
+    },
+    {
+      "id": "034",
+      "name": "스위트 바질",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613392739811.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16613392906454.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 23, 24],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["향기나는"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "반려동물과 어린아이 괜찮아요",
+        "둥근모양",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "바질은 그리스어로 왕을 의미하는 바실레우스에서 이름을 따서 허브의 왕이라 불러요. 레몬 바질, 타이 바질, 홀리 바질 등 종류가 다양한데, 흔히 키우는 바질은 스위트 바질이에요. 바질은 빛, 바람, 물을 좋아해서 실내에서 키울 때는 빛과 통풍에 신경 써줘야 해요. 먹기 위해 키운다면 잎 8개째마다 나오는 새순들은 매번 잘라주셔야 풍성한 바질을 만날 수 있답니다. 이러한 조건들을 잘 맞춰준다면 신선한 바질을 매일 식탁에서 만날 수 있을 거에요."
+      ]
     }
   ],
   "sample": [

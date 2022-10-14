@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './recommendationNavigation.module.css';
+import classes from './RecommendationNavigation.module.css';
 import checkbox from '../../data/checkbox.json';
 import PlantRecommendRadioBig from '../UI/PlantRecommendRadioBig/PlantRecommendRadioBig';
 import PlantRecommendRadioSmall from '../UI/PlantRecommendRadioSmall/PlantRecommendRadioSmall';
