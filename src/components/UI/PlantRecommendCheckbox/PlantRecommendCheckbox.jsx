@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './PlantRecommendCheckbox.module.css';
 
-const PlantRecommendCheckbox = ({ item, name }) => {
+const PlantRecommendCheckbox = ({ item, name, handleCheckbox }) => {
   return (
     <div className={classes.recommend}>
       <label htmlFor={item.id}>
@@ -9,9 +9,10 @@ const PlantRecommendCheckbox = ({ item, name }) => {
         <span className={classes.text}>{item.text}</span>
       </label>
       <input
-        type="checkbox"
+        type='checkbox'
         id={item.id}
         className={classes.checkbox}
+        onChange={handleCheckbox}
       />
     </div>
   );
