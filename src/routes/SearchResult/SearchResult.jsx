@@ -1,7 +1,7 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
-import PlantItem from '../../components/PlantItem/PlantItem';
-import classes from './SearchResult.module.css';
+import React from "react";
+import { useLocation } from "react-router-dom";
+import PlantItem from "../../components/PlantItem/PlantItem";
+import classes from "./SearchResult.module.css";
 
 const SearchResult = (props) => {
   let userId = props.userInfo.uid;
@@ -15,6 +15,9 @@ const SearchResult = (props) => {
     <>
       <div className={classes.wrapper}>
         <div className={classes.container}>
+          <div className={classes.title}>
+              <span>검색결과</span>
+          </div>
           <ul className={classes.searchResult}>
             {/* 김동현 2022.10.13 - 검색한 식물 정보 mapping */}
             {search.map((item) => {
