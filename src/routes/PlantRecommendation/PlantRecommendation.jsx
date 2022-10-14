@@ -1,12 +1,5 @@
 import React from 'react';
 import classes from './PlantRecommendation.module.css';
-import checkbox from '../../data/checkbox.json';
-import PlantRecommendRadioBig from '../../../src/components/UI/PlantRecommendRadioBig/PlantRecommendRadioBig';
-import PlantRecommendRadioSmall from '../../../src/components/UI/PlantRecommendRadioSmall/PlantRecommendRadioSmall';
-import PlantRecommendCheckbox from '../../../src/components/UI/PlantRecommendCheckbox/PlantRecommendCheckbox';
-import { useNavigate } from 'react-router-dom';
-import logo from '../../image/logo.png';
-import Button from '../../../src/components/UI/Button/Button';
 import plantInfo from '../../data/plantInfo.json';
 import PlantItem from '../../components/PlantItem/PlantItem';
 

@@ -104,11 +104,6 @@ const Navigation = (props) => {
                   <input type='submit' value='☌' />
                 </form>
               </div>
-              {/* <div>
-                {searchPlant.map((plant) => {
-                  return <PlantItem plant={plant} />;
-                })}
-              </div> */}
               {/* menu */}
               <div className={classes.menuArea}>
                 <Button className={classes.yellow} onClick={goToPlantPick}>

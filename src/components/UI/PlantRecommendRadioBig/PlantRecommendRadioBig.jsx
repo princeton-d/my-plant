@@ -9,7 +9,7 @@ const PlantRecommendRadioBig = ({ item, name }) => {
         <span className={classes.text}>{item.text}</span>
       </label>
       <input
-        type="radio"
+        type='radio'
         id={item.id}
         className={classes.checkbox}
         name={name}
