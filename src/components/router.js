@@ -13,7 +13,7 @@ const AppRouter = (props) => {
     <Router>
       {/* 김동현 2022.10.07 로그인 후 네비게이션 바 보임 */}
       {props.isLogin ? <Navigation userInfo={props.userInfo} setIsLogin={props.setIsLogin} setPlantRecommendation={props.setPlantRecommendation} /> : <AuthNavigation setIsLogin={props.setIsLogin} setUserInfo={props.setUserInfo} />}
-      {props.plantRecommendation && <RecommendationNavigation setPlantRecommendation={props.setPlantRecommendation} checkState={props.checkState} setCheckState={props.setCheckState} />}
+      {props.plantRecommendation && <RecommendationNavigation setPlantRecommendation={props.setPlantRecommendation} checkState={props.checkState} setCheckState={props.setCheckState} handleCheckbox={props.handleCheckbox} checkBoxFilter={props.checkBoxFilter} />}
       <Routes>
         {props.isLogin ? <Route path='/my-plant' element={<PlantPick userInfo={props.userInfo} />} /> : <Route path='/my-plant' element={<Home />} />}
         <Route path='/my-plant/garden' element={<UserGarden userInfo={props.userInfo} />} />

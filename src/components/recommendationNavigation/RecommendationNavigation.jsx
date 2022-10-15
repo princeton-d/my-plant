@@ -31,6 +31,8 @@ const RecommendationNavigation = (props) => {
                   item={item}
                   key={item.text}
                   name='aboutMe'
+                  handleCheckbox={props.handleCheckbox}
+                  checkBoxFilter={props.checkBoxFilter}
                 />
               );
             })}
@@ -44,6 +46,8 @@ const RecommendationNavigation = (props) => {
                     item={item}
                     key={item.text}
                     name='aboutHome1'
+                    handleCheckbox={props.handleCheckbox}
+                    checkBoxFilter={props.checkBoxFilter}
                   />
                 );
               })}
@@ -53,6 +57,8 @@ const RecommendationNavigation = (props) => {
                     item={item}
                     key={item.text}
                     name='aboutHome2'
+                    handleCheckbox={props.handleCheckbox}
+                    checkBoxFilter={props.checkBoxFilter}
                   />
                 );
               })}
@@ -61,7 +67,14 @@ const RecommendationNavigation = (props) => {
           <div className={classes.bottomInfo}>
             <h3>이런걸 원해요</h3>
             {checkbox.bottomCheckbox.map((item) => {
-              return <PlantRecommendCheckbox item={item} key={item.text} />;
+              return (
+                <PlantRecommendCheckbox
+                  item={item}
+                  key={item.text}
+                  handleCheckbox={props.handleCheckbox}
+                  checkBoxFilter={props.checkBoxFilter}
+                />
+              );
             })}
           </div>
           <button className={classes.backBtn} onClick={onClick}>
