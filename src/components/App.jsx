@@ -3,12 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { authService } from '../service/fbase';
 import classes from './App.module.css';
 import AppRouter from './router';
+import plantInfo from '../data/plantInfo.json';
 
 const App = () => {
   // 김동현 2022.10.04 - true: 네비게이션, false: 인증화면 출력(임시 테스트용)
   const [isLogin, setIsLogin] = useState(false);
   const [userInfo, setUserInfo] = useState(null);
   const [plantRecommendation, setPlantRecommendation] = useState(null);
+  const [plant, setPlant] = useState(plantInfo.plant);
   const [checkState, setCheckState] = useState({
     1: false, // 식물을 처음 키워봐요
     2: false, // 식물을 키워본적 있어요
@@ -51,10 +53,32 @@ const App = () => {
         return { ...prev, [key]: e.target.checked, 5: false };
       else return { ...prev, [key]: e.target.checked };
     });
+    if (key === '1' && e.target.checked === true) {
+      setPlant(
+        plantInfo.plant.filter((item) => item.Difficulty.includes('easy'))
+      );
+    } else if (key === '2' && e.target.checked === true) {
+      setPlant(
+        plantInfo.plant.filter((item) =>
+          item.Difficulty.some((i) => ['normal', 'hard'].includes(i))
+        )
+      );
+    } else if (key === '3' && e.target.checked === true) {
+      setPlant(
+        plant.filter((item) =>
+          item.amountOfSunshine.some((i) => ['반양지', '양지'].includes(i))
+        )
+      );
+    } else if (key === '4' && e.target.checked === true) {
+      setPlant(
+        plant.filter((item) =>
+          item.amountOfSunshine.some((i) => ['반음지', '음지'].includes(i))
+        )
+      );
+    }
   };
-  useEffect(() => {
-    console.log(checkState);
-  }, [checkState]);
+  console.log(plant);
+  const checkBoxFilter = (e) => {};
   return (
     <>
       <AppRouter
@@ -67,6 +91,7 @@ const App = () => {
         checkState={checkState}
         setCheckState={setCheckState}
         handleCheckbox={handleCheckbox}
+        checkBoxFilter={checkBoxFilter}
       />
     </>
   );

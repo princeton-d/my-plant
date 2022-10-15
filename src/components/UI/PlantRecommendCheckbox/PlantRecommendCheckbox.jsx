@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './PlantRecommendCheckbox.module.css';
 
-const PlantRecommendCheckbox = ({ item, name, handleCheckbox }) => {
+const PlantRecommendCheckbox = ({ item, handleCheckbox }) => {
   return (
     <div className={classes.recommend}>
       <label htmlFor={item.id}>
