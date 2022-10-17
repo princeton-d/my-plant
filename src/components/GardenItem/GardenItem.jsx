@@ -1,24 +1,32 @@
 // 김동현 2022.10.04
-import React from "react";
-import { useState } from "react";
-import classes from "./GardenItem.module.css";
-import { dbService as db } from "../../service/fbase";
-import { addDoc, collection, deleteDoc, doc, updateDoc } from "firebase/firestore";
-import Button from "../UI/Button/Button";
-import ModalPortal from "../modal/modalPortal";
-import PlantInfoModal from "../modal/PlantInfoModal/PlantInfoModal";
+import React from 'react';
+import { useState } from 'react';
+import classes from './GardenItem.module.css';
+import { dbService as db } from '../../service/fbase';
+import {
+  addDoc,
+  collection,
+  deleteDoc,
+  doc,
+  updateDoc,
+} from 'firebase/firestore';
+import Button from '../UI/Button/Button';
+import ModalPortal from '../modal/modalPortal';
+import PlantInfoModal from '../modal/PlantInfoModal/PlantInfoModal';
 
 const GardenItem = ({ item }) => {
   const { plant } = item;
   const [wateringDate, setWateringDate] = useState(item.wateringDate);
-  const [nextWateringDate, setNextWateringDate] = useState(item.nextWateringDate);
+  const [nextWateringDate, setNextWateringDate] = useState(
+    item.nextWateringDate
+  );
   const [editMode, setEditMode] = useState(false);
   const [wateringMode, setWateringMode] = useState(false);
   const [nickName, setNickName] = useState(item.nickName);
   const [openModal, setOpenModal] = useState(false);
   const [showPlantName, setShowPlantName] = useState(false);
   const [thumbImg, setThumbImg] = useState(plant.picture[0]);
-  
+
   const openModalHandler = () => {
     setOpenModal(!openModal);
   };
@@ -28,10 +36,10 @@ const GardenItem = ({ item }) => {
   };
   const onEditNickName = (e) => {
     e.preventDefault();
-    updateDoc(doc(db, "garden", item.did), {
+    updateDoc(doc(db, 'garden', item.did), {
       nickName: nickName,
     });
-    const ok = window.confirm("수정하시겠습니까?");
+    const ok = window.confirm('수정하시겠습니까?');
     if (ok) {
       toggleEditMode();
     }
@@ -42,9 +50,9 @@ const GardenItem = ({ item }) => {
   };
 
   const onDelete = () => {
-    const ok = window.confirm("정원에서 제외하겠습니까?");
+    const ok = window.confirm('정원에서 제외하겠습니까?');
     if (ok) {
-      deleteDoc(doc(db, "garden", item.did));
+      deleteDoc(doc(db, 'garden', item.did));
     }
   };
 
@@ -54,58 +62,56 @@ const GardenItem = ({ item }) => {
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
     const day = date.getDate();
-    const today = `${year}-${month}-${day}`
-    updateDoc(doc(db, "garden", item.did), {
-      wateringDate: today
-    })
+    const today = `${year}-${month}-${day}`;
+    updateDoc(doc(db, 'garden', item.did), {
+      wateringDate: today,
+    });
     setWateringDate(today);
     toggleWateringMode();
   };
   const onChangeWateringDate = (e) => {
-    updateDoc(doc(db, "garden", item.did), {
-      wateringDate: e.target.value
-    })
+    updateDoc(doc(db, 'garden', item.did), {
+      wateringDate: e.target.value,
+    });
     setWateringDate(e.target.value);
-  }
+  };
   const onChangeNextWateringDate = (e) => {
-    updateDoc(doc(db, "garden", item.did), {
-      nextWateringDate: e.target.value
-    })
+    updateDoc(doc(db, 'garden', item.did), {
+      nextWateringDate: e.target.value,
+    });
     setNextWateringDate(e.target.value);
-  }
-  const onChangePlantImg = (img) => {
-    updateDoc(doc(db, "garden", item.did), {
-      thumbImg: img
-    })
-    setThumbImg(img);
-  }
+  };
 
   const endWateringMode = () => {
-    const ok = window.confirm("확인을 누르시면 물주기 정보가 지워집니다. 식물을 그만 돌보겠습니까? ")
+    const ok = window.confirm(
+      '확인을 누르시면 물주기 정보가 지워집니다. 식물을 그만 돌보겠습니까? '
+    );
     if (ok) {
-      updateDoc(doc(db, "garden", item.did), {
-        wateringDate: null
+      updateDoc(doc(db, 'garden', item.did), {
+        wateringDate: null,
       });
       setWateringDate(null);
       toggleWateringMode();
     }
-  }
-  const togglePlantName = () => setShowPlantName(prev => !prev);
-  const plantInfoClasses = showPlantName ? `${classes.plantInfo}` : `${classes.plantInfo} ${classes.active}`
+  };
+  const togglePlantName = () => setShowPlantName((prev) => !prev);
+  const plantInfoClasses = showPlantName
+    ? `${classes.plantInfo}`
+    : `${classes.plantInfo} ${classes.active}`;
 
   const [adding, setAdding] = useState(false);
   const onAddToGarden = async () => {
     setAdding(true);
-    await addDoc(collection(db, "garden"), {
+    await addDoc(collection(db, 'garden'), {
       plant: plant,
       creatorId: item.creatorId,
       nickName: plant.name,
       wateringDate: null,
       nextWateringDate: null,
-      thumbImg: plant.picture[0]
+      thumbImg: plant.picture[0],
     });
     setAdding(false);
-    window.alert("식물을 정원에 담았습니다!");
+    window.alert('식물을 정원에 담았습니다!');
   };
 
   return (
@@ -115,13 +121,17 @@ const GardenItem = ({ item }) => {
           <img
             className={classes.plantImg}
             src={thumbImg}
-            alt="plant"
+            alt='plant'
             onClick={openModalHandler}
             onMouseEnter={togglePlantName}
             onMouseLeave={togglePlantName}
           />
-          <button className={plantInfoClasses} onClick={openModalHandler} onMouseEnter={togglePlantName}
-            onMouseLeave={togglePlantName}>
+          <button
+            className={plantInfoClasses}
+            onClick={openModalHandler}
+            onMouseEnter={togglePlantName}
+            onMouseLeave={togglePlantName}
+          >
             <span>{plant.name}</span>
             <span>?</span>
           </button>
@@ -132,9 +142,9 @@ const GardenItem = ({ item }) => {
               className={classes.editNickNameForm}
               onSubmit={onEditNickName}
             >
-              <input type="text" value={nickName} onChange={onChangeNickName} />
-              <button type="submit" className={classes.editButton}>
-                <i className="fa-solid fa-check"></i>
+              <input type='text' value={nickName} onChange={onChangeNickName} />
+              <button type='submit' className={classes.editButton}>
+                <i className='fa-solid fa-check'></i>
               </button>
               <button onClick={onCancle} className={classes.cancleButton}>
                 x
@@ -144,7 +154,7 @@ const GardenItem = ({ item }) => {
             <div className={classes.nickNameArea}>
               <h3 className={classes.plantNickName}>{nickName}</h3>
               <button onClick={toggleEditMode}>
-                <i className="fa-solid fa-pen"></i>
+                <i className='fa-solid fa-pen'></i>
               </button>
             </div>
           )}
@@ -154,18 +164,26 @@ const GardenItem = ({ item }) => {
               onClick={startWateringMode}
             >
               <span>물주기</span>
-              <i className="fa-solid fa-droplet"></i>
+              <i className='fa-solid fa-droplet'></i>
             </Button>
           ) : (
             <>
               <div className={classes.wateringDate}>
                 <div>
                   <p>가장 최근 물 준 날</p>
-                  <input type="date" defaultValue={wateringDate} onChange={onChangeWateringDate} />
+                  <input
+                    type='date'
+                    defaultValue={wateringDate}
+                    onChange={onChangeWateringDate}
+                  />
                 </div>
                 <div>
                   <p>다음 물 줄 날</p>
-                  <input type="date" defaultValue={nextWateringDate} onChange={onChangeNextWateringDate} />
+                  <input
+                    type='date'
+                    defaultValue={nextWateringDate}
+                    onChange={onChangeNextWateringDate}
+                  />
                 </div>
               </div>
               <Button className={classes.stopBtn} onClick={endWateringMode}>
@@ -186,7 +204,6 @@ const GardenItem = ({ item }) => {
             plant={plant}
             onAddToGarden={onAddToGarden}
             adding={adding}
-            changePlantImg={onChangePlantImg}
           />
         </ModalPortal>
       ) : null}

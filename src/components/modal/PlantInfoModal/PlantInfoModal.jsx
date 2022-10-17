@@ -15,7 +15,6 @@ const PlantInfoModal = (props) => {
 
   const onClickImg = (e) => {
     setPlantImg(e.target.src);
-    props.changePlantImg(e.target.src);
   };
 
   return (
