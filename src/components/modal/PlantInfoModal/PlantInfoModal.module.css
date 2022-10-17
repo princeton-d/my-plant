@@ -1,7 +1,7 @@
 /* 2022.10.06 - 스타일링 작업 */
 @value fBasic from '../../../common/font.css';
 @value sMedium, sSmall from '../../../common/size.css';
-@value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../../common/color.css';
+@value cdBlue, cGreen, cYellow, cWhite, cGrey, clGrey from '../../../common/color.css';
 
 .container {
   position: fixed;
@@ -126,6 +126,20 @@
   border-bottom: 1px solid black;
 }
 
+.detailTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.detailTags li {
+  padding: 1rem;
+  background: clGrey;
+  font-size: 1.1rem;
+  border-radius: 3rem;
+}
+
 .detailInfo > p {
   font-size: 1.4rem;
   line-height: 1.8;
@@ -219,6 +233,9 @@
   }
   .detailInfo {
     padding: 2.5rem;
+  }
+  .detailTags {
+    justify-content: center;
   }
   .buttonArea {
     justify-content: center;
