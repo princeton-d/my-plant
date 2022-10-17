@@ -65,6 +65,7 @@ const Navigation = (props) => {
       },
     });
   };
+  // 김동현 2022.10.17 - 검색어 클릭 시 검색어 input에 추가
   return (
     <>
       {/* wrapper area */}
@@ -97,12 +98,17 @@ const Navigation = (props) => {
                       setSearchFocus(true);
                     }}
                     onBlur={() => {
-                      setSearchFocus(false);
+                      setTimeout(() => {
+                        setSearchFocus(false);
+                      }, 100);
                     }}
                   />
                   <input type='submit' value='☌' />
                   {searchFocus ? (
-                    <SearchWindow searchPlant={searchPlant} />
+                    <SearchWindow
+                      searchPlant={searchPlant}
+                      setSearch={setSearch}
+                    />
                   ) : null}
                 </form>
               </div>
