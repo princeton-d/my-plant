@@ -32,7 +32,6 @@ const RecommendationNavigation = (props) => {
                   key={item.text}
                   name='aboutMe'
                   handleCheckbox={props.handleCheckbox}
-                  checkBoxFilter={props.checkBoxFilter}
                 />
               );
             })}
@@ -47,7 +46,6 @@ const RecommendationNavigation = (props) => {
                     key={item.text}
                     name='aboutHome1'
                     handleCheckbox={props.handleCheckbox}
-                    checkBoxFilter={props.checkBoxFilter}
                   />
                 );
               })}
@@ -58,7 +56,6 @@ const RecommendationNavigation = (props) => {
                     key={item.text}
                     name='aboutHome2'
                     handleCheckbox={props.handleCheckbox}
-                    checkBoxFilter={props.checkBoxFilter}
                   />
                 );
               })}
@@ -72,7 +69,6 @@ const RecommendationNavigation = (props) => {
                   item={item}
                   key={item.text}
                   handleCheckbox={props.handleCheckbox}
-                  checkBoxFilter={props.checkBoxFilter}
                 />
               );
             })}

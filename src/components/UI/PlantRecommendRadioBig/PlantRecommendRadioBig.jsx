@@ -1,12 +1,7 @@
 import React from 'react';
 import classes from './PlantRecommendRadioBig.module.css';
 
-const PlantRecommendRadioBig = ({
-  item,
-  name,
-  handleCheckbox,
-  checkBoxFilter,
-}) => {
+const PlantRecommendRadioBig = ({ item, name, handleCheckbox }) => {
   return (
     <div className={classes.recommend}>
       <label htmlFor={item.id}>
@@ -19,7 +14,6 @@ const PlantRecommendRadioBig = ({
         className={classes.checkbox}
         name={name}
         onChange={handleCheckbox}
-        onClick={checkBoxFilter}
       />
     </div>
   );

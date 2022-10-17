@@ -53,32 +53,77 @@ const App = () => {
         return { ...prev, [key]: e.target.checked, 5: false };
       else return { ...prev, [key]: e.target.checked };
     });
-    if (key === '1' && e.target.checked === true) {
-      setPlant(
-        plantInfo.plant.filter((item) => item.Difficulty.includes('easy'))
-      );
-    } else if (key === '2' && e.target.checked === true) {
-      setPlant(
-        plantInfo.plant.filter((item) =>
-          item.Difficulty.some((i) => ['normal', 'hard'].includes(i))
-        )
-      );
-    } else if (key === '3' && e.target.checked === true) {
-      setPlant(
-        plant.filter((item) =>
-          item.amountOfSunshine.some((i) => ['반양지', '양지'].includes(i))
-        )
-      );
-    } else if (key === '4' && e.target.checked === true) {
-      setPlant(
-        plant.filter((item) =>
-          item.amountOfSunshine.some((i) => ['반음지', '음지'].includes(i))
-        )
-      );
-    }
   };
-  console.log(plant);
-  const checkBoxFilter = (e) => {};
+  const filter = () => {
+    const PLANT = plantInfo.plant;
+    const plants = [];
+    checkState[1]
+      ? plants.push(PLANT.filter((item) => item.Difficulty.includes('easy')))
+      : plants.push();
+    checkState[2]
+      ? plants.push(
+          PLANT.filter((item) =>
+            item.Difficulty.some((i) => ['normal', 'hard'].includes(i))
+          )
+        )
+      : plants.push();
+    checkState[3]
+      ? plants.push(
+          PLANT.filter((item) =>
+            item.amountOfSunshine.some((i) => ['반양지', '양지'].includes(i))
+          )
+        )
+      : plants.push();
+    checkState[4]
+      ? plants.push(
+          PLANT.filter((item) =>
+            item.amountOfSunshine.some((i) => ['반음지', '음지'].includes(i))
+          )
+        )
+      : plants.push();
+    checkState[5]
+      ? plants.push(PLANT.filter((item) => item.Temperature.includes(21)))
+      : plants.push();
+    checkState[6]
+      ? plants.push(PLANT.filter((item) => item.Temperature.includes(17)))
+      : plants.push();
+    checkState[7]
+      ? plants.push(PLANT.filter((item) => item.function.includes('공기정화')))
+      : plants.push();
+    checkState[8]
+      ? plants.push(
+          PLANT.filter((item) =>
+            item.Characteristics.includes('반려동물과 어린아이 괜찮아요')
+          )
+        )
+      : plants.push();
+    checkState[9]
+      ? plants.push(
+          PLANT.filter((item) =>
+            item.Characteristics.includes('잎을 감상하기 좋아요')
+          )
+        )
+      : plants.push();
+    checkState[10]
+      ? plants.push(
+          PLANT.filter((item) => item.Characteristics.includes('꽃을 감상하는'))
+        )
+      : plants.push();
+    checkState[11]
+      ? plants.push(
+          PLANT.filter((item) => item.Characteristics.includes('열매가 열리는'))
+        )
+      : plants.push();
+    checkState[12]
+      ? plants.push(
+          PLANT.filter((item) => item.Characteristics.includes('다육/선인장'))
+        )
+      : plants.push();
+  };
+
+  useEffect(() => {
+    filter();
+  }, [handleCheckbox]);
   return (
     <>
       <AppRouter
@@ -91,7 +136,6 @@ const App = () => {
         checkState={checkState}
         setCheckState={setCheckState}
         handleCheckbox={handleCheckbox}
-        checkBoxFilter={checkBoxFilter}
       />
     </>
   );
