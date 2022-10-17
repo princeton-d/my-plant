@@ -1,14 +1,14 @@
-import React from "react";
-import classes from "./PlantInfoModal.module.css";
-import sun from "../../../image/sun.png";
-import water from "../../../image/water.png";
-import air from "../../../image/air.png";
-import { useState } from "react";
+import React from 'react';
+import classes from './PlantInfoModal.module.css';
+import sun from '../../../image/sun.png';
+import water from '../../../image/water.png';
+import air from '../../../image/air.png';
+import { useState } from 'react';
 
 const PlantInfoModal = (props) => {
   const [plantImg, setPlantImg] = useState(props.plant.picture[0]);
   const onClick = (e) => {
-    if (e.target.id === "modalClose") {
+    if (e.target.id === 'modalClose') {
       props.setOpenModal(!props.openModal);
     }
   };
@@ -20,11 +20,11 @@ const PlantInfoModal = (props) => {
 
   return (
     <>
-      <div id="modalClose" className={classes.container} onClick={onClick}>
+      <div id='modalClose' className={classes.container} onClick={onClick}>
         <div className={classes.contents}>
           <div className={classes.imgArea}>
             <div className={classes.mainImgArea}>
-              <img className={classes.mainImg} src={plantImg} alt="img" />
+              <img className={classes.mainImg} src={plantImg} alt='img' />
             </div>
             <div className={classes.subImgArea}>
               {props.plant.picture.map((item) => {
@@ -51,27 +51,27 @@ const PlantInfoModal = (props) => {
             <div className={classes.detailInfo}>
               <ul className={classes.detailTags}>
                 {props.plant.Characteristics.map((item) => (
-                  <li>{item}</li>
+                  <li key={Math.random()}>{item}</li>
                 ))}
               </ul>
               <p>{props.plant.Description}</p>
               <div className={classes.detailInfos}>
                 <div>
-                  <img src={sun} alt="sun" />
+                  <img src={sun} alt='sun' />
                   <div>
                     <h3>{props.plant.amountOfSunshine[0]}</h3>
                     <span>{props.plant.amountOfSunshine[1]}</span>
                   </div>
                 </div>
                 <div>
-                  <img src={water} alt="water" />
+                  <img src={water} alt='water' />
                   <div>
                     <h3>{props.plant.irrigationWater[0]}</h3>
                     <span>{props.plant.irrigationWater[1]}</span>
                   </div>
                 </div>
                 <div>
-                  <img src={air} alt="air" />
+                  <img src={air} alt='air' />
                   <div>
                     <h3>잘 자라는 온도</h3>
                     <span>

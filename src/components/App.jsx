@@ -10,7 +10,6 @@ const App = () => {
   const [isLogin, setIsLogin] = useState(false);
   const [userInfo, setUserInfo] = useState(null);
   const [plantRecommendation, setPlantRecommendation] = useState(null);
-  const [plant, setPlant] = useState(plantInfo.plant);
   const [checkState, setCheckState] = useState({
     1: false, // 식물을 처음 키워봐요
     2: false, // 식물을 키워본적 있어요
@@ -126,17 +125,19 @@ const App = () => {
   }, [handleCheckbox]);
   return (
     <>
-      <AppRouter
-        isLogin={isLogin}
-        setIsLogin={setIsLogin}
-        userInfo={userInfo}
-        setUserInfo={setUserInfo}
-        plantRecommendation={plantRecommendation}
-        setPlantRecommendation={setPlantRecommendation}
-        checkState={checkState}
-        setCheckState={setCheckState}
-        handleCheckbox={handleCheckbox}
-      />
+      {isLogin && (
+        <AppRouter
+          isLogin={isLogin}
+          setIsLogin={setIsLogin}
+          userInfo={userInfo}
+          setUserInfo={setUserInfo}
+          plantRecommendation={plantRecommendation}
+          setPlantRecommendation={setPlantRecommendation}
+          checkState={checkState}
+          setCheckState={setCheckState}
+          handleCheckbox={handleCheckbox}
+        />
+      )}
     </>
   );
 };
