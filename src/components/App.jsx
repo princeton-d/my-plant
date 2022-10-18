@@ -138,7 +138,6 @@ const App = () => {
     }
   };
   filters();
-  console.log(resultPlant);
   return (
     <>
       {isLogin && (

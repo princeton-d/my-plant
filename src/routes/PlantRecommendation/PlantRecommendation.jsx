@@ -5,7 +5,6 @@ import PlantItem from '../../components/PlantItem/PlantItem';
 
 // 김동현 2022.10.02
 const PlantRecommendation = (props) => {
-  console.log('a', props.resultPlant.length);
   let userId = props.userInfo.uid;
 
   return (
