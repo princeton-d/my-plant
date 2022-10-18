@@ -53,7 +53,10 @@ const App = () => {
       else return { ...prev, [key]: e.target.checked };
     });
   };
-  const filter = () => {
+
+  const resultPlant = [];
+
+  const filters = () => {
     const PLANT = plantInfo.plant;
     const plants = [];
     checkState[1]
@@ -118,11 +121,24 @@ const App = () => {
           PLANT.filter((item) => item.Characteristics.includes('다육/선인장'))
         )
       : plants.push();
-  };
+    const newArr = [...plants];
+    const filterArr = (arr) =>
+      arr.filter((item, index) => arr.indexOf(item) !== index);
 
-  useEffect(() => {
-    filter();
-  }, [handleCheckbox]);
+    let i = 1;
+    while (i < 13) {
+      if (newArr.length < 2) {
+        resultPlant.push(...newArr);
+        break;
+      } else {
+        newArr.push(filterArr(newArr[0].concat(newArr[1])));
+        newArr.splice(0, 2);
+        i++;
+      }
+    }
+  };
+  filters();
+  console.log(resultPlant);
   return (
     <>
       {isLogin && (
@@ -136,6 +152,7 @@ const App = () => {
           checkState={checkState}
           setCheckState={setCheckState}
           handleCheckbox={handleCheckbox}
+          resultPlant={resultPlant}
         />
       )}
     </>
