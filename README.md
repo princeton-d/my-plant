@@ -26,7 +26,7 @@
 
 #### - 현재는 유저정원에 마지막 관수를 기준으로 다음 관수일에 알림을 보내주는 기능 개발예정
 
-## 
+## 구동 
 ![스크린샷 2022-10-19 오후 2 01 56](https://user-images.githubusercontent.com/98032384/196690099-765867b6-553b-41b4-a06b-94b0f4cc4d16.png)
 ![스크린샷 2022-10-19 오후 2 03 29](https://user-images.githubusercontent.com/98032384/196690144-1dfdd08d-8b1b-4a09-bd9a-7cb775f3a1b5.png)
 ![스크린샷 2022-10-19 오후 2 04 27](https://user-images.githubusercontent.com/98032384/196690156-19995530-3d41-4dd1-a972-0b2c83780598.png)
