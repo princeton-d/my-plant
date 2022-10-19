@@ -1479,35 +1479,32 @@
     },
     {
       "id": "049",
-      "name": "아비스",
+      "name": "예루살렘 체리",
       "picture": [
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558676279931.jpg",
-        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558676539372.jpg"
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16642771815801.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1658219831670%EC%98%A5%EC%B2%9C%EC%95%B5%EB%91%90.JPG",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/1658219845405%EC%98%A5%EC%B2%9C%EC%95%B5%EB%91%902.JPG"
       ],
       "Difficulty": ["normal", "⭑⭑"],
       "irrigationWater": [
-        "주 2회 이상",
-        "흙이 촉촉한 상태를 유지하는 것이 좋아요"
+        "주 1~2회",
+        "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
       ],
-      "Temperature": [21, 22, 23, 24, 25],
-      "amountOfSunshine": [
-        "반음지",
-        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      "Temperature": [
+        15, 16, 17, 18, 19, 2021, 22, 23, 24, 25, 26, 27, 28, 29, 30
       ],
-      "function": ["공기정화"],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": [],
       "Characteristics": [
-        "잎을 감상하기 좋아요",
-        "선물하기 좋은",
-        "공기정화",
-        "빛이 적어도 되는",
-        "반려동물과 어린아이 괜찮아요",
+        "열매가 열리는",
+        "목대있는",
+        "둥근모양",
         "길쭉한",
-        "갈라진",
-        "잎이 두꺼운",
+        "잎 끝이 뾰족한",
         "잎이 빳빳한"
       ],
       "Description": [
-        "주로 열대 지방에 넓게 분포하고 있는 아비스는 새 순이 나오는 중심부가 새 둥지를 닮아 'Bird's nest fern(새둥지 고사리)'이라고 불린답니다. 제주도에 자생하고 있는 멸종위기 식물 '파초일엽(Asplenium antiquum)과 외형적으로 아주 비슷하답니다. 아비스는 주로 습기가 많고 그늘진 나무나 바위 위에 붙어서 사는 착생 양치식물로, 아기가 주먹을 꼭 쥔 것 같이 꽉 말려있던 새 순이 빛을 받기위해 조금씩 펴지는 모습을 관찰하는 재미가 있는 식물이랍니다."
+        "동글동글 귀여운 주황색 열매가 달린 옥천 앵두는 햇빛을 사랑하는 가지과의 식물이에요. 고추, 가지, 토마토와 같은 'Solanum'속에 속한답니다. 종명인 'pseudocapsicum'은 가짜(pseudo) 고추(capsicum)을 의미해요. 옥천 앵두는 여름에 하얀 꽃이 피고 가을에 열매가 맺혀 겨울까지 지속되어 '크리스마스 체리', '예루살렘 체리'라고 불리게 되었답니다. 옥천 앵두의 열매는 독성이 있어 인간에게도 동물에게도 해롭기 때문에 섭취하면 안돼요. 반려동물과 어린 아이가 있다면 섭취하지 않도록 주의가 필요합니다."
       ]
     },
     {
