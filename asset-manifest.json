@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/my-plant/static/css/main.07b92ce7.css",
-    "main.js": "/my-plant/static/js/main.e2fd491c.js",
+    "main.css": "/my-plant/static/css/main.7f1166ce.css",
+    "main.js": "/my-plant/static/js/main.deda3334.js",
     "static/media/bg.jpg": "/my-plant/static/media/bg.9c5e532fac9d863607fc.jpg",
     "static/media/gardening.png": "/my-plant/static/media/gardening.1392e51b9a0ad3a4199f.png",
     "static/media/logo.png": "/my-plant/static/media/logo.ba374c04debec6bfebbc.png",
     "index.html": "/my-plant/index.html",
-    "main.07b92ce7.css.map": "/my-plant/static/css/main.07b92ce7.css.map",
-    "main.e2fd491c.js.map": "/my-plant/static/js/main.e2fd491c.js.map"
+    "main.7f1166ce.css.map": "/my-plant/static/css/main.7f1166ce.css.map",
+    "main.deda3334.js.map": "/my-plant/static/js/main.deda3334.js.map"
   },
   "entrypoints": [
-    "static/css/main.07b92ce7.css",
-    "static/js/main.e2fd491c.js"
+    "static/css/main.7f1166ce.css",
+    "static/js/main.deda3334.js"
   ]
 }
