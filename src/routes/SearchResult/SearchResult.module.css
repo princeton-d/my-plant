@@ -38,3 +38,18 @@
     padding-bottom: 5rem
   }
 }
+
+.noResult {
+  height: 73vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  opacity: .4;
+}
+
+.noResult img {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
