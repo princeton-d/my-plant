@@ -70,6 +70,10 @@
   transform: translateX(-0.5rem);
 }
 
+.recommendBtn {
+  display: none;
+}
+
 @media screen and (max-width: sSmall) {
   .wrapper {
     position: relative;
