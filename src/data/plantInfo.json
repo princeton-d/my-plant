@@ -336,7 +336,7 @@
       ],
       "Difficulty": ["easy", "⭑"],
       "irrigationWater": [
-        "평균 주 1~2회",
+        "주 1~2회",
         "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
       ],
       "Temperature": [20, 21, 22, 23, 24, 25],
@@ -370,7 +370,7 @@
       ],
       "Difficulty": ["easy", "⭑"],
       "irrigationWater": [
-        "평균 주 1~2회",
+        "주 1~2회",
         "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
       ],
       "Temperature": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
@@ -402,7 +402,7 @@
       ],
       "Difficulty": ["easy", "⭑"],
       "irrigationWater": [
-        "평균 주 1~2회",
+        "주 1~2회",
         "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
       ],
       "Temperature": [21, 22, 23, 24, 25],
@@ -437,7 +437,7 @@
       ],
       "Difficulty": ["easy", "⭑"],
       "irrigationWater": [
-        "평균 주 1~2회",
+        "주 1~2회",
         "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"
       ],
       "Temperature": [
@@ -1069,6 +1069,591 @@
       ],
       "Description": [
         "주로 열대 지방에 넓게 분포하고 있는 아비스는 새 순이 나오는 중심부가 새 둥지를 닮아 'Bird's nest fern(새둥지 고사리)'이라고 불린답니다. 제주도에 자생하고 있는 멸종위기 식물 '파초일엽(Asplenium antiquum)과 외형적으로 아주 비슷하답니다. 아비스는 주로 습기가 많고 그늘진 나무나 바위 위에 붙어서 사는 착생 양치식물로, 아기가 주먹을 꼭 쥔 것 같이 꽉 말려있던 새 순이 빛을 받기위해 조금씩 펴지는 모습을 관찰하는 재미가 있는 식물이랍니다."
+      ]
+    },
+    {
+      "id": "036",
+      "name": "수채화 고무나무",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558148739281.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558148925273.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558149007454.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558149112055.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "목대 있는",
+        "둥근모양",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한",
+        "길쭉한"
+      ],
+      "Description": [
+        "수채화 고무나무는 인도고무나무의 한 품종이에요. 따뜻한 온도와 밝은 빛 조건만 맞춰준다면 쉽게 키울 수 있는 식물이에요. 다만, 온도 변화에 예민한 편이기 때문에 차가운 바람이 드나드는 곳과 온도변화가 심한 창가는 피해 놓아주시고 잎에 먼지가 앉지 않도록 자주 닦아주어 더 많은 빛을 받아 양분을 만들 수 있도록 해주세요. 수액에는 독성이 있으니 어린아이와 반려동물이 섭취하지 않도록 주의해야 해요."
+      ]
+    },
+    {
+      "id": "037",
+      "name": "칼라데아 진저",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558755529471.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558755617292.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "둥근모양",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한",
+        "길쭉한"
+      ],
+      "Description": [
+        "진녹색의 잎에 선명한 분홍색의 빗살무늬가 매력적인 칼라데아 진저는 따뜻한 남아메리카가 고향이기 때문에 추위에는 약한 편이고, 촉촉한 공중습도를 좋아해요. 가끔 샤워하실 때 화장실로 데려가 스팀을 맞게 해주시면 아주 좋아할거예요. 칼라데아 진저는 낮에는 햇빛을 많이 받기 위해 잎을 내려 활짝 펴고 밤에는 다시 하늘 위로 오므리는 변화를 보인답니다. 움직임을 관찰하는 재미가 있는 식물이예요. 칼라데아속의 친구들은 모두 수돗물의 염소성분에 예민하기 때문에 물을 주시거나 분무를 해 주실 때 주의해주세요, 하루 이상 받아두어 염소농도가 낮아진 수돗물이나 정수기 물을 이용해 주시면 잎이 얼룩지지않고 잘 자란답니다."
+      ]
+    },
+    {
+      "id": "038",
+      "name": "산세베리아 문샤인",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558134075021.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558134306862.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558135296624.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558135404235.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["월 1회 이하", "빳빳한 잎이 쪼글쪼글해지면 주세요"],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "다육/선인장",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "몸통이 납작한",
+        "가시가 없는",
+        "길쭉한",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "아프리카에서온 산세베리아 문샤인은 산세베리아의 품종 중 하나의 종류에요. 이불을 감싼 듯이 잎이 겹처있고, 일반 산세베리아와 다르게 잎에 무늬가 없어요. 은은한 은색 빛을 띄는 색상을 지니고 있어요. 건조한 지역에서 온 다육식물문샤인은 다육질이기에 절대 물을 자주 주시면 안되요. 차갑고 습기가 많은 흙에서는 쉽게 부패하기 때문에 물을 자주 주지 않는게 포인트랍니다"
+      ]
+    },
+    {
+      "id": "039",
+      "name": "디지고테카 아랄리아",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557988651071.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557988754942.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557989006773.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557989133824.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화", "음이온"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "목대 있는",
+        "길쭉한",
+        "갈라진",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "디지코테카 아랄리아는 톱니같이 삐죽삐죽하고 폭죽터지듯 갈라진 진한 와인빛의 잎이 매력적인 식물이에요. 어려워 보이는 생김새와 다르게 부드러운 햇빛이 드는 대부분의 공간에서 잘 자라는 편이라 더욱 사랑스러워요. 포름알데히드 제거 능력이 뛰어나고 음이온 발생량이 많아 공기정화에 탁월한 식물이기도 해요. 카페나 거실등에 배치하면 공간에서 존재감을 뿜어낼 거에요. 아랄리아는 장소를 옮기는 것을 좋아하지 않아요. 특히 겨울에는 아랄리아의 위치 변경은 피해주세요."
+      ]
+    },
+    {
+      "id": "040",
+      "name": "핑크 은행목",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16589883591131.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16589883830642.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16589883896783.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16589883979224.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["월1~2회", "빳빳한 잎이 쪼글쪼글해지면 주세요"],
+      "Temperature": [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "다육/선인장",
+        "선물하기 좋은",
+        "공기정화",
+        "목대 있는",
+        "가시가 없는",
+        "둥근모양",
+        "무늬가 있는",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "핑크 은행목은 사랑무, 벚꽃 아악무, 칼라 아악무, 사랑목 등 다양한 이름으로 유통되고있는 다육식물입니다. 남아프리카에서 온 핑크 은행목은 은행목의 변종을 여러 번 교배하여 만들어진 잎변이종으로 변종이 많아 종류에 따라 분홍색 잎의 발현이 달라질 수 있어요. 이 아름다운 색감 덕분에 꽃을 보는 것 같은 느낌을 자아내어 인기가 많은 식물입니다. 새로 돋아나는 새 순에서 핑크빛이 나오므로 순치기를 자주 잘 해줘야 핑크 잎을 많이 볼 수 있어요. 은행목은 독성이 없어 코끼리나 육지 거북이가 즐겨 먹는 식물이기도 해서 'Elephant Bush'라고도 알려져 있고, 밤에 이산화탄소를 제거해주는 기능이 탁월한 식물이랍니다."
+      ]
+    },
+    {
+      "id": "041",
+      "name": "핑크 싱고니움",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558169455311.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578749906331.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16578750075742.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "하트모양",
+        "잎 끝이 뾰족한"
+      ],
+      "Description": [
+        "싱고니움의 잎의 모양은 화살촉 모양과 비슷해서 'Arrow Head Plant'라고 불리기도 해요. 반그늘과 따듯한 환경을 좋아하는 거실과 사무실에 두면 좋은 식물이에요. 잎을 자르면 나오는 수액에 독성이 있으니 아이가 있는 집이나 반려동물이 있는 집에는 주의해서 키워야 해요. 빛을 향해 잎이 자라는 특징이 있어서 잎이 햇빛을 골고루 받을 수 있게, 화분을 돌려가며 키워주세요."
+      ]
+    },
+    {
+      "id": "042",
+      "name": "호야 카르노사",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16566803322751.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16566803405582.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16566803538034.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "화분 속 흙이 다 마르면 듬뿍 주세요"],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "덩굴로 자라는",
+        "둥근모양",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "동남아와 호주에서 온 호야 카르노사는 현지에서 나무껍질, 돌 틈에 착생해요. 'Wax plant' 라는 영명을 지니고 있는 호야는 왁스칠을 한 듯, 광택이 나는 잎을 가지고 있어요. 건조하게 관리하는게 좋으며 과습에 약해요.이쁜 꽃을 보기 위해서는 5~9월 사이, 낮 12시간 이상 한 달 넘게 빛을 받아야 해요. 또한 온도변화에 민감해서 한 공간에서 키우는게 좋아요. 호야는 실내공기를 정화하는 능력이 있는 공기정화 식물입니다. 특히 새집증후군을 일으키는 성분인 자일렌의 제거효율이 높은 편에 속해요. 호야는 향기나는 분홍, 흰색 꽃을 피우며 매년 꽃이 피는 자리에서 꽃이 피어요. 늘어지듯이 자라서 행잉화분에 심어 공중에 매달아서 많이 기른답니다."
+      ]
+    },
+    {
+      "id": "043",
+      "name": "아레카 야자",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16571814681171.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16571818310242.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16571818390413.jpg"
+      ],
+      "Difficulty": ["normal", "⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "길쭉한",
+        "갈라진",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "아레카야자는 NASA가 선정한 실내 공기 정화 1위 식물이에요. 증산량이 많아 1.8m의 아레카야자를 기준으로 하루에 1리터의 물을 배출하는 천연 가습기 역할도 합니다. 게다가 무독성이라 반려동물에게도 안전해요. 'Chrysalidocarpus'이라는 종 명은 그리스어로 '황금 열매'라는 뜻이며, 속 명인 'Lutescens'는 '노란색이 되다'라는 뜻인데, 아레카 야자의 줄기 색이 노란색을 띠기 때문에 붙여진 이름이라고 해요. 마다가스카르에서 온 아레카 야자는 밝은 간접광이 오래 드는 공간을 좋아하고 촉촉한 습도를 좋아하는 친구예요."
+      ]
+    },
+    {
+      "id": "044",
+      "name": "드라세나 마지나타",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557979190921.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557979393972.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557979478063.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16557979684325.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["월1~2회", "화분 속 흙이 다 마르면 듬뿍 주세요"],
+      "Temperature": [24, 25, 26, 27, 28, 29, 30, 31, 32],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "목대 있는",
+        "길쭉한",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "드사레나 마지나타는 단단한 목대를 가지고 있고 시원하게 위로 뻗은 창 모양의 잎이 아주 매력적인 식물입니다. 잎색은 녹색, 연두색, 흰색, 빨강, 자주색, 분홍색 등 다양한 색을 가지고 있어요. 드라세나 마지나타는 실내 공기의 독성물질 제거 능력이 뛰어나 실내 공기 정화 식물로 인기 만점 이에요. 잎에는 사포닌 성분이 있어 반려동물에게 구토, 식욕부진을 일으킬 수 있으니 주의 해야해요."
+      ]
+    },
+    {
+      "id": "045",
+      "name": "괴마옥",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16589155784795.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16589155784795.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16589155494903.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16589155683524.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["월1~2회", "단단한 몸통이 말랑해지면 물을 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "다육/선인장",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "목대 있는",
+        "가시가 없는",
+        "길쭉한",
+        "잎이 두꺼운",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "파인애플을 닮은 괴마옥은 남아프리카 케이프 지역의 열대 초원에서 온 다육식물이에요. '귀신을 쫓는구슬'이라는 뜻의 이름으로 나쁜 기운을 물리쳐준다고 해요. 게다가 물을 자주 주지 않아도 되고, 키우기 어렵지 않아서 선물용으로도 인기 있는 식물입니다. 위로 쭉쭉 키를 키우는 괴마옥은 새로 자라는 줄기는 녹색을 띠고 있지만 시간이 지날수록 갈색으로 목질화되어 괴마옥을 더 파인애플처럼 보이게 해요. 괴마옥은 아미산과 철갑환의 교잡종으로, 어렸을 때 아미산과 아주 비슷한 생김새를 가지고 있어 간혹 아미산을 괴마옥으로 판매하는 경우가 있어요. 아미산은 키가 잘 크지 않고 옆으로 자구를 내어 퍼지면서 자란답니다. 괴마옥을 자르거나 상처를 내게 되면 하얀 진액이 나오는데, 이 진액에는 독성이 있어 직접 손에 닿지 않도록 항상 주의가 필요해요."
+      ]
+    },
+    {
+      "id": "046",
+      "name": "장미허브",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16576879526532.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16576831225153.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16576830538731.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "화분 속 흙이 다 마르면 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "다육/선인장",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "향기나는",
+        "목대 있는",
+        "둥근모양",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "장미허브는 꿀풀과 플렉트란서스속의 허브식물로, 도톰한 톱니모양의 귀여운 잎에서 좋은 향이 나고 잎이 나오는 모양이 장미 꽃을 닮아 장미허브라고 불려요. 줄기가 자라나면 아랫 줄기가 나무처럼 목질화되어 자라는 성질이 있어 치기를 통해 잎을 솎아내 동그란 외목대 수형으로도 만들 수 있답니다. 장미허브는 생명력이 강해 식물을 처음 키우시는 초보 식집사도 잘 키울 수 있어요. 음이온 발생량이 많고, 주변 습도를 높여주며, 이산화탄소를 제거해주는 기능이 탁월해 공기정화능력도 뛰어난 식물이랍니다. 장미허브는 잎이 통통하게 수분을 잘 머금고 있어서 다육식물과 비슷하게 관리해주셔야해요."
+      ]
+    },
+    {
+      "id": "047",
+      "name": "필로덴드론 플로리다 뷰티",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583882685611.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583882807302.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16583882871783.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [
+        18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35
+      ],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "공기정화",
+        "빛이 적어도 되는",
+        "덩굴로 자라는",
+        "갈라진",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "필로덴드론 플로리다 뷰티는 필로덴드론 페다텀의 잎 변이종 식물이에요. 마치 노란 물감을 발라놓은 것 같은 아름다운 무늬가 다섯갈래의 잎사귀에 아름답게 펼쳐져 있는 게 특징이랍니다. 플로리다 뷰티는 흙 위로 공중 뿌리가 자라나며 줄기를 지지하기도 하며, 수태봉으로 지지해주면 잎이 더 힘있고 크게 성장한답니다. 플로리다 뷰티는 열대우림같은 환경에서 가장 잘 자라요. 주변 공기를 따뜻하게, 그리고 촉촉하게 관리해주시면 건강하게 잘 키울 수 있어요. 필로덴드론의 종류답게 공기 중의 포름알데히드와 일산화탄소를 제거하는 능력이 뛰어나 실내 공기정화 식물로의 역할도 수행해요. 빛이 부족한 공간에서는 아름다운 무늬를 잃어버릴 수 있으니 은은한 밝은 빛을 오래 받을 수 있는 공간에 놓아주세요."
+      ]
+    },
+    {
+      "id": "048",
+      "name": "떡갈잎 고무나무",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558014320961.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558014514203.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558014600174.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [16, 17, 18, 19, 20],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "목대 있는",
+        "둥근모양",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "바이올린을 닮은 잎을 가진 떡갈잎 고무나무는 그 잎이 떡갈나무의 잎을 닮아 '떡갈잎 고무나무'라고 불러요. 고무나무 종류는 키우기 쉽고 손이 많이 안 가는 편이라 꾸준히 인기가 많은 식물이랍니다. 다만, 온도 변화에 예민한 편이기 때문에 차가운 바람이 드나드는 곳과 온도변화가 심한 창가는 피해 놓아주시고 잎에 먼지가 앉지 않도록 자주 닦아주어 더 많은 빛을 받아 양분을 만들 수 있도록 해주세요. 수액에는 독성이 있으니 어린아이와 반려동물이 섭취하지 않도록 주의해야 해요."
+      ]
+    },
+    {
+      "id": "049",
+      "name": "아비스",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558676279931.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558676539372.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": [
+        "주 2회 이상",
+        "흙이 촉촉한 상태를 유지하는 것이 좋아요"
+      ],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반음지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "길쭉한",
+        "갈라진",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "주로 열대 지방에 넓게 분포하고 있는 아비스는 새 순이 나오는 중심부가 새 둥지를 닮아 'Bird's nest fern(새둥지 고사리)'이라고 불린답니다. 제주도에 자생하고 있는 멸종위기 식물 '파초일엽(Asplenium antiquum)과 외형적으로 아주 비슷하답니다. 아비스는 주로 습기가 많고 그늘진 나무나 바위 위에 붙어서 사는 착생 양치식물로, 아기가 주먹을 꼭 쥔 것 같이 꽉 말려있던 새 순이 빛을 받기위해 조금씩 펴지는 모습을 관찰하는 재미가 있는 식물이랍니다."
+      ]
+    },
+    {
+      "id": "050",
+      "name": "소철",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558143643712.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558143762303.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558143902104.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["월1~2회", "화분 속 흙이 다 마르면 듬뿍 주세요"],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "공기정화",
+        "빛이 적어도 되는",
+        "목대 있는",
+        "바늘모양",
+        "길쭉한",
+        "갈라진",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "소철은 공기 정화 능력이 아주 뛰어난 식물이에요. 소철의 이름은 식물의 힘이 없을 때, 철분을 주면 생기를 찾는다는 특성에서 유래되었다고해요. 줄기가 없이 중심부에서 곧게 뻗은 잎은 이국적인 분위기를 자아내요. 성장이 아주 느린 편에 속해 일년에 한 번씩 잎이 새로 나고, 암수 그루가 따로 있어 성별마다 다른 꽃이 피어요. 암그루의 중심부에는 열매가 달리지만 열매에는 독성이 있어 섭취하시면 안 돼요."
+      ]
+    },
+    {
+      "id": "051",
+      "name": "아이비",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558693813941.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558694094584.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558694192905.jpg"
+      ],
+      "Difficulty": ["easy", "⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [16, 17, 18, 19, 20],
+      "amountOfSunshine": ["음지", "밝은 햇빛이 들지 않아도 괜찮아요"],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "초보자용",
+        "선물하기 좋은",
+        "공기정화",
+        "빛이 적어도 되는",
+        "덩굴로 자라는",
+        "별모양",
+        "무늬가 있는",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "전세계적으로 많은 품종이 개발되어 있는 아이비는 잎 모양과 색이 다양해요. 덩굴성의 유연한 줄기를 가지고 있어 아름다운 수형으로 가꾸기 좋은 식물이에요. 빛이 적은 곳에서도 잘 자라 실내 어느 공간에서도 아주 잘 자라고 건조에도 강한 편이라 초보 가드너도 건강하게 잘 키울 수 있고, 성장속도가 빨라 자라는 것만 봐도 뿌듯함을 느낄 수 있답니다. 하지만 독성이 있어 반려동물과 어린아이가 있다면 섭취하지 않도록 주의해주세요."
+      ]
+    },
+    {
+      "id": "052",
+      "name": "켄차 야자",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16581186418581.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16581190070522.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16581190146843.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16581190216454.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [21, 22, 23, 24, 25],
+      "amountOfSunshine": ["반양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "공기정화",
+        "빛이 적어도 되는",
+        "반려동물과 어린아이 괜찮아요",
+        "목대 있는",
+        "바늘모양",
+        "길쭉한",
+        "갈라진",
+        "잎 끝이 뾰족한",
+        "잎이 빳빳한"
+      ],
+      "Description": [
+        "켄차 야자는 아레카 야자와 닮은 듯한 켄차 야자는 열대성 식물로 잎줄기가 매우 긴 식물이에요. 호주의 로드호에섬에서 왔어요. 아레카 야자와 비슷하지만 아래 부분, 밑동을 보면 쉽게 구분이 가능해요. 켄차 야자는 마른 껍칠 처럼 보이는 섬유질이 감싸고 있는게 특징이에요. 뜨거운 태양에서 잘 자랄 것 같지만 거실, 실내의 밝은 곳에서도 잘 자라요. 키가 2m 정도로 자라나며, 호주에서는 10m 까지도 자라는 식물이랍니다. 겨울철 실내 습도를 높이고 실내공기를 깨끗하게 해주고, 독성이 없어 반려동물과 함께하기에도 좋은 식물이에요."
+      ]
+    },
+    {
+      "id": "053",
+      "name": "여인초",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16571618369301.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16571618539972.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["주1~2회", "흙 표면부터 3CM까지 마르면, 듬뿍 주세요"],
+      "Temperature": [18, 19, 20, 21, 22, 23, 24, 25],
+      "amountOfSunshine": [
+        "반양지",
+        "하루 2~3시간 정도의 은은한 햇빛이 필요해요"
+      ],
+      "function": ["공기정화"],
+      "Characteristics": [
+        "잎을 감상하기 좋아요",
+        "공기정화",
+        "빛이 적어도 되는",
+        "둥근모양",
+        "길쭉한",
+        "잎 끝이 뾰족한",
+        "잎이 두꺼운"
+      ],
+      "Description": [
+        "여인초는 성장속도가 아주 빠른 잎보기 식물입니다. 마다가스카르가 고향인 여인초는 아주 크게 성장하면 부채처럼 보여 '부채 파초'라고도 불린답니다. 극락조와 그 생김새가 아주 닮아있지만 잎의 두께와 모양을 확인하면 쉽게 구분할 수 있어요. 여인초의 잎은 넓고 광택이 나는 달걀모양의 부드러운느낌이 나며, 극락조의 잎은 여인초에 비해 좁고 두껍고 타원형에 가까운 모양을 하고 있답니다. 촉촉한 습도와 밝은 간접광을 좋아하는 여인초는 집 안을 이국적으로 만들어 줄 수 있는 훌륭한 실내식물입니다."
+      ]
+    },
+    {
+      "id": "054",
+      "name": "아데니움",
+      "picture": [
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558794016261.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558794089692.jpg",
+        "https://huga.s3.ap-northeast-2.amazonaws.com/plantImages/16558794162313.jpg"
+      ],
+      "Difficulty": ["normal", "⭑⭑"],
+      "irrigationWater": ["월1~2회", "단단한 몸통이 말랑해지면 물을 주세요"],
+      "Temperature": [
+        18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32
+      ],
+      "amountOfSunshine": ["양지", "하루 6시간 이상 밝은 햇빛이 필요해요"],
+      "function": [],
+      "Characteristics": [
+        "다육/선인장",
+        "가시가 없는",
+        "둥근모양",
+        "잎이 두꺼운",
+        "길쭉한"
+      ],
+      "Description": [
+        "어린왕자 속 바오밥 나무를 닮은 아데니움은 건조한 기후에서도 아름다운 꽃을 피워 사막의 장미라고도 많이 알려져있어요. 통통한 줄기에 수분을 저장하는 능력이 뛰어나 물을 자주 주지 않아도 되고 밝은 햇빛을 아주 좋아하는 식물입니다. 협죽도과에 속하는 아데니움은 진액 속에 독성이 있어서 반려동물이나 어린아이가 있을 경우에는 섭취하지 않도록 주의해주시고, 진액에 의해 알러지 반응이 나타날 수 있으므로 식물을 다룰 때 꼭 장갑을 껴야합니다."
       ]
     }
   ],
