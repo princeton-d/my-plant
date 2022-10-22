@@ -26,7 +26,20 @@
 
 #### - 현재는 유저정원에 마지막 관수를 기준으로 다음 관수일에 알림을 보내주는 기능 개발예정
 
-## service view
+## 구동 
+![0-2](https://user-images.githubusercontent.com/98032384/196694404-eb725c7e-40f3-4849-bbbe-b7eb3aaf63f1.png)
+![0](https://user-images.githubusercontent.com/98032384/196694424-31d5ad76-1811-4bbf-b055-66e7dbb25553.png)
+![1](https://user-images.githubusercontent.com/98032384/196694429-fce6c9f7-8bea-4f82-bb21-dda9b103e4ef.png)
+![2](https://user-images.githubusercontent.com/98032384/196694432-b3546cc1-9c40-4416-9352-b88bf08d4928.png)
+<img width="461" alt="3-2" src="https://user-images.githubusercontent.com/98032384/196694434-400e202d-bf94-4e99-ade9-780be527b867.png">
+![3](https://user-images.githubusercontent.com/98032384/196694440-b66ab791-ef89-4caf-80e9-e6ed08f4f3d5.png)
+![4](https://user-images.githubusercontent.com/98032384/196694444-58241e82-47c5-45d1-9b22-d52ca4ce2de7.png)
+![m1](https://user-images.githubusercontent.com/98032384/196694447-23538538-9892-4d71-9e98-27ddf6a5bccb.png)
+![m2](https://user-images.githubusercontent.com/98032384/196694454-00009412-b35b-4b20-8309-af43ee138d81.png)
+![m3](https://user-images.githubusercontent.com/98032384/196694457-43f7cf78-984e-427b-9030-5b0897385629.png)
+![m4](https://user-images.githubusercontent.com/98032384/196694460-c1e7618b-5b9c-4bcd-a550-2b3cfbf2ec1c.png)
+
+
 
 ## 간략 설명
 
