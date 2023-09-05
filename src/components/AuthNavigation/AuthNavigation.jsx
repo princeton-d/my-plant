@@ -1,5 +1,3 @@
-// 2022.10.04 - 기본 구조 작업
-
 import {
   GoogleAuthProvider,
   signInAnonymously,
@@ -20,12 +18,10 @@ const AuthNavigation = (props) => {
   const [email, setEmail] = useState('test@test.com');
   const [password, setPassword] = useState('123123');
   const [error, setError] = useState('');
-  // 김동현 2022.10.06 - 모달창 실행
   const handleSignUpButton = () => {
     setOpenModal(!openModal);
   };
 
-  // 김동현 2022.10.05 - 이메일, 비밀번호 state에 저장
   const onChange = (e) => {
     if (e.target.name === 'email') {
       setEmail(e.target.value);
@@ -33,7 +29,7 @@ const AuthNavigation = (props) => {
       setPassword(e.target.value);
     }
   };
-  // 김동현 2022.10.05 - 로그인 기능
+
   const onSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -55,11 +51,11 @@ const AuthNavigation = (props) => {
       }
     }
   };
-  // 김동현 2022.10.05 - 게스트 로그인 기능
+
   const handleGuestButton = async () => {
     const user = await signInAnonymously(authService);
   };
-  // 김동현 2022.10.05 - 구글 로그인 기능
+
   const handleGoogleLoginButton = async () => {
     const provider = new GoogleAuthProvider();
     signInWithPopup(authService, provider);

@@ -3,7 +3,6 @@ import PlantItem from '../../components/PlantItem/PlantItem';
 import classes from './PlantPick.module.css';
 import plantInfo from '../../data/plantInfo.json';
 
-// 김동현 2022.10.04 - 기본작업
 const PlantPick = ({ userInfo }) => {
   let userId = userInfo.uid;
   const randomPlant = (array) => {
@@ -23,7 +22,6 @@ const PlantPick = ({ userInfo }) => {
           </div>
           <div className={classes.toadyPlant}>
             <ul>
-              {/* 김동현 2022.10.04 - 각각의 식물 정보 mapping */}
               {randomPlant(plantInfo.plant).map((item) => {
                 return <PlantItem plant={item} key={item.id} userId={userId} />;
               })}

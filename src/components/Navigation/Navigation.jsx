@@ -10,7 +10,6 @@ import plantInfo from '../../data/plantInfo.json';
 import PlantItem from '../PlantItem/PlantItem';
 import SearchWindow from '../SearchWindow/SearchWindow';
 
-// 김동현 2022.10.06 navigation 작업
 const Navigation = (props) => {
   const navigate = useNavigate();
   const [menuActive, setMenuActive] = useState(false);
@@ -19,17 +18,17 @@ const Navigation = (props) => {
 
   const handlePlantRecommendationButton = () => {
     toggleMenu();
-    props.setPlantRecommendation(true); // 식물추천 navigation 으로 변경
-    navigate('/my-plant/recommendation'); // 식물추천 page 로 이동
+    props.setPlantRecommendation(true);
+    navigate('/my-plant/recommendation');
   };
-  // 김동현 2022.10.06 - 로그아웃 기능
+
   const handleLogoutButton = () => {
     toggleMenu();
     signOut(authService);
     props.setIsLogin(false);
     navigate('/my-plant');
   };
-  // 김수영 2022.10.12 - 경로 이동 수정
+
   const goToPlantPick = () => {
     toggleMenu();
     navigate('/my-plant');
@@ -38,22 +37,21 @@ const Navigation = (props) => {
     toggleMenu();
     navigate('/my-plant/garden');
   };
-  // 김수영 2022.10.08 - 반응형 메뉴바 보이기 기능
+
   const toggleMenu = () => setMenuActive((prev) => !prev);
   const gnbClasses = !menuActive
     ? `${classes.gnbArea}`
     : `${classes.gnbArea} ${classes.gnbActive}`;
-  // 김동현 2022.10.09 - 검색기능
+
   const onChange = (e) => {
     setSearch(e.target.value);
   };
-  // 김수영 2022.10.10 = 토글 메뉴 기능 추가
+
   const onCloseMenu = () => toggleMenu();
   const closeGnbClasses = !menuActive
     ? `${classes.gnbBottom} ${classes.closeGnb}`
     : `${classes.gnbBottom}`;
 
-  // 김동현 2022.10.13 - 검색 기능
   const searchPlant = plantInfo.plant.filter((plant) => {
     return plant.name.replace(/ /g, '').includes(search.replace(/ /g, ''));
   });
@@ -65,7 +63,7 @@ const Navigation = (props) => {
       },
     });
   };
-  // 김동현 2022.10.17 - 검색어 클릭 시 검색어 input에 추가
+
   return (
     <>
       {/* wrapper area */}

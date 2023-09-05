@@ -19,7 +19,6 @@ const SearchResult = (props) => {
           <div className={classes.title}>
             <span>검색결과</span>
           </div>
-          {/* 김동현 2022.10.13 - 검색한 식물 정보 mapping */}
           {search && (
             <ul className={classes.searchResult}>
               {search.map((item) => {

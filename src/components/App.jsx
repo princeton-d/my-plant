@@ -25,7 +25,7 @@ const App = () => {
     11: false, // 열매가 맺혔으면 좋겠어요
     12: false, // 다육이/선인장이 좋아요
   });
-  // 김동현 2022.10.05 - 유저 정보 변화 감지
+
   useEffect(() => {
     onAuthStateChanged(authService, (user) => {
       if (user) {
@@ -38,7 +38,7 @@ const App = () => {
       }
     });
   }, []);
-  // 김동현 2022-10-14 다중필터기능
+
   const handleCheckbox = (e) => {
     const key = e.target.id;
     setCheckState((prev) => {

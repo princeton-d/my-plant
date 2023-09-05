@@ -1,5 +1,3 @@
-/* 2022.10.04 - 기본 구조 작업 */
-/* 2022.10.05 - 스타일링 작업 */
 @value fBasic from '../../common/font.css';
 @value sMedium, sSmall from '../../common/size.css';
 @value cdBlue, cGreen, cYellow, cWhite, cGrey from '../../common/color.css';

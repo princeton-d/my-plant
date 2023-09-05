@@ -3,7 +3,6 @@ import classes from './PlantRecommendation.module.css';
 import plantInfo from '../../data/plantInfo.json';
 import PlantItem from '../../components/PlantItem/PlantItem';
 
-// 김동현 2022.10.02
 const PlantRecommendation = (props) => {
   let userId = props.userInfo.uid;
 
@@ -19,7 +18,6 @@ const PlantRecommendation = (props) => {
           </div>
           <div className={classes.Recommendation}>
             <ul>
-              {/* 김동현 2022.10.04 - 식물 추천 로직 구현 예정 */}
               {props.resultPlant.length > 0 ? (
                 props.resultPlant[0].map((item) => {
                   return (

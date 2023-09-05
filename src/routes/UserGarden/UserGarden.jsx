@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
 import gardening from "../../image/gardening.png";
 
-// 김수영 2022.10.7 CRUD 기능 구현
 const UserGarden = (props) => {
   const [plantInfo, setPlantInfo] = useState([]);
   useEffect(() => {

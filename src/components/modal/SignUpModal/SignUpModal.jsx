@@ -5,7 +5,6 @@ import Button from '../../UI/Button/Button';
 import classes from './SignUpModal.module.css';
 import logo from '../../../image/logo.png';
 
-// 김동현 2022.10.02 setup
 const SignUpModal = ({ openModal, setOpenModal }) => {
   const [inputValue, setInputValue] = useState({
     email: '',

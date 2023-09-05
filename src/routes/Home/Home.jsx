@@ -1,7 +1,6 @@
 import React from 'react';
 import classes from './Home.module.css';
 
-// 김동현 2022.10.01 - html page 작업
 const Home = () => {
   return (
     <>

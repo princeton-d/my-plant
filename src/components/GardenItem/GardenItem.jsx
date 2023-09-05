@@ -1,4 +1,3 @@
-// 김동현 2022.10.04
 import React from 'react';
 import { useState } from 'react';
 import classes from './GardenItem.module.css';

@@ -5,8 +5,6 @@ import PlantInfoModal from '../modal/PlantInfoModal/PlantInfoModal';
 import { dbService as db } from '../../service/fbase';
 import { addDoc, collection } from 'firebase/firestore';
 
-// 김동현 2022.10.06 - 클릭하면 식물정보 모달창이 보이도록 작업
-// 김수영 2022.10.07 - 모달창에서 정원에 추가 클릭 시 정원으로 추가
 const PlantItem = ({ plant, userId }) => {
   const [openModal, setOpenModal] = useState(false);
   const [adding, setAdding] = useState(false);

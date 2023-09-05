@@ -11,7 +11,6 @@ import SearchResult from '../routes/SearchResult/SearchResult';
 const AppRouter = (props) => {
   return (
     <Router>
-      {/* 김동현 2022.10.07 로그인 후 네비게이션 바 보임 */}
       {props.isLogin ? <Navigation userInfo={props.userInfo} setIsLogin={props.setIsLogin} setPlantRecommendation={props.setPlantRecommendation} /> : <AuthNavigation setIsLogin={props.setIsLogin} setUserInfo={props.setUserInfo} />}
       {props.plantRecommendation && <RecommendationNavigation setPlantRecommendation={props.setPlantRecommendation} checkState={props.checkState} setCheckState={props.setCheckState} handleCheckbox={props.handleCheckbox} />}
       <Routes>
